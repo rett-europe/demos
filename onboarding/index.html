@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>rettX – onboarding demo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--brand:#6b3fa0;--brand-d:#4d2b78;--bg:#f4f1f8;--ink:#241a33}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:var(--brand);color:#fff;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+header h1{margin:0;font-size:20px;font-weight:600}
+.hr{display:flex;gap:12px;align-items:center}
+.seg{display:flex;background:rgba(255,255,255,.18);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:none;color:#fff;padding:7px 14px;font-size:14px;cursor:pointer}
+.seg button.on{background:#fff;color:var(--brand);font-weight:600}
+main{max-width:1280px;margin:24px auto;padding:0 16px;display:grid;grid-template-columns:1fr 280px;gap:20px}
+@media(max-width:900px){main{grid-template-columns:1fr}}
+.stage{background:#e4dcef;border-radius:12px;padding:16px;display:flex;gap:24px;justify-content:center;align-items:center;box-shadow:0 6px 24px rgba(40,20,70,.15)}
+.dev{display:none}
+.dev video{display:block;width:100%;cursor:pointer;background:#000}
+.desk{background:#000;border-radius:10px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.3)}
+.phone{background:#111;border-radius:34px;padding:12px;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.phone video{border-radius:22px}
+.mode-desktop #dd,.mode-both #dd,.mode-mobile #dm,.mode-both #dm{display:block}
+.mode-desktop #dd{width:100%}
+.mode-mobile #dm{width:min(100%,340px)}
+.mode-both #dd{flex:1 1 0;min-width:0}
+.mode-both #dm{width:min(28%,260px);flex:none}
+@media(max-width:900px){.mode-both .stage{flex-direction:column}.mode-both #dm{width:min(60%,260px)}}
+.ctl{display:flex;align-items:center;gap:12px;margin-top:12px;background:#fff;padding:10px 14px;border-radius:12px}
+#pp{width:44px;height:44px;border-radius:50%;border:0;background:var(--brand);color:#fff;font-size:18px;cursor:pointer}
+#pp:hover{background:var(--brand-d)}
+#seek{flex:1;accent-color:var(--brand)}
+#time{font-variant-numeric:tabular-nums;font-size:14px;min-width:90px;text-align:right}
+select{font-size:15px;padding:6px 10px;border-radius:8px;border:1px solid #cbb8e3;background:#fff}
+aside{background:#fff;border-radius:12px;padding:16px;align-self:start}
+aside h2{font-size:15px;margin:0 0 10px;color:var(--brand)}
+#steps{list-style:none;margin:0;padding:0}
+#steps li{padding:10px 12px;border-radius:8px;cursor:pointer;font-size:14px;display:flex;gap:10px}
+#steps li:hover{background:#efe8f8}
+#steps li.on{background:var(--brand);color:#fff}
+#steps b{opacity:.6;font-variant-numeric:tabular-nums}
+#err{display:none;background:#fde8e8;color:#8a1c1c;padding:10px;border-radius:8px;margin-top:10px}
+</style></head><body>
+<header><h1>rettX · How onboarding works</h1>
+<div class="hr"><div class="seg" id="views" role="group" aria-label="View">
+ <button data-m="desktop">Desktop</button><button data-m="mobile">Mobile</button><button data-m="both">Side by side</button></div>
+<select id="lang" aria-label="Language"></select></div></header>
+<main>
+<section>
+ <div class="stage mode-both" id="stage">
+  <div class="dev desk" id="dd"><video id="v" playsinline preload="auto" muted></video></div>
+  <div class="dev phone" id="dm"><video id="vm" playsinline preload="auto" muted></video></div>
+ </div>
+ <div class="ctl"><button id="pp" aria-label="Play">▶</button>
+  <input id="seek" type="range" min="0" max="1000" value="0" aria-label="Seek">
+  <span id="time">0:00 / 0:00</span></div>
+ <div id="err"></div>
+</section>
+<aside><h2>Steps</h2><ul id="steps"></ul></aside>
+</main>
+<script>
+// To add a language: run `node capture.mjs <code> desktop` and `... mobile`, then add an entry (d = desktop cue times, m = mobile cue times, same order as ids).
+const IDS=["language","language-next","profile","profile-location","profile-next","privacy","privacy-accept","done"];
+const LANGS={
+ en:{name:"English",d:[1.238,8.292,9.963,15.647,24.482,26.204,32.621,34.16],m:[1.248,8.257,10.046,15.77,24.707,26.371,32.317,34.572],
+  cap:["Choose your preferred language","Continue to the next step","Tell us a little about yourself","Select your country and region","Continue","Read the privacy policy","Scroll to the end and accept","All set – welcome to rettX!"]},
+ es:{name:"Español",d:[1.558,8.672,10.424,16.055,24.902,26.612,32.588,33.981],m:[1.124,8.247,10.002,15.686,24.551,26.222,32.195,34.479],
+  cap:["Elige tu idioma preferido","Continúa al siguiente paso","Cuéntanos un poco sobre ti","Selecciona tu país y región","Continuar","Lee la política de privacidad","Desplázate hasta el final y acepta","¡Todo listo – bienvenido a rettX!"]}};
+const $=id=>document.getElementById(id);
+const v=$('v'),vm=$('vm'),seek=$('seek'),pp=$('pp'),sel=$('lang'),steps=$('steps'),time=$('time'),err=$('err'),stage=$('stage');
+let lang='en',mode='both';
+const fmt=s=>isFinite(s)?Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0'):'0:00';
+for(const k in LANGS)sel.add(new Option(LANGS[k].name,k));
+// desktop time -> mobile time, piecewise-linear between matching cues
+function toM(t){const {d,m}=LANGS[lang];
+ if(t<=d[0])return d[0]?t*m[0]/d[0]:t;
+ for(let i=1;i<d.length;i++)if(t<=d[i])return m[i-1]+(t-d[i-1])*(m[i]-m[i-1])/(d[i]-d[i-1]);
+ return m[m.length-1]+(t-d[d.length-1]);}
+function fromM(t){const {d,m}=LANGS[lang];
+ if(t<=m[0])return m[0]?t*d[0]/m[0]:t;
+ for(let i=1;i<m.length;i++)if(t<=m[i])return d[i-1]+(t-m[i-1])*(d[i]-d[i-1])/(m[i]-m[i-1]);
+ return d[d.length-1]+(t-m[m.length-1]);}
+// the visible video is the master clock; the other follows it
+const master=()=>mode==='mobile'?vm:v;
+const slave=()=>mode==='mobile'?v:vm;
+const now=()=>mode==='mobile'?fromM(vm.currentTime):v.currentTime;
+const total=()=>mode==='mobile'?fromM(vm.duration):v.duration;
+function setT(t){v.currentTime=t;vm.currentTime=toM(t);}
+function sync(){const s=slave();if(s.readyState<1)return;
+ const want=mode==='mobile'?fromM(vm.currentTime):toM(v.currentTime);
+ if(Math.abs(s.currentTime-want)>0.25)s.currentTime=want;
+ if(master().paused!==s.paused&&!master().ended)master().paused?s.pause():s.play().catch(()=>{});}
+function load(l){lang=l;sel.value=l;err.style.display='none';
+ v.src=`media/onboarding-${l}.webm`;vm.src=`media/onboarding-${l}-m.webm`;v.load();vm.load();steps.innerHTML='';
+ LANGS[l].d.forEach((t,i)=>{const li=document.createElement('li');
+  li.innerHTML=`<b>${i+1}</b><span>${LANGS[l].cap[i]}</span>`;
+  li.onclick=()=>{setT(t);play()};steps.append(li)});
+ update();}
+function update(){const t=now(),T=total();let c=-1;LANGS[lang].d.forEach((x,i)=>{if(t>=x)c=i});
+ seek.value=T?t/T*1000:0;time.textContent=fmt(t)+' / '+fmt(T);
+ [...steps.children].forEach((li,i)=>li.classList.toggle('on',i===c));}
+function loop(){sync();update();requestAnimationFrame(loop)}
+function play(){v.play().catch(()=>{});vm.play().catch(()=>{});pp.textContent='❚❚'}
+function pause(){v.pause();vm.pause();pp.textContent='▶'}
+const playing=()=>!master().paused&&!master().ended;
+const toggle=()=>playing()?pause():play();
+function done(){pp.textContent='▶';slave().pause()}
+v.addEventListener('ended',()=>{if(mode!=='mobile')done()});
+vm.addEventListener('ended',()=>{if(mode==='mobile')done()});
+for(const x of[v,vm])x.addEventListener('error',()=>{err.textContent='Could not load a video file for "'+lang+'" (media/onboarding-'+lang+'[-m].webm).';err.style.display='block'});
+pp.onclick=toggle;v.onclick=toggle;vm.onclick=toggle;
+seek.oninput=()=>{const T=total();if(T)setT(seek.value/1000*(mode==='mobile'?T:T))};
+sel.onchange=()=>{pause();load(sel.value)};
+function setMode(m){const t=now(),was=playing();mode=m;stage.className='stage mode-'+m;
+ document.querySelectorAll('#views button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));
+ setT(t);if(was)play();}
+document.querySelectorAll('#views button').forEach(b=>b.onclick=()=>setMode(b.dataset.m));
+setMode('both');load('en');loop();
+</script></body></html>

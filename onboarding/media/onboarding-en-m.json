@@ -1,0 +1,38 @@
+{
+  "lang": "en",
+  "total": 38.584,
+  "timeline": [
+    {
+      "id": "language",
+      "t": 1.248
+    },
+    {
+      "id": "language-next",
+      "t": 8.257
+    },
+    {
+      "id": "profile",
+      "t": 10.046
+    },
+    {
+      "id": "profile-location",
+      "t": 15.77
+    },
+    {
+      "id": "profile-next",
+      "t": 24.707
+    },
+    {
+      "id": "privacy",
+      "t": 26.371
+    },
+    {
+      "id": "privacy-accept",
+      "t": 32.317
+    },
+    {
+      "id": "done",
+      "t": 34.572
+    }
+  ]
+}
