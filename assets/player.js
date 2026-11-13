@@ -101,5 +101,5 @@
     setT(t); if (was) play();
   }
   document.querySelectorAll('#views button').forEach((b) => (b.onclick = () => setMode(b.dataset.m)));
-  setMode('both'); load(lang); loop();
+  setMode(matchMedia('(max-width:700px)').matches ? 'mobile' : 'both'); load(lang); loop();
 })();
