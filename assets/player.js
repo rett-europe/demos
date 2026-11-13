@@ -103,3 +103,5 @@
   document.querySelectorAll('#views button').forEach((b) => (b.onclick = () => setMode(b.dataset.m)));
   setMode(matchMedia('(max-width:700px)').matches ? 'mobile' : 'both'); load(lang); loop();
 })();
+
+(function(){var b=document.getElementById('fs'),s=document.getElementById('stage');if(!b||!s)return;if(!s.requestFullscreen){b.hidden=true;return;}b.onclick=function(){document.fullscreenElement?document.exitFullscreen():s.requestFullscreen().then(function(){try{screen.orientation.lock('portrait').catch(function(){})}catch(e){}}).catch(function(){})}})();
