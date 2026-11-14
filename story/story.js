@@ -269,7 +269,7 @@ window.STORIES = {
    "kind": "card",
    "step": 6,
    "title": "Sube el informe genético",
-   "text": "rettX necesita el informe del estudio genético que confirma el diagnóstico de síndrome de Rett. Debe mostrar el nombre de tu familiar, su fecha de nacimiento y la mutación genética. Hay dos formas de añadirlo: elegir un archivo que ya tengas en el móvil o escanear el informe en papel con la cámara."
+   "text": "rettX necesita el informe del estudio genético que confirma el diagnóstico de síndrome de Rett. Debe mostrar el nombre de tu familiar, su fecha de nacimiento y la mutación genética. Hay dos formas de añadirlo: elegir un archivo que ya tengas en el móvil o escanear el informe en papel     con la cámara."
   },
   {
    "kind": "card",
@@ -345,6 +345,698 @@ window.STORIES = {
    "text": "¡Gracias por registrarte! Tu familiar ya forma parte del registro europeo del síndrome de Rett. Nota: rettX no es un producto sanitario. La validación solo confirma los datos del registro; no es un consejo médico.",
    "kick": "Todo listo"
   }
+ ],
+ "fr": [
+  {
+   "kind": "card",
+   "step": 1,
+   "url": "app.rettx.eu",
+   "title": "Rendez-vous sur app.rettx.eu",
+   "text": "Ouvrez app.rettx.eu sur votre téléphone ou votre ordinateur. C’est la maison du registre européen du syndrome de Rett. Pour vous inscrire, touchez « Rejoindre rettX »."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-fr.webm",
+   "from": 0,
+   "to": 6.37
+  },
+  {
+   "kind": "card",
+   "step": 2,
+   "title": "Créez votre compte",
+   "text": "Sur l’écran « Créer votre compte », saisissez votre propre adresse e-mail et touchez « Continuer ». Utilisez votre propre e-mail, pas une adresse créée pour votre proche."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-fr.webm",
+   "from": 6.37,
+   "to": 14.984
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Pas besoin de mot de passe",
+   "text": "rettX ne vous demande jamais de mot de passe. À chaque connexion, un nouveau code à usage unique est envoyé à votre adresse e-mail. Rien à retenir, rien à réutiliser, rien à voler. Seule une personne ayant accès à votre messagerie peut se connecter : c’est encore plus sûr."
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Saisissez le code reçu par e-mail",
+   "text": "Ouvrez votre messagerie, trouvez l’e-mail de rettX et saisissez le code sur l’écran « Vérifiez votre identité »."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-fr.webm",
+   "from": 14.984,
+   "to": 24.933
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Configurez votre compte",
+   "text": "Votre compte est créé. rettX vous demande maintenant votre langue préférée, votre nom et votre lieu de résidence."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-fr.webm",
+   "from": 0,
+   "to": 29.102
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Acceptez la politique de confidentialité",
+   "text": "Lisez comment vos données sont protégées, puis acceptez la politique de confidentialité pour continuer."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-fr.webm",
+   "from": 29.102,
+   "to": 41.693
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Bienvenue sur rettX !",
+   "text": "Vous y êtes. Créez maintenant le profil de votre proche avec l’essentiel : prénom, nom, date de naissance et votre lien de parenté."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-fr.webm",
+   "from": 0,
+   "to": 37.673
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Donnez votre consentement",
+   "text": "Relisez le formulaire de consentement pour votre proche et acceptez-le. Le profil est alors créé."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-fr.webm",
+   "from": 37.673,
+   "to": 49.432
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Ajoutez le rapport génétique",
+   "text": "rettX a besoin du rapport du test génétique qui confirme le diagnostic du syndrome de Rett. Il doit indiquer le nom de votre proche, sa date de naissance et la mutation génétique. Il y a deux façons de l’ajouter : choisir un fichier déjà présent sur votre téléphone, ou scanner le rapport papier avec l’appareil photo."
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Option 1 : ajouter un fichier",
+   "text": "Si vous avez le rapport en PDF ou en photo sur votre téléphone, par exemple reçu par e-mail, touchez « Téléverser le fichier de diagnostic » et choisissez-le."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-file-fr.webm",
+   "from": 0,
+   "to": 12.806
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Option 2 : scanner le rapport papier",
+   "text": "Si vous n’avez le rapport que sur papier, touchez « Scanner le document ». Posez le rapport sur une surface plane et photographiez chaque page. Quand toutes les pages sont prises, touchez « Terminer » et rettX les rassemble en un seul PDF."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-fr.webm",
+   "from": 0,
+   "to": 16.155
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Envoyé en toute sécurité",
+   "text": "Quelle que soit l’option choisie, le rapport est téléversé de façon sécurisée puis traité. L’équipe rettX l’examine ensuite."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-fr.webm",
+   "from": 16.155,
+   "to": 26.753
+  },
+  {
+   "kind": "card",
+   "step": 7,
+   "title": "L’équipe rettX valide le diagnostic",
+   "text": "Une personne de l’équipe rettX lit le rapport et vérifie qu’il concerne bien votre proche et qu’il confirme le syndrome de Rett avec la mutation génétique. Pendant l’examen, le profil ne peut pas être modifié. Vous n’avez rien d’autre à faire."
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "Diagnostic confirmé",
+   "text": "Une fois validé, le profil est marqué comme confirmé et votre inscription est terminée."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-fr.webm",
+   "from": 0,
+   "to": 7.051
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "La mutation génétique figure sur le profil",
+   "text": "La mutation confirmée par le rapport fait désormais partie du profil de votre proche. On y voit le détail : la modification codante, la modification protéique et la position génomique."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-fr.webm",
+   "from": 7.051,
+   "to": 13.322
+  },
+  {
+   "kind": "card",
+   "step": 9,
+   "end": true,
+   "title": "Bienvenue dans la communauté rettX",
+   "text": "Merci pour votre inscription ! Votre proche fait désormais partie du registre européen du syndrome de Rett. À noter : rettX n’est pas un dispositif médical. La validation confirme uniquement les données du registre ; ce n’est pas un avis médical.",
+   "kick": "Terminé"
+  }
+ ],
+ "de": [
+  {
+   "kind": "card",
+   "step": 1,
+   "url": "app.rettx.eu",
+   "title": "Öffnen Sie app.rettx.eu",
+   "text": "Öffnen Sie app.rettx.eu auf Ihrem Handy oder Computer. Hier ist das europäische Rett-Syndrom-Register zu Hause. Um sich zu registrieren, tippen Sie auf „Bei rettX mitmachen“."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-de.webm",
+   "from": 0,
+   "to": 6.424
+  },
+  {
+   "kind": "card",
+   "step": 2,
+   "title": "Erstellen Sie Ihr Konto",
+   "text": "Geben Sie auf dem Bildschirm „Konto erstellen“ Ihre eigene E-Mail-Adresse ein und tippen Sie auf „Weiter“. Bitte verwenden Sie Ihre eigene Adresse, nicht eine für Ihren Angehörigen angelegte."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-de.webm",
+   "from": 6.424,
+   "to": 14.995
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Kein Passwort nötig",
+   "text": "rettX fragt nie nach einem Passwort. Bei jeder Anmeldung erhalten Sie einen neuen Einmalcode per E-Mail. Nichts zu merken, nichts wiederzuverwenden, nichts zu stehlen. Nur wer Zugriff auf Ihr Postfach hat, kann sich anmelden – das ist sogar noch sicherer."
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Code aus der E-Mail eingeben",
+   "text": "Öffnen Sie Ihr Postfach, suchen Sie die E-Mail von rettX und geben Sie den Code auf dem Bildschirm „Bestätigen Sie Ihre Identität“ ein."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-de.webm",
+   "from": 14.995,
+   "to": 24.812
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Konto einrichten",
+   "text": "Ihr Konto ist erstellt. rettX fragt nun nach Ihrer bevorzugten Sprache, Ihrem Namen und Ihrem Wohnort."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-de.webm",
+   "from": 0,
+   "to": 24.881
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Datenschutzerklärung akzeptieren",
+   "text": "Lesen Sie, wie Ihre Daten geschützt werden, und akzeptieren Sie die Datenschutzerklärung, um fortzufahren."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-de.webm",
+   "from": 24.881,
+   "to": 38.015
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Willkommen bei rettX!",
+   "text": "Sie sind dabei. Legen Sie nun das Profil Ihres Angehörigen mit dem Wichtigsten an: Vorname, Nachname, Geburtsdatum und Ihre Beziehung zueinander."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-de.webm",
+   "from": 0,
+   "to": 31.333
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Einwilligung erteilen",
+   "text": "Lesen Sie die Einwilligungserklärung für Ihren Angehörigen und stimmen Sie zu. Danach wird das Profil angelegt."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-de.webm",
+   "from": 31.333,
+   "to": 43.059
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Genetischen Befund hochladen",
+   "text": "rettX benötigt den Befund des Gentests, der die Diagnose Rett-Syndrom bestätigt. Er muss den Namen Ihres Angehörigen, das Geburtsdatum und die Genmutation enthalten. Es gibt zwei Wege: eine Datei auswählen, die schon auf Ihrem Handy ist, oder den Papierbefund mit der Kamera scannen."
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Option 1: Datei hinzufügen",
+   "text": "Wenn Sie den Befund als PDF oder Foto auf dem Handy haben, zum Beispiel aus einer E-Mail, tippen Sie auf „Befund hochladen“ und wählen Sie ihn aus."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-file-de.webm",
+   "from": 0,
+   "to": 12.775
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Option 2: Papierbefund scannen",
+   "text": "Wenn Sie den Befund nur auf Papier haben, tippen Sie auf „Dokument scannen“. Legen Sie ihn auf eine ebene Fläche und fotografieren Sie jede Seite. Wenn alle Seiten erfasst sind, tippen Sie auf „Abschließen“ und rettX fügt sie zu einem einzigen PDF zusammen."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-de.webm",
+   "from": 0,
+   "to": 16.476
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Sicher übermittelt",
+   "text": "Egal, welche Option Sie wählen: Der Befund wird sicher hochgeladen und verarbeitet. Anschließend prüft ihn das rettX-Team."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-de.webm",
+   "from": 16.476,
+   "to": 27.035
+  },
+  {
+   "kind": "card",
+   "step": 7,
+   "title": "Das rettX-Team prüft die Diagnose",
+   "text": "Eine Person aus dem rettX-Team liest den Befund und prüft, ob er zu Ihrem Angehörigen gehört und das Rett-Syndrom mit der Genmutation bestätigt. Während der Prüfung kann das Profil nicht geändert werden. Sie müssen nichts weiter tun."
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "Diagnose bestätigt",
+   "text": "Nach der Prüfung wird das Profil als bestätigt markiert und Ihre Registrierung ist abgeschlossen."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-de.webm",
+   "from": 0,
+   "to": 7.09
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "Die Genmutation steht im Profil",
+   "text": "Die bestätigte Genmutation aus dem Befund ist jetzt Teil des Profils Ihres Angehörigen. Sie zeigt die Details: die Veränderung in der codierenden Sequenz, die Proteinveränderung und die genomische Position."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-de.webm",
+   "from": 7.09,
+   "to": 13.331
+  },
+  {
+   "kind": "card",
+   "step": 9,
+   "end": true,
+   "title": "Willkommen in der rettX-Community",
+   "text": "Danke für Ihre Registrierung! Ihr Angehöriger ist jetzt Teil des europäischen Rett-Syndrom-Registers. Hinweis: rettX ist kein Medizinprodukt. Die Prüfung bestätigt nur die Registerdaten und ist keine medizinische Beratung.",
+   "kick": "Geschafft"
+  }
+ ],
+ "it": [
+  {
+   "kind": "card",
+   "step": 1,
+   "url": "app.rettx.eu",
+   "title": "Vai su app.rettx.eu",
+   "text": "Apri app.rettx.eu sul telefono o sul computer. È la casa del registro europeo della sindrome di Rett. Per registrarti, tocca \"Unisciti a rettX\"."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-it.webm",
+   "from": 0,
+   "to": 6.344
+  },
+  {
+   "kind": "card",
+   "step": 2,
+   "title": "Crea il tuo account",
+   "text": "Nella schermata \"Crea il tuo account\" scrivi il tuo indirizzo e-mail e tocca \"Continua\". Usa la tua e-mail personale, non una creata per il tuo familiare."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-it.webm",
+   "from": 6.344,
+   "to": 14.919
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Nessuna password",
+   "text": "rettX non ti chiede mai una password. Ogni volta che accedi, ricevi via e-mail un nuovo codice monouso. Niente da ricordare, niente da riutilizzare, niente da rubare. Solo chi ha accesso alla tua casella di posta può entrare: per questo è ancora più sicuro."
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Inserisci il codice ricevuto",
+   "text": "Apri la tua casella di posta, trova l’e-mail di rettX e inserisci il codice nella schermata \"Verifica la tua identità\"."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-it.webm",
+   "from": 14.919,
+   "to": 24.881
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Configura il tuo account",
+   "text": "Il tuo account è stato creato. Ora rettX ti chiede la lingua che preferisci, il tuo nome e dove vivi."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-it.webm",
+   "from": 0,
+   "to": 24.759
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Accetta l’informativa sulla privacy",
+   "text": "Leggi come vengono protetti i tuoi dati, poi accetta l’informativa sulla privacy per continuare."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-it.webm",
+   "from": 24.759,
+   "to": 37.238
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Ti diamo il benvenuto in rettX!",
+   "text": "Ci sei. Ora crea il profilo del tuo familiare con le informazioni di base: nome, cognome, data di nascita e il vostro rapporto di parentela."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-it.webm",
+   "from": 0,
+   "to": 34.529
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Dai il tuo consenso",
+   "text": "Leggi il modulo di consenso per il tuo familiare e accettalo. Il profilo viene così creato."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-it.webm",
+   "from": 34.529,
+   "to": 46.252
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Carica il referto genetico",
+   "text": "rettX ha bisogno del referto del test genetico che conferma la diagnosi di sindrome di Rett. Deve riportare il nome del tuo familiare, la data di nascita e la mutazione genetica. Puoi aggiungerlo in due modi: scegliendo un file già presente sul telefono oppure scansionando il referto cartaceo con la fotocamera."
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Opzione 1: aggiungi un file",
+   "text": "Se hai il referto in PDF o in foto sul telefono, per esempio ricevuto via e-mail, tocca \"Carica file di diagnosi\" e sceglilo."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-file-it.webm",
+   "from": 0,
+   "to": 12.601
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Opzione 2: scansiona il referto cartaceo",
+   "text": "Se hai il referto solo su carta, tocca \"Scansiona documento\". Appoggialo su una superficie piana e fotografa ogni pagina. Quando hai acquisito tutte le pagine, tocca \"Completa\" e rettX le unisce in un unico PDF."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-it.webm",
+   "from": 0,
+   "to": 16.31
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Inviato in modo sicuro",
+   "text": "Qualunque opzione tu scelga, il referto viene caricato in modo sicuro ed elaborato. Ora il team di rettX lo esamina."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-it.webm",
+   "from": 16.31,
+   "to": 26.906
+  },
+  {
+   "kind": "card",
+   "step": 7,
+   "title": "Il team di rettX convalida la diagnosi",
+   "text": "Una persona del team di rettX legge il referto e verifica che appartenga al tuo familiare e che confermi la sindrome di Rett con la mutazione genetica. Durante la verifica il profilo non può essere modificato. Non devi fare nient’altro."
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "Diagnosi confermata",
+   "text": "Dopo la convalida, il profilo viene contrassegnato come confermato e la tua registrazione è completa."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-it.webm",
+   "from": 0,
+   "to": 7.671
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "La mutazione genetica è nel profilo",
+   "text": "La mutazione confermata dal referto fa ora parte del profilo del tuo familiare. Ne mostra i dettagli: la variazione codificante, la variazione proteica e la posizione genomica."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-it.webm",
+   "from": 7.671,
+   "to": 14.02
+  },
+  {
+   "kind": "card",
+   "step": 9,
+   "end": true,
+   "title": "Ti diamo il benvenuto nella comunità rettX",
+   "text": "Grazie per la registrazione! Il tuo familiare ora fa parte del registro europeo della sindrome di Rett. Nota: rettX non è un dispositivo medico. La convalida conferma solo i dati del registro; non è un parere medico.",
+   "kick": "Fatto"
+  }
+ ],
+ "pl": [
+  {
+   "kind": "card",
+   "step": 1,
+   "url": "app.rettx.eu",
+   "title": "Wejdź na app.rettx.eu",
+   "text": "Otwórz app.rettx.eu w telefonie lub na komputerze. To dom europejskiego rejestru zespołu Retta. Aby się zarejestrować, dotknij „Dołącz do rettX”."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-pl.webm",
+   "from": 0,
+   "to": 6.375
+  },
+  {
+   "kind": "card",
+   "step": 2,
+   "title": "Utwórz konto",
+   "text": "Na ekranie „Utwórz konto” wpisz swój adres e-mail i dotknij „Dalej”. Użyj własnego adresu, a nie adresu utworzonego dla bliskiej osoby."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-pl.webm",
+   "from": 6.375,
+   "to": 14.714
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Bez hasła",
+   "text": "rettX nigdy nie prosi o hasło. Przy każdym logowaniu na Twój adres e-mail trafia nowy, jednorazowy kod. Nie trzeba niczego zapamiętywać, nie da się go użyć ponownie ani ukraść. Zalogować się może tylko osoba z dostępem do Twojej skrzynki, dlatego to jeszcze bezpieczniejsze."
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Wpisz kod z e-maila",
+   "text": "Otwórz skrzynkę odbiorczą, znajdź wiadomość od rettX i wpisz kod na ekranie „Potwierdź swoją tożsamość”."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-pl.webm",
+   "from": 14.714,
+   "to": 24.455
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Skonfiguruj konto",
+   "text": "Konto zostało utworzone. Teraz rettX zapyta o preferowany język, Twoje imię i nazwisko oraz miejsce zamieszkania."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-pl.webm",
+   "from": 0,
+   "to": 24.666
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Zaakceptuj politykę prywatności",
+   "text": "Przeczytaj, jak chronimy Twoje dane, a następnie zaakceptuj politykę prywatności, aby kontynuować."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-pl.webm",
+   "from": 24.666,
+   "to": 37.081
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Witamy w rettX!",
+   "text": "Gotowe. Teraz utwórz profil bliskiej osoby z podstawowymi danymi: imię, nazwisko, data urodzenia i Twój stopień pokrewieństwa."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-pl.webm",
+   "from": 0,
+   "to": 29.696
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Wyraź zgodę",
+   "text": "Przeczytaj formularz zgody dotyczący bliskiej osoby i zaakceptuj go. Następnie profil zostanie utworzony."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-pl.webm",
+   "from": 29.696,
+   "to": 41.066
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Prześlij wynik badania genetycznego",
+   "text": "rettX potrzebuje wyniku badania genetycznego, który potwierdza diagnozę zespołu Retta. Musi zawierać imię i nazwisko bliskiej osoby, datę urodzenia oraz mutację genu. Można go dodać na dwa sposoby: wybrać plik zapisany w telefonie albo zeskanować papierowy wynik aparatem."
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Opcja 1: dodaj plik",
+   "text": "Jeśli masz wynik w telefonie jako PDF lub zdjęcie, na przykład z e-maila, dotknij „Prześlij plik z diagnozą” i wybierz go."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-file-pl.webm",
+   "from": 0,
+   "to": 12.674
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Opcja 2: zeskanuj papierowy wynik",
+   "text": "Jeśli masz wynik tylko na papierze, dotknij „Skanuj dokument”. Połóż go na płaskiej powierzchni i zrób zdjęcie każdej strony. Gdy wszystkie strony są gotowe, dotknij „Zakończ”, a rettX połączy je w jeden plik PDF."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-pl.webm",
+   "from": 0,
+   "to": 16.036
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Bezpiecznie wysłane",
+   "text": "Niezależnie od wybranej opcji wynik jest bezpiecznie przesyłany i przetwarzany. Następnie sprawdza go zespół rettX."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-pl.webm",
+   "from": 16.036,
+   "to": 26.602
+  },
+  {
+   "kind": "card",
+   "step": 7,
+   "title": "Zespół rettX weryfikuje diagnozę",
+   "text": "Osoba z zespołu rettX czyta wynik i sprawdza, czy dotyczy Twojej bliskiej osoby oraz czy potwierdza zespół Retta wraz z mutacją genu. W trakcie weryfikacji profilu nie można zmieniać. Nie musisz robić nic więcej."
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "Diagnoza potwierdzona",
+   "text": "Po weryfikacji profil zostaje oznaczony jako potwierdzony, a Twoja rejestracja jest zakończona."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-pl.webm",
+   "from": 0,
+   "to": 7.067
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "Mutacja genu jest w profilu",
+   "text": "Potwierdzona mutacja z wyniku jest teraz częścią profilu bliskiej osoby. Widać jej szczegóły: zmianę w sekwencji kodującej, zmianę w białku i pozycję w genomie."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-pl.webm",
+   "from": 7.067,
+   "to": 13.325
+  },
+  {
+   "kind": "card",
+   "step": 9,
+   "end": true,
+   "title": "Witamy w społeczności rettX",
+   "text": "Dziękujemy za rejestrację! Twoja bliska osoba jest teraz częścią europejskiego rejestru zespołu Retta. Uwaga: rettX nie jest wyrobem medycznym. Weryfikacja potwierdza wyłącznie dane w rejestrze i nie stanowi porady medycznej.",
+   "kick": "Gotowe"
+  }
  ]
 };
-window.STORY_UI = {"en":{"step":"Step","next":"What's next","tapContinue":"Tap to continue","tapStart":"Tap to start","replay":"Watch again","title":"rettX · How to register"},"es":{"step":"Paso","next":"Y ahora","tapContinue":"Toca para continuar","tapStart":"Toca para empezar","replay":"Ver de nuevo","title":"rettX · Cómo registrarse"}};
+window.STORY_UI = {"en":{"step":"Step","next":"What's next","tapContinue":"Tap to continue","tapStart":"Tap to start","replay":"Watch again","title":"rettX · How to register"},"es":{"step":"Paso","next":"Y ahora","tapContinue":"Toca para continuar","tapStart":"Toca para empezar","replay":"Ver de nuevo","title":"rettX · Cómo registrarse"},"fr":{"step":"Étape","next":"Et ensuite","tapContinue":"Touchez pour continuer","tapStart":"Touchez pour commencer","replay":"Revoir","title":"rettX · Comment s’inscrire"},"de":{"step":"Schritt","next":"Wie geht es weiter","tapContinue":"Tippen zum Fortfahren","tapStart":"Tippen zum Starten","replay":"Noch einmal ansehen","title":"rettX · So registrieren Sie sich"},"it":{"step":"Passo","next":"E ora","tapContinue":"Tocca per continuare","tapStart":"Tocca per iniziare","replay":"Guarda di nuovo","title":"rettX · Come registrarsi"},"pl":{"step":"Krok","next":"Co dalej","tapContinue":"Dotknij, aby kontynuować","tapStart":"Dotknij, aby rozpocząć","replay":"Obejrzyj ponownie","title":"rettX · Jak się zarejestrować"}};
