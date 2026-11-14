@@ -94,8 +94,50 @@ window.STORY = [
  {
   "kind": "card",
   "step": 6,
+  "title": "Upload the genetic report",
+  "text": "rettX needs the genetic test report that confirms the Rett syndrome diagnosis. It must show your loved one's name, date of birth and the gene mutation. There are two ways to add it: pick a file that is already on your phone, or scan the paper report with your camera."
+ },
+ {
+  "kind": "card",
+  "step": 6,
+  "title": "Option 1: add a file",
+  "text": "If you have the report as a PDF or a photo on your phone, for example from an email, tap \"Add diagnosis file\" and choose it from your phone."
+ },
+ {
+  "kind": "clip",
+  "src": "media/upload-file.webm",
+  "from": 0,
+  "to": 12.573
+ },
+ {
+  "kind": "card",
+  "step": 6,
+  "title": "Option 2: scan the paper report",
+  "text": "If you only have the report on paper, tap \"Scan document\". Place the report on a flat surface and take a photo of each page. When all pages are captured, tap \"Complete\" and rettX turns them into a single PDF."
+ },
+ {
+  "kind": "clip",
+  "src": "media/upload-scan.webm",
+  "from": 0,
+  "to": 15.725
+ },
+ {
+  "kind": "card",
+  "step": 6,
+  "title": "Sent securely",
+  "text": "Whichever option you choose, the report is uploaded securely and processed. The rettX team now reviews it."
+ },
+ {
+  "kind": "clip",
+  "src": "media/upload-scan.webm",
+  "from": 15.725,
+  "to": 26.276
+ },
+ {
+  "kind": "card",
+  "step": 7,
   "title": "Coming next",
   "end": true,
-  "text": "Upload the genetic report so the rettX team can validate the diagnosis."
+  "text": "The rettX team validates the diagnosis. You will be notified when it is confirmed."
  }
 ];
