@@ -5,49 +5,55 @@ window.STORY = [
   "step": 1,
   "title": "Go to app.rettx.eu",
   "url": "app.rettx.eu",
-  "text": "Open app.rettx.eu on your phone or computer. It is the home of the European Rett Syndrome registry."
+  "text": "Open app.rettx.eu on your phone or computer. It is the home of the European Rett Syndrome registry. To register, tap \"Join rettX\"."
  },
  {
   "kind": "clip",
-  "src": "media/signin.webm",
+  "src": "media/signup.webm",
   "from": 0,
-  "to": 5.152
+  "to": 6.377
  },
  {
   "kind": "card",
   "step": 2,
-  "title": "Sign in with your email",
-  "text": "In the \"Access your account\" box, type your email address and tap \"Send sign-in link\". No password needed."
+  "title": "Create your account",
+  "text": "On the \"Create Your Account\" screen, type your own email address and tap \"Continue\". Please use your own email, not one created for your loved one."
  },
  {
   "kind": "clip",
-  "src": "media/signin.webm",
-  "from": 5.152,
-  "to": 11.331
+  "src": "media/signup.webm",
+  "from": 6.377,
+  "to": 14.706
+ },
+ {
+  "kind": "card",
+  "step": 3,
+  "title": "No password needed",
+  "text": "rettX never asks for a password. Every time you sign in, a fresh one-time code is sent to your email. There is nothing to remember, nothing to reuse and nothing to steal. Only someone with access to your inbox can sign in, which makes it even more secure."
  },
  {
   "kind": "card",
   "step": 3,
   "title": "Enter the code from your email",
-  "text": "A one-time code is sent to the email you entered. Open your inbox and type the code on the sign-in screen."
+  "text": "Open your inbox, find the email from rettX and type the code on the \"Verify Your Identity\" screen."
  },
  {
   "kind": "clip",
-  "src": "media/signin.webm",
-  "from": 11.331,
-  "to": 21.034
+  "src": "media/signup.webm",
+  "from": 14.706,
+  "to": 24.473
  },
  {
   "kind": "card",
   "step": 4,
   "title": "Set up your account",
-  "text": "The first time you sign in, rettX asks for your preferred language, your name and where you live."
+  "text": "Your account is created. rettX now asks for your preferred language, your name and where you live."
  },
  {
   "kind": "clip",
   "src": "media/onboarding.webm",
   "from": 0,
-  "to": 24.3
+  "to": 24.528
  },
  {
   "kind": "card",
@@ -58,8 +64,8 @@ window.STORY = [
  {
   "kind": "clip",
   "src": "media/onboarding.webm",
-  "from": 24.3,
-  "to": 36.731
+  "from": 24.528,
+  "to": 36.951
  },
  {
   "kind": "card",
@@ -71,7 +77,7 @@ window.STORY = [
   "kind": "clip",
   "src": "media/create-patient.webm",
   "from": 0,
-  "to": 33.754
+  "to": 33.561
  },
  {
   "kind": "card",
@@ -82,8 +88,8 @@ window.STORY = [
  {
   "kind": "clip",
   "src": "media/create-patient.webm",
-  "from": 33.754,
-  "to": 45.452
+  "from": 33.561,
+  "to": 48.056
  },
  {
   "kind": "card",
