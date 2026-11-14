@@ -119,7 +119,7 @@ window.STORY = [
   "kind": "clip",
   "src": "media/upload-scan.webm",
   "from": 0,
-  "to": 15.725
+  "to": 15.79
  },
  {
   "kind": "card",
@@ -130,14 +130,45 @@ window.STORY = [
  {
   "kind": "clip",
   "src": "media/upload-scan.webm",
-  "from": 15.725,
-  "to": 26.276
+  "from": 15.79,
+  "to": 26.333
  },
  {
   "kind": "card",
   "step": 7,
-  "title": "Coming next",
+  "title": "The rettX team validates the diagnosis",
+  "text": "A person from the rettX team reads the report and checks that it belongs to your loved one and confirms Rett syndrome with the gene mutation. While the report is under review, the profile cannot be changed. You don't need to do anything else."
+ },
+ {
+  "kind": "card",
+  "step": 8,
+  "title": "Diagnosis confirmed",
+  "text": "Once validated, the profile is marked as confirmed and your registration is complete."
+ },
+ {
+  "kind": "clip",
+  "src": "media/completed.webm",
+  "from": 0,
+  "to": 7.073
+ },
+ {
+  "kind": "card",
+  "step": 8,
+  "title": "The gene mutation is on the profile",
+  "text": "The confirmed gene mutation from the report is now part of your loved one's profile. It shows the details: the coding change, the protein change and the genomic position."
+ },
+ {
+  "kind": "clip",
+  "src": "media/completed.webm",
+  "from": 7.073,
+  "to": 13.316
+ },
+ {
+  "kind": "card",
+  "step": 9,
+  "kick": "All done",
+  "title": "Welcome to the rettX community",
   "end": true,
-  "text": "The rettX team validates the diagnosis. You will be notified when it is confirmed."
+  "text": "Thank you for registering! Your loved one is now part of the European Rett syndrome registry. Note: rettX is not a medical device. The validation confirms the registry data only; it is not medical advice."
  }
 ];

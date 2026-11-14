@@ -81,7 +81,7 @@ video.on{visibility:visible}
     it.dur = it.end ? 0 : Math.max(5, 2.5 + words(it.title + ' ' + it.text) * 0.32);
     const c = document.createElement('div'); c.className = 'card';
     c.innerHTML = `<div class="brand">rett<i>X</i></div><div class="body">
-      <span class="kick">${it.end ? 'What\'s next' : 'Step ' + it.step}</span><h2></h2><p></p>
+      <span class="kick">${it.kick || (it.end ? 'What\'s next' : 'Step ' + it.step)}</span><h2></h2><p></p>
       ${it.url ? `<div class="url">${lock}<span>${it.url}</span></div>` : ''}
       ${it.end ? '<button class="replay">↺ Watch again</button>' : ''}</div>
       ${it.end ? '' : '<div class="foot"><div class="timer"><b></b></div><span>Tap to continue</span></div>'}`;
