@@ -1037,6 +1037,179 @@ window.STORIES = {
    "text": "Dziękujemy za rejestrację! Twoja bliska osoba jest teraz częścią europejskiego rejestru zespołu Retta. Uwaga: rettX nie jest wyrobem medycznym. Weryfikacja potwierdza wyłącznie dane w rejestrze i nie stanowi porady medycznej.",
    "kick": "Gotowe"
   }
+ ],
+ "gr": [
+  {
+   "kind": "card",
+   "step": 1,
+   "url": "app.rettx.eu",
+   "title": "Μεταβείτε στο app.rettx.eu",
+   "text": "Ανοίξτε το app.rettx.eu στο κινητό ή στον υπολογιστή σας. Εκεί βρίσκεται το ευρωπαϊκό μητρώο για το σύνδρομο Rett. Για να εγγραφείτε, πατήστε «Γίνε μέλος του rettX»."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-gr.webm",
+   "from": 0,
+   "to": 6.42
+  },
+  {
+   "kind": "card",
+   "step": 2,
+   "title": "Δημιουργήστε τον λογαριασμό σας",
+   "text": "Στην οθόνη «Δημιουργήστε τον λογαριασμό σας», πληκτρολογήστε το email σας και πατήστε «Συνέχεια». Χρησιμοποιήστε το δικό σας email, όχι ένα που δημιουργήσατε για το αγαπημένο σας πρόσωπο."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-gr.webm",
+   "from": 6.42,
+   "to": 15.053
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Χωρίς κωδικό πρόσβασης",
+   "text": "Το rettX δεν σας ζητά ποτέ κωδικό πρόσβασης. Κάθε φορά που συνδέεστε, λαμβάνετε στο email σας έναν νέο κωδικό μίας χρήσης. Δεν χρειάζεται να θυμάστε τίποτα, και ο κωδικός δεν μπορεί να ξαναχρησιμοποιηθεί ή να κλαπεί. Μόνο όποιος έχει πρόσβαση στο email σας μπορεί να συνδεθεί, γι’ αυτό είναι ακόμη πιο ασφαλές."
+  },
+  {
+   "kind": "card",
+   "step": 3,
+   "title": "Εισαγάγετε τον κωδικό από το email",
+   "text": "Ανοίξτε τα εισερχόμενά σας, βρείτε το email από το rettX και πληκτρολογήστε τον κωδικό στην οθόνη «Επαληθεύστε την ταυτότητά σας»."
+  },
+  {
+   "kind": "clip",
+   "src": "media/signup-gr.webm",
+   "from": 15.053,
+   "to": 24.886
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Ρυθμίστε τον λογαριασμό σας",
+   "text": "Ο λογαριασμός σας δημιουργήθηκε. Τώρα το rettX θα σας ρωτήσει τη γλώσσα που προτιμάτε, το όνομά σας και πού ζείτε."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-gr.webm",
+   "from": 0,
+   "to": 24.719
+  },
+  {
+   "kind": "card",
+   "step": 4,
+   "title": "Αποδεχτείτε την πολιτική απορρήτου",
+   "text": "Διαβάστε πώς προστατεύουμε τα δεδομένα σας και, στη συνέχεια, αποδεχτείτε την πολιτική απορρήτου για να συνεχίσετε."
+  },
+  {
+   "kind": "clip",
+   "src": "media/onboarding-gr.webm",
+   "from": 24.719,
+   "to": 37.108
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Καλώς ήρθατε στο rettX!",
+   "text": "Είστε μέσα. Στη συνέχεια, δημιουργήστε το προφίλ του αγαπημένου σας προσώπου με τα βασικά στοιχεία: όνομα, επώνυμο, ημερομηνία γέννησης και τη σχέση σας μαζί του."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-gr.webm",
+   "from": 0,
+   "to": 29.671
+  },
+  {
+   "kind": "card",
+   "step": 5,
+   "title": "Δώστε τη συγκατάθεσή σας",
+   "text": "Διαβάστε το έντυπο συγκατάθεσης για το αγαπημένο σας πρόσωπο και αποδεχτείτε το. Στη συνέχεια δημιουργείται το προφίλ."
+  },
+  {
+   "kind": "clip",
+   "src": "media/create-patient-gr.webm",
+   "from": 29.671,
+   "to": 41.59
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Ανεβάστε τη γενετική έκθεση",
+   "text": "Το rettX χρειάζεται τη γενετική έκθεση που επιβεβαιώνει τη διάγνωση του συνδρόμου Rett. Πρέπει να περιλαμβάνει το όνομα, το επώνυμο και την ημερομηνία γέννησης του αγαπημένου σας προσώπου, καθώς και τη μετάλλαξη του γονιδίου. Μπορείτε να την προσθέσετε με δύο τρόπους: να επιλέξετε ένα αρχείο από το κινητό σας ή να σαρώσετε μια έντυπη έκθεση με την κάμερα."
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Επιλογή 1: προσθέστε ένα αρχείο",
+   "text": "Αν έχετε την έκθεση στο κινητό σας ως PDF ή φωτογραφία, για παράδειγμα από ένα email, πατήστε «Ανέβασμα αρχείου διάγνωσης» και επιλέξτε την."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-file-gr.webm",
+   "from": 0,
+   "to": 12.648
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Επιλογή 2: σαρώστε μια έντυπη έκθεση",
+   "text": "Αν έχετε την έκθεση μόνο σε χαρτί, πατήστε «Σάρωση εγγράφου». Τοποθετήστε την σε επίπεδη επιφάνεια και τραβήξτε μια φωτογραφία από κάθε σελίδα. Όταν είναι έτοιμες όλες οι σελίδες, πατήστε «Ολοκλήρωση» και το rettX θα τις συνδυάσει σε ένα PDF."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-gr.webm",
+   "from": 0,
+   "to": 16.27
+  },
+  {
+   "kind": "card",
+   "step": 6,
+   "title": "Στάλθηκε με ασφάλεια",
+   "text": "Όποια επιλογή κι αν χρησιμοποιήσετε, η έκθεση αποστέλλεται και επεξεργάζεται με ασφάλεια. Στη συνέχεια την ελέγχει η ομάδα του rettX."
+  },
+  {
+   "kind": "clip",
+   "src": "media/upload-scan-gr.webm",
+   "from": 16.27,
+   "to": 26.83
+  },
+  {
+   "kind": "card",
+   "step": 7,
+   "title": "Η ομάδα του rettX επαληθεύει τη διάγνωση",
+   "text": "Ένα μέλος της ομάδας του rettX διαβάζει την έκθεση και ελέγχει ότι αφορά το αγαπημένο σας πρόσωπο και ότι επιβεβαιώνει το σύνδρομο Rett με μια μετάλλαξη γονιδίου. Κατά τη διάρκεια του ελέγχου, το προφίλ δεν μπορεί να τροποποιηθεί. Δεν χρειάζεται να κάνετε τίποτα άλλο."
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "Η διάγνωση επιβεβαιώθηκε",
+   "text": "Μετά την επαλήθευση, το προφίλ επισημαίνεται ως επιβεβαιωμένο και η εγγραφή σας ολοκληρώνεται."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-gr.webm",
+   "from": 0,
+   "to": 7.059
+  },
+  {
+   "kind": "card",
+   "step": 8,
+   "title": "Η μετάλλαξη του γονιδίου είναι στο προφίλ",
+   "text": "Η επιβεβαιωμένη μετάλλαξη από την έκθεση αποτελεί πλέον μέρος του προφίλ του αγαπημένου σας προσώπου. Μπορείτε να δείτε τις λεπτομέρειές της: την αλλαγή στην κωδικοποιούσα αλληλουχία, την αλλαγή στην πρωτεΐνη και τη θέση στο γονιδίωμα."
+  },
+  {
+   "kind": "clip",
+   "src": "media/completed-gr.webm",
+   "from": 7.059,
+   "to": 13.275
+  },
+  {
+   "kind": "card",
+   "step": 9,
+   "end": true,
+   "title": "Καλώς ήρθατε στην κοινότητα του rettX",
+   "text": "Σας ευχαριστούμε για την εγγραφή! Το αγαπημένο σας πρόσωπο είναι πλέον μέρος του ευρωπαϊκού μητρώου για το σύνδρομο Rett. Σημείωση: το rettX δεν είναι ιατροτεχνολογικό προϊόν. Η επαλήθευση επιβεβαιώνει μόνο τα δεδομένα του μητρώου και δεν αποτελεί ιατρική συμβουλή.",
+   "kick": "Ολοκληρώθηκε"
+  }
  ]
 };
-window.STORY_UI = {"en":{"step":"Step","next":"What's next","tapContinue":"Tap to continue","tapStart":"Tap to start","replay":"Watch again","title":"rettX · How to register"},"es":{"step":"Paso","next":"Y ahora","tapContinue":"Toca para continuar","tapStart":"Toca para empezar","replay":"Ver de nuevo","title":"rettX · Cómo registrarse"},"fr":{"step":"Étape","next":"Et ensuite","tapContinue":"Touchez pour continuer","tapStart":"Touchez pour commencer","replay":"Revoir","title":"rettX · Comment s’inscrire"},"de":{"step":"Schritt","next":"Wie geht es weiter","tapContinue":"Tippen zum Fortfahren","tapStart":"Tippen zum Starten","replay":"Noch einmal ansehen","title":"rettX · So registrieren Sie sich"},"it":{"step":"Passo","next":"E ora","tapContinue":"Tocca per continuare","tapStart":"Tocca per iniziare","replay":"Guarda di nuovo","title":"rettX · Come registrarsi"},"pl":{"step":"Krok","next":"Co dalej","tapContinue":"Dotknij, aby kontynuować","tapStart":"Dotknij, aby rozpocząć","replay":"Obejrzyj ponownie","title":"rettX · Jak się zarejestrować"}};
+window.STORY_UI = {"en":{"step":"Step","next":"What's next","tapContinue":"Tap to continue","tapStart":"Tap to start","replay":"Watch again","title":"rettX · How to register"},"es":{"step":"Paso","next":"Y ahora","tapContinue":"Toca para continuar","tapStart":"Toca para empezar","replay":"Ver de nuevo","title":"rettX · Cómo registrarse"},"fr":{"step":"Étape","next":"Et ensuite","tapContinue":"Touchez pour continuer","tapStart":"Touchez pour commencer","replay":"Revoir","title":"rettX · Comment s’inscrire"},"de":{"step":"Schritt","next":"Wie geht es weiter","tapContinue":"Tippen zum Fortfahren","tapStart":"Tippen zum Starten","replay":"Noch einmal ansehen","title":"rettX · So registrieren Sie sich"},"it":{"step":"Passo","next":"E ora","tapContinue":"Tocca per continuare","tapStart":"Tocca per iniziare","replay":"Guarda di nuovo","title":"rettX · Come registrarsi"},"pl":{"step":"Krok","next":"Co dalej","tapContinue":"Dotknij, aby kontynuować","tapStart":"Dotknij, aby rozpocząć","replay":"Obejrzyj ponownie","title":"rettX · Jak się zarejestrować"},"gr":{"step":"Βήμα","next":"Τι ακολουθεί","tapContinue":"Πατήστε για να συνεχίσετε","tapStart":"Πατήστε για να ξεκινήσετε","replay":"Δείτε ξανά","title":"rettX · Πώς να εγγραφείτε"}};

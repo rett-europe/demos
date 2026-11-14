@@ -63,7 +63,7 @@ video.on{visibility:visible}
 (() => {
   const q = new URLSearchParams(location.search);
   const LANG = window.STORIES[q.get('lang')] ? q.get('lang') : 'en', T = window.STORY_UI[LANG];
-  document.documentElement.lang = LANG; document.title = T.title;
+  document.documentElement.lang = ({ gr: 'el' })[LANG] || LANG; document.title = T.title;
   const S = window.STORIES[LANG], screen = document.getElementById('screen'), bar = document.getElementById('bar');
   const pp = document.getElementById('pp'), start = document.getElementById('start'), phone = document.getElementById('phone');
   const videos = {}, cards = [], segs = [];
