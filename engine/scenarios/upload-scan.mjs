@@ -54,6 +54,9 @@ export default {
   async run({ page, VP, wait, cue, click, begin }) {
     await page.goto(`${BASE}/patients`);
     await page.waitForSelector('app-diagnosis-tab', { timeout: 30000 });
+    // The tab re-renders once the mutation status arrives; wait for its buttons before scrolling to it
+    await page.locator('app-diagnosis-tab .g-btn.ghost').first().waitFor({ timeout: 30000 });
+    await wait(500);
     await page.locator('app-diagnosis-tab').scrollIntoViewIfNeeded();
     await begin();
     await page.mouse.move(VP.width / 2, VP.height / 2);
