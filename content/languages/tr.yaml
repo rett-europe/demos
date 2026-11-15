@@ -6,7 +6,7 @@ chapters:
     of: /
     next: İleri
     prev: Geri
-    all: Tüm adımlar
+    all: Tüm demolar
     desktop: Masaüstü
     mobile: Mobil
     both: Yan yana
@@ -62,3 +62,80 @@ chapters:
       text: Doğrulandıktan sonra hasta bir RETTXID alır ve onaylanan mutasyon kayda eklenir.
     - title: Bilmekte fayda var
       text: rettX bir tıbbi cihaz değildir. Doğrulama yalnızca kayıt verilerini onaylar; tıbbi tavsiye, tanı veya tedavi önerisi değildir.
+story:
+  ui:
+    step: Adım
+    next: Sırada ne var
+    tapContinue: Devam etmek için dokunun
+    tapStart: Başlamak için dokunun
+    replay: Tekrar izle
+    title: rettX · Nasıl kayıt olunur
+  cards:
+    go-to-app:
+      title: app.rettx.eu adresine gidin
+      text: Telefonunuzda veya bilgisayarınızda app.rettx.eu adresini açın. Burası Avrupa Rett Sendromu kayıt sisteminin evidir. Kayıt olmak için “rettX'e katıl” düğmesine dokunun.
+    create-account:
+      title: Hesabınızı oluşturun
+      text: “Hesabınızı Oluşturun” ekranında kendi e-posta adresinizi yazın ve “Devam” düğmesine dokunun. Lütfen yakınınız için oluşturulmuş bir adresi değil, kendi e-postanızı kullanın.
+    no-password:
+      title: Şifre gerekmez
+      text: rettX sizden asla şifre istemez. Her oturum açışınızda e-postanıza yeni, tek kullanımlık bir kod gönderilir. Hatırlanacak, yeniden kullanılacak ya da çalınacak bir şey yoktur. Yalnızca gelen kutunuza erişimi olan kişi oturum açabilir; bu da sistemi daha da güvenli kılar.
+    enter-code:
+      title: E-postanızdaki kodu girin
+      text: Gelen kutunuzu açın, rettX'ten gelen e-postayı bulun ve kodu “Kimliğinizi Doğrulayın” ekranına yazın.
+    set-up-account:
+      title: Hesabınızı ayarlayın
+      text: Hesabınız oluşturuldu. rettX şimdi tercih ettiğiniz dili, adınızı ve nerede yaşadığınızı soracak.
+    privacy:
+      title: Gizlilik politikasını kabul edin
+      text: Verilerinizin nasıl korunduğunu okuyun, ardından devam etmek için gizlilik politikasını kabul edin.
+    welcome:
+      title: rettX'e hoş geldiniz!
+      text: "Giriş yaptınız. Şimdi yakınınızın profilini temel bilgilerle oluşturun: adı, soyadı, doğum tarihi ve onunla yakınlık dereceniz."
+    consent:
+      title: Onayınızı verin
+      text: Yakınınız için onam formunu inceleyin ve kabul edin. Ardından profil oluşturulur.
+    upload-report:
+      title: Genetik raporu yükleyin
+      text: "rettX'in Rett sendromu tanısını doğrulayan genetik test raporuna ihtiyacı vardır. Raporda yakınınızın adı, doğum tarihi ve gen mutasyonu yer almalıdır. Raporu eklemenin iki yolu vardır: telefonunuzda zaten bulunan bir dosyayı seçebilir ya da kâğıt raporu kameranızla tarayabilirsiniz."
+    option-file:
+      title: "Seçenek 1: dosya ekleyin"
+      text: Rapor telefonunuzda PDF veya fotoğraf olarak varsa, örneğin bir e-postadan, “Tanı dosyası yükle” düğmesine dokunun ve dosyayı telefonunuzdan seçin.
+    option-scan:
+      title: "Seçenek 2: kâğıt raporu tarayın"
+      text: Rapor yalnızca kâğıt üzerindeyse “Belge tarama” düğmesine dokunun. Raporu düz bir yüzeye koyun ve her sayfanın fotoğrafını çekin. Tüm sayfalar çekildiğinde “Tamamla” düğmesine dokunun; rettX bunları tek bir PDF'te birleştirir.
+    sent:
+      title: Güvenle gönderildi
+      text: Hangi seçeneği kullanırsanız kullanın, rapor güvenli bir şekilde yüklenir ve işlenir. Ardından rettX ekibi raporu inceler.
+    validation:
+      title: rettX ekibi tanıyı doğrular
+      text: rettX ekibinden bir kişi raporu okur; raporun yakınınıza ait olduğunu ve Rett sendromunu gen mutasyonuyla doğruladığını kontrol eder. Rapor incelenirken profil değiştirilemez. Başka bir şey yapmanıza gerek yoktur.
+    confirmed:
+      title: Tanı doğrulandı
+      text: Doğrulandıktan sonra profil onaylanmış olarak işaretlenir ve kaydınız tamamlanır.
+    mutation:
+      title: Gen mutasyonu profilde
+      text: "Rapordaki doğrulanmış gen mutasyonu artık yakınınızın profilinin bir parçasıdır. Ayrıntılar gösterilir: kodlama değişikliği, protein değişikliği ve genomik konum."
+    thank-you:
+      title: rettX topluluğuna hoş geldiniz
+      text: "Kayıt olduğunuz için teşekkür ederiz! Yakınınız artık Avrupa Rett sendromu kayıt sisteminin bir parçası. Not: rettX bir tıbbi cihaz değildir. Doğrulama yalnızca kayıt verilerini teyit eder; tıbbi tavsiye değildir."
+      kick: Hepsi bu kadar
+mock:
+  email: sizin.email@email.com
+  signup:
+    title: Hesabınızı Oluşturun
+    sub: rettX'e devam etmek için rettX'e kaydolun.
+    email: E-posta adresi*
+    next: Devam
+    have: Zaten bir hesabınız var mı?
+    login: Oturum açın
+    verify: Kimliğinizi Doğrulayın
+    sent: Kodunuzu içeren bir e-postayı şu adrese gönderdik
+    code: Kodu girin
+    none: E-posta almadınız mı?
+    resend: Yeniden gönder
+  picker:
+    title: Dosya seçin
+    recent: Son kullanılanlar
+    dl: İndirilenler
+    cam: Kamera

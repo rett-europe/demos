@@ -6,7 +6,7 @@ chapters:
     of: van
     next: Volgende
     prev: Terug
-    all: Alle stappen
+    all: "Alle demo's"
     desktop: Computer
     mobile: Mobiel
     both: Naast elkaar
@@ -62,3 +62,80 @@ chapters:
       text: Na validatie krijgt de patiënt een RETTXID en wordt de bevestigde mutatie aan het dossier toegevoegd.
     - title: Goed om te weten
       text: rettX is geen medisch hulpmiddel. De validatie bevestigt alleen de gegevens in het register; het is geen medisch advies, diagnose of behandeladvies.
+story:
+  ui:
+    step: Stap
+    next: Wat volgt
+    tapContinue: Tik om verder te gaan
+    tapStart: Tik om te beginnen
+    replay: Opnieuw bekijken
+    title: rettX · Zo registreert u zich
+  cards:
+    go-to-app:
+      title: Ga naar app.rettx.eu
+      text: Open app.rettx.eu op uw telefoon of computer. Het is de thuisbasis van het Europese register voor het Rett-syndroom. Tik op “Word lid van rettX” om u te registreren.
+    create-account:
+      title: Maak uw account aan
+      text: Typ op het scherm “Maak uw account aan” uw eigen e-mailadres en tik op “Doorgaan”. Gebruik uw eigen e-mailadres, niet een adres dat voor uw naaste is aangemaakt.
+    no-password:
+      title: Geen wachtwoord nodig
+      text: rettX vraagt nooit om een wachtwoord. Telkens wanneer u inlogt, ontvangt u per e-mail een nieuwe eenmalige code. Er valt niets te onthouden, niets te hergebruiken en niets te stelen. Alleen wie toegang heeft tot uw mailbox kan inloggen, en dat maakt het nog veiliger.
+    enter-code:
+      title: Voer de code uit uw e-mail in
+      text: Open uw mailbox, zoek de e-mail van rettX en typ de code op het scherm “Verifieer uw identiteit”.
+    set-up-account:
+      title: Stel uw account in
+      text: Uw account is aangemaakt. rettX vraagt nu naar uw voorkeurstaal, uw naam en waar u woont.
+    privacy:
+      title: Accepteer het privacybeleid
+      text: Lees hoe uw gegevens worden beschermd en accepteer daarna het privacybeleid om verder te gaan.
+    welcome:
+      title: Welkom bij rettX!
+      text: "U bent binnen. Maak nu het profiel van uw naaste aan met de basisgegevens: voornaam, achternaam, geboortedatum en uw relatie."
+    consent:
+      title: Geef uw toestemming
+      text: Lees het toestemmingsformulier voor uw naaste door en accepteer het. Daarna wordt het profiel aangemaakt.
+    upload-report:
+      title: Upload het genetische rapport
+      text: "rettX heeft het rapport van de genetische test nodig dat de diagnose Rett-syndroom bevestigt. Daarop moeten de naam en geboortedatum van uw naaste en de genmutatie staan. U kunt het op twee manieren toevoegen: kies een bestand dat al op uw telefoon staat, of scan het papieren rapport met uw camera."
+    option-file:
+      title: "Optie 1: een bestand toevoegen"
+      text: Hebt u het rapport als pdf of foto op uw telefoon, bijvoorbeeld uit een e-mail? Tik dan op “Diagnosebestand uploaden” en kies het op uw telefoon.
+    option-scan:
+      title: "Optie 2: het papieren rapport scannen"
+      text: Hebt u het rapport alleen op papier? Tik dan op “Document scannen”. Leg het rapport op een vlakke ondergrond en maak van elke pagina een foto. Als alle pagina’s zijn vastgelegd, tikt u op “Voltooien” en maakt rettX er één pdf van.
+    sent:
+      title: Veilig verzonden
+      text: Welke optie u ook kiest, het rapport wordt veilig geüpload en verwerkt. Het rettX-team beoordeelt het nu.
+    validation:
+      title: Het rettX-team valideert de diagnose
+      text: Iemand van het rettX-team leest het rapport en controleert of het bij uw naaste hoort en het Rett-syndroom met de genmutatie bevestigt. Zolang het rapport “In beoordeling” is, kan het profiel niet worden gewijzigd. U hoeft verder niets te doen.
+    confirmed:
+      title: Diagnose bevestigd
+      text: Na validatie wordt het profiel als bevestigd gemarkeerd en is uw registratie voltooid.
+    mutation:
+      title: De genmutatie staat op het profiel
+      text: "De bevestigde genmutatie uit het rapport maakt nu deel uit van het profiel van uw naaste. U ziet de details: de coderende wijziging, de eiwitwijziging en de genomische positie."
+    thank-you:
+      title: Welkom in de rettX-gemeenschap
+      text: "Bedankt voor uw registratie! Uw naaste maakt nu deel uit van het Europese register voor het Rett-syndroom. Let op: rettX is geen medisch hulpmiddel. De validatie bevestigt alleen de gegevens in het register; het is geen medisch advies."
+      kick: Klaar
+mock:
+  email: uw.email@email.com
+  signup:
+    title: Maak uw account aan
+    sub: Meld u aan bij rettX om door te gaan naar rettX.
+    email: E-mailadres*
+    next: Doorgaan
+    have: Hebt u al een account?
+    login: Inloggen
+    verify: Verifieer uw identiteit
+    sent: We hebben een e-mail met uw code gestuurd naar
+    code: Voer de code in
+    none: Geen e-mail ontvangen?
+    resend: Opnieuw verzenden
+  picker:
+    title: Kies een bestand
+    recent: Recent
+    dl: Downloads
+    cam: Camera

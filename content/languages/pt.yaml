@@ -6,7 +6,7 @@ chapters:
     of: de
     next: Seguinte
     prev: Voltar
-    all: Todos os passos
+    all: Todas as demos
     desktop: Computador
     mobile: Telemóvel
     both: Lado a lado
@@ -62,3 +62,80 @@ chapters:
       text: Depois de validado, o paciente recebe um RETTXID e a mutação confirmada é adicionada à sua ficha.
     - title: Bom saber
       text: A rettX não é um dispositivo médico. A validação confirma apenas os dados do registo; não é aconselhamento médico, diagnóstico nem recomendação de tratamento.
+story:
+  ui:
+    step: Passo
+    next: A seguir
+    tapContinue: Toque para continuar
+    tapStart: Toque para começar
+    replay: Ver novamente
+    title: rettX · Como fazer o registo
+  cards:
+    go-to-app:
+      title: Aceda a app.rettx.eu
+      text: Abra app.rettx.eu no telemóvel ou no computador. É a casa do registo europeu da síndrome de Rett. Para se registar, toque em «Junte-se ao rettX».
+    create-account:
+      title: Crie a sua conta
+      text: No ecrã «Criar a sua conta», escreva o seu próprio endereço de e-mail e toque em «Continuar». Utilize o seu próprio e-mail, e não um criado para o seu familiar.
+    no-password:
+      title: Não precisa de palavra-passe
+      text: A rettX nunca pede uma palavra-passe. Sempre que inicia sessão, é enviado para o seu e-mail um novo código de utilização única. Não há nada para memorizar, nada para reutilizar e nada para roubar. Só quem tem acesso à sua caixa de correio pode iniciar sessão, o que torna tudo ainda mais seguro.
+    enter-code:
+      title: Introduza o código do e-mail
+      text: Abra a sua caixa de correio, procure o e-mail da rettX e introduza o código no ecrã «Verifique a sua identidade».
+    set-up-account:
+      title: Configure a sua conta
+      text: A sua conta está criada. A rettX pede agora o seu idioma preferido, o seu nome e o local onde vive.
+    privacy:
+      title: Aceite a política de privacidade
+      text: Leia como os seus dados são protegidos e, depois, aceite a política de privacidade para continuar.
+    welcome:
+      title: Bem-vindo/a à rettX!
+      text: "Já está dentro. Agora, crie o perfil do seu familiar com o essencial: nome, apelido, data de nascimento e a sua relação."
+    consent:
+      title: Dê o seu consentimento
+      text: Reveja o formulário de consentimento relativo ao seu familiar e aceite-o. O perfil é então criado.
+    upload-report:
+      title: Carregue o relatório genético
+      text: "A rettX precisa do relatório do teste genético que confirma o diagnóstico de síndrome de Rett. Deve mostrar o nome do seu familiar, a data de nascimento e a mutação genética. Há duas formas de o adicionar: escolher um ficheiro que já esteja no telemóvel ou digitalizar o relatório em papel com a câmara."
+    option-file:
+      title: "Opção 1: adicionar um ficheiro"
+      text: Se tiver o relatório em PDF ou em fotografia no telemóvel, por exemplo recebido por e-mail, toque em «Enviar arquivo com diagnóstico Rett» e escolha-o no telemóvel.
+    option-scan:
+      title: "Opção 2: digitalizar o relatório em papel"
+      text: Se só tiver o relatório em papel, toque em «Digitalizar documento». Coloque o relatório numa superfície plana e tire uma fotografia a cada página. Quando tiver todas as páginas, toque em «Concluir» e a rettX junta-as num único PDF.
+    sent:
+      title: Enviado em segurança
+      text: Seja qual for a opção escolhida, o relatório é carregado em segurança e processado. A equipa rettX vai agora analisá-lo.
+    validation:
+      title: A equipa rettX valida o diagnóstico
+      text: Uma pessoa da equipa rettX lê o relatório e verifica se pertence ao seu familiar e se confirma a síndrome de Rett com a mutação genética. Enquanto o relatório está em análise, o perfil não pode ser alterado. Não precisa de fazer mais nada.
+    confirmed:
+      title: Diagnóstico confirmado
+      text: Depois de validado, o perfil fica marcado como confirmado e o seu registo está concluído.
+    mutation:
+      title: A mutação genética está no perfil
+      text: "A mutação genética confirmada no relatório faz agora parte do perfil do seu familiar. Mostra os detalhes: a alteração codificante, a alteração proteica e a posição genómica."
+    thank-you:
+      title: Bem-vindo/a à comunidade rettX
+      text: "Obrigado pelo seu registo! O seu familiar faz agora parte do registo europeu da síndrome de Rett. Nota: a rettX não é um dispositivo médico. A validação confirma apenas os dados do registo; não é aconselhamento médico."
+      kick: Concluído
+mock:
+  email: seu.email@email.com
+  signup:
+    title: Criar a sua conta
+    sub: Registe-se na rettX para continuar para a rettX.
+    email: Endereço de e-mail*
+    next: Continuar
+    have: Já tem uma conta?
+    login: Iniciar sessão
+    verify: Verifique a sua identidade
+    sent: Enviámos um e-mail com o seu código para
+    code: Introduza o código
+    none: Não recebeu um e-mail?
+    resend: Reenviar
+  picker:
+    title: Escolher um ficheiro
+    recent: Recentes
+    dl: Transferências
+    cam: Câmara

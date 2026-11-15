@@ -6,7 +6,7 @@ chapters:
     of: af
     next: Næste
     prev: Tilbage
-    all: Alle trin
+    all: Alle demoer
     desktop: Computer
     mobile: Mobil
     both: Side om side
@@ -62,3 +62,80 @@ chapters:
       text: Når diagnosen er valideret, får patienten et RETTXID, og den bekræftede mutation føjes til journalen.
     - title: Godt at vide
       text: rettX er ikke et medicinsk udstyr. Valideringen bekræfter kun registerets data; den er hverken lægelig rådgivning, en diagnose eller en behandlingsanbefaling.
+story:
+  ui:
+    step: Trin
+    next: Hvad sker der nu
+    tapContinue: Tryk for at fortsætte
+    tapStart: Tryk for at starte
+    replay: Se igen
+    title: rettX · Sådan tilmelder du dig
+  cards:
+    go-to-app:
+      title: Gå til app.rettx.eu
+      text: Åbn app.rettx.eu på din telefon eller computer. Det er hjemmet for det europæiske register for Rett syndrom. Tryk på »Bliv en del af rettX« for at tilmelde dig.
+    create-account:
+      title: Opret din konto
+      text: På skærmen »Opret din konto« skriver du din egen e-mailadresse og trykker på »Fortsæt«. Brug din egen e-mail, ikke en adresse oprettet til din nærtstående.
+    no-password:
+      title: Ingen adgangskode nødvendig
+      text: rettX beder aldrig om en adgangskode. Hver gang du logger ind, sendes en ny engangskode til din e-mail. Der er intet at huske, intet at genbruge og intet at stjæle. Kun den, der har adgang til din indbakke, kan logge ind, og det gør det endnu mere sikkert.
+    enter-code:
+      title: Indtast koden fra din e-mail
+      text: Åbn din indbakke, find e-mailen fra rettX, og indtast koden på skærmen »Bekræft din identitet«.
+    set-up-account:
+      title: Opsæt din konto
+      text: Din konto er oprettet. rettX spørger nu om dit foretrukne sprog, dit navn og hvor du bor.
+    privacy:
+      title: Accepter privatlivspolitikken
+      text: Læs, hvordan dine data beskyttes, og accepter derefter privatlivspolitikken for at fortsætte.
+    welcome:
+      title: Velkommen til rettX!
+      text: "Du er inde. Opret nu en profil for din nærtstående med det grundlæggende: fornavn, efternavn, fødselsdato og jeres relation."
+    consent:
+      title: Giv dit samtykke
+      text: Gennemgå samtykkeerklæringen for din nærtstående, og accepter den. Derefter oprettes profilen.
+    upload-report:
+      title: Upload den genetiske rapport
+      text: "rettX har brug for rapporten fra den genetiske test, der bekræfter diagnosen Rett syndrom. Den skal vise din nærtståendes navn, fødselsdato og genmutationen. Der er to måder at tilføje den på: vælg en fil, du allerede har på telefonen, eller scan papirrapporten med dit kamera."
+    option-file:
+      title: "Mulighed 1: tilføj en fil"
+      text: Hvis du har rapporten som PDF eller foto på telefonen, for eksempel fra en e-mail, så tryk på »Upload diagnosefil« og vælg den på telefonen.
+    option-scan:
+      title: "Mulighed 2: scan papirrapporten"
+      text: Hvis du kun har rapporten på papir, så tryk på »Scan dokument«. Læg rapporten på en plan overflade, og tag et foto af hver side. Når alle sider er taget, trykker du på »Færdig«, og rettX samler dem i én PDF.
+    sent:
+      title: Sendt sikkert
+      text: Uanset hvilken mulighed du vælger, uploades rapporten sikkert og behandles. rettX-teamet gennemgår den nu.
+    validation:
+      title: rettX-teamet validerer diagnosen
+      text: En person fra rettX-teamet læser rapporten og kontrollerer, at den tilhører din nærtstående og bekræfter Rett syndrom med genmutationen. Mens rapporten er under gennemgang, kan profilen ikke ændres. Du behøver ikke gøre mere.
+    confirmed:
+      title: Diagnose bekræftet
+      text: Når den er valideret, markeres profilen som bekræftet, og din tilmelding er færdig.
+    mutation:
+      title: Genmutationen står på profilen
+      text: "Den bekræftede genmutation fra rapporten er nu en del af din nærtståendes profil. Den viser detaljerne: den kodende ændring, proteinændringen og den genomiske position."
+    thank-you:
+      title: Velkommen til rettX-fællesskabet
+      text: "Tak, fordi du tilmeldte dig! Din nærtstående er nu en del af det europæiske register for Rett syndrom. Bemærk: rettX er ikke medicinsk udstyr. Valideringen bekræfter kun registerdataene; det er ikke medicinsk rådgivning."
+      kick: Alt er klar
+mock:
+  email: din.email@email.com
+  signup:
+    title: Opret din konto
+    sub: Tilmeld dig rettX for at fortsætte til rettX.
+    email: E-mailadresse*
+    next: Fortsæt
+    have: Har du allerede en konto?
+    login: Log ind
+    verify: Bekræft din identitet
+    sent: Vi har sendt en e-mail med din kode til
+    code: Indtast koden
+    none: Har du ikke modtaget en e-mail?
+    resend: Send igen
+  picker:
+    title: Vælg en fil
+    recent: Seneste
+    dl: Overførsler
+    cam: Kamera

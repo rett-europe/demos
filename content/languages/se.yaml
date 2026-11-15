@@ -6,7 +6,7 @@ chapters:
     of: av
     next: Nästa
     prev: Tillbaka
-    all: Alla steg
+    all: Alla demor
     desktop: Dator
     mobile: Mobil
     both: Sida vid sida
@@ -62,3 +62,80 @@ chapters:
       text: När diagnosen är godkänd får patienten ett RETTXID och den bekräftade mutationen läggs till i journalen.
     - title: Bra att veta
       text: rettX är inte en medicinteknisk produkt. Granskningen bekräftar bara registrets uppgifter; den är inte medicinsk rådgivning, en diagnos eller en behandlingsrekommendation.
+story:
+  ui:
+    step: Steg
+    next: Vad händer sedan
+    tapContinue: Tryck för att fortsätta
+    tapStart: Tryck för att börja
+    replay: Titta igen
+    title: rettX · Så registrerar du dig
+  cards:
+    go-to-app:
+      title: Gå till app.rettx.eu
+      text: Öppna app.rettx.eu i din telefon eller dator. Där finns det europeiska registret för Retts syndrom. Tryck på ”Gå med i rettX” för att registrera dig.
+    create-account:
+      title: Skapa ditt konto
+      text: På skärmen ”Skapa ditt konto” skriver du in din egen e-postadress och trycker på ”Fortsätt”. Använd din egen e-post, inte en som skapats för din närstående.
+    no-password:
+      title: Inget lösenord behövs
+      text: rettX ber dig aldrig om ett lösenord. Varje gång du loggar in skickas en ny engångskod till din e-post. Det finns inget att komma ihåg, inget att återanvända och inget att stjäla. Bara den som har tillgång till din inkorg kan logga in, vilket gör det ännu säkrare.
+    enter-code:
+      title: Ange koden från din e-post
+      text: Öppna din inkorg, leta upp mejlet från rettX och skriv in koden på skärmen ”Verifiera din identitet”.
+    set-up-account:
+      title: Ställ in ditt konto
+      text: Ditt konto är skapat. rettX frågar nu efter ditt föredragna språk, ditt namn och var du bor.
+    privacy:
+      title: Godkänn integritetspolicyn
+      text: Läs hur dina uppgifter skyddas och godkänn sedan integritetspolicyn för att fortsätta.
+    welcome:
+      title: Välkommen till rettX!
+      text: "Nu är du inne. Skapa sedan din närståendes profil med grunduppgifterna: förnamn, efternamn, födelsedatum och er relation."
+    consent:
+      title: Ge ditt samtycke
+      text: Läs igenom samtyckesformuläret för din närstående och godkänn det. Därefter skapas profilen.
+    upload-report:
+      title: Ladda upp den genetiska rapporten
+      text: "rettX behöver rapporten från gentestet som bekräftar diagnosen Retts syndrom. Den måste visa din närståendes namn, födelsedatum och genmutationen. Det finns två sätt att lägga till den: välj en fil som redan finns i din telefon, eller skanna pappersrapporten med kameran."
+    option-file:
+      title: "Alternativ 1: lägg till en fil"
+      text: Om du har rapporten som PDF eller foto i telefonen, till exempel från ett mejl, trycker du på ”Ladda upp diagnosfil” och väljer den i telefonen.
+    option-scan:
+      title: "Alternativ 2: skanna pappersrapporten"
+      text: Om du bara har rapporten på papper trycker du på ”Skanna dokument”. Lägg rapporten på en plan yta och fotografera varje sida. När alla sidor är fotograferade trycker du på ”Slutför” så gör rettX om dem till en enda PDF.
+    sent:
+      title: Säkert skickad
+      text: Oavsett vilket alternativ du väljer laddas rapporten upp säkert och bearbetas. rettX-teamet granskar den nu.
+    validation:
+      title: rettX-teamet validerar diagnosen
+      text: En person i rettX-teamet läser rapporten och kontrollerar att den gäller din närstående och bekräftar Retts syndrom med genmutationen. Medan rapporten granskas kan profilen inte ändras. Du behöver inte göra något mer.
+    confirmed:
+      title: Diagnosen är bekräftad
+      text: När den har validerats markeras profilen som bekräftad och din registrering är klar.
+    mutation:
+      title: Genmutationen finns i profilen
+      text: "Den bekräftade genmutationen från rapporten är nu en del av din närståendes profil. Där syns detaljerna: den kodande förändringen, proteinförändringen och den genomiska positionen."
+    thank-you:
+      title: Välkommen till rettX-gemenskapen
+      text: "Tack för att du registrerade dig! Din närstående är nu en del av det europeiska registret för Retts syndrom. Observera: rettX är inte en medicinteknisk produkt. Valideringen bekräftar endast registeruppgifterna; den är inte medicinsk rådgivning."
+      kick: Klart
+mock:
+  email: din.email@email.com
+  signup:
+    title: Skapa ditt konto
+    sub: Registrera dig hos rettX för att fortsätta till rettX.
+    email: E-postadress*
+    next: Fortsätt
+    have: Har du redan ett konto?
+    login: Logga in
+    verify: Verifiera din identitet
+    sent: Vi har skickat ett e-postmeddelande med din kod till
+    code: Ange koden
+    none: Fick du inget e-postmeddelande?
+    resend: Skicka igen
+  picker:
+    title: Välj en fil
+    recent: Senaste
+    dl: Nedladdningar
+    cam: Kamera

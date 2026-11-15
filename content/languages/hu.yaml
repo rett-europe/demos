@@ -6,7 +6,7 @@ chapters:
     of: /
     next: Tovább
     prev: Vissza
-    all: Minden lépés
+    all: Összes bemutató
     desktop: Asztali
     mobile: Mobil
     both: Egymás mellett
@@ -62,3 +62,80 @@ chapters:
       text: Az ellenőrzés után a beteg RETTXID azonosítót kap, a megerősített mutáció pedig bekerül az adatlapjára.
     - title: Jó tudni
       text: A rettX nem orvostechnikai eszköz. Az ellenőrzés csak a nyilvántartás adatait erősíti meg; nem orvosi tanács, diagnózis vagy kezelési javaslat.
+story:
+  ui:
+    step: Lépés
+    next: Mi következik
+    tapContinue: Koppintson a folytatáshoz
+    tapStart: Koppintson a kezdéshez
+    replay: Újranézés
+    title: rettX · Így regisztrálhat
+  cards:
+    go-to-app:
+      title: Nyissa meg az app.rettx.eu oldalt
+      text: Nyissa meg az app.rettx.eu oldalt telefonján vagy számítógépén. Ez az európai Rett-szindróma-regiszter otthona. A regisztrációhoz koppintson a „Csatlakozz a rettX-hez” gombra.
+    create-account:
+      title: Hozza létre fiókját
+      text: A „Fiók létrehozása” képernyőn írja be saját e-mail-címét, majd koppintson a „Folytatás” gombra. Kérjük, a saját e-mail-címét használja, ne a szerette számára létrehozott címet.
+    no-password:
+      title: Nincs szükség jelszóra
+      text: A rettX soha nem kér jelszót. Minden bejelentkezéskor új, egyszer használatos kódot küldünk e-mailben. Nincs mit megjegyezni, nincs mit újra felhasználni, és nincs mit ellopni. Csak az tud bejelentkezni, aki hozzáfér az Ön postafiókjához, így még biztonságosabb.
+    enter-code:
+      title: Adja meg az e-mailben kapott kódot
+      text: Nyissa meg a postafiókját, keresse meg a rettX-től érkezett e-mailt, és írja be a kódot a „Személyazonosság ellenőrzése” képernyőn.
+    set-up-account:
+      title: Állítsa be fiókját
+      text: Fiókja elkészült. A rettX most a kívánt nyelvet, az Ön nevét és lakóhelyét kéri.
+    privacy:
+      title: Fogadja el az adatvédelmi szabályzatot
+      text: Olvassa el, hogyan védjük adatait, majd a továbblépéshez fogadja el az adatvédelmi szabályzatot.
+    welcome:
+      title: Üdvözöljük a rettX-ben!
+      text: "Sikeresen belépett. Most hozza létre szerette profilját az alapadatokkal: utónév, vezetéknév, születési dátum és az Önök kapcsolata."
+    consent:
+      title: Adja meg hozzájárulását
+      text: Olvassa át a szerettére vonatkozó hozzájárulási nyilatkozatot, és fogadja el. Ezután létrejön a profil.
+    upload-report:
+      title: Töltse fel a genetikai leletet
+      text: "A rettX-nek szüksége van a Rett-szindróma diagnózisát megerősítő genetikai vizsgálati leletre. Ezen szerepelnie kell szerette nevének, születési dátumának és a génmutációnak. Kétféleképpen adhatja hozzá: kiválaszthat egy fájlt, amely már a telefonján van, vagy beszkennelheti a papíralapú leletet a kamerával."
+    option-file:
+      title: "1. lehetőség: fájl hozzáadása"
+      text: Ha a lelet PDF-ként vagy fotóként megvan a telefonján, például egy e-mailből, koppintson a „Diagnózis fájl feltöltése” gombra, és válassza ki a telefonjáról.
+    option-scan:
+      title: "2. lehetőség: a papíralapú lelet beszkennelése"
+      text: Ha a lelet csak papíron van meg, koppintson a „Dokumentum beolvasása” gombra. Helyezze a leletet sík felületre, és fényképezze le minden oldalát. Ha az összes oldal elkészült, koppintson a „Befejezés” gombra, és a rettX egyetlen PDF-fájlba fűzi össze őket.
+    sent:
+      title: Biztonságosan elküldve
+      text: Bármelyik lehetőséget választja, a lelet biztonságosan feltöltődik és feldolgozásra kerül. Ezután a rettX csapata átnézi.
+    validation:
+      title: A rettX csapata validálja a diagnózist
+      text: A rettX csapatának egyik munkatársa elolvassa a leletet, és ellenőrzi, hogy az az Ön szerettéhez tartozik-e, és megerősíti-e a Rett-szindrómát a génmutációval. Amíg a lelet „Ellenőrzés alatt” áll, a profil nem módosítható. Önnek nincs más teendője.
+    confirmed:
+      title: A diagnózis megerősítve
+      text: A validálás után a profil megerősítettként jelenik meg, és regisztrációja befejeződött.
+    mutation:
+      title: A génmutáció megjelenik a profilon
+      text: "A leletből megerősített génmutáció mostantól szerette profiljának része. Láthatók a részletek: a kódoló változás, a fehérjeváltozás és a genomi pozíció."
+    thank-you:
+      title: Üdvözöljük a rettX közösségben
+      text: "Köszönjük a regisztrációt! Szerette mostantól az európai Rett-szindróma-regiszter része. Fontos: a rettX nem orvostechnikai eszköz. A validálás csak a regiszter adatait erősíti meg; nem minősül orvosi tanácsnak."
+      kick: Kész
+mock:
+  email: on.email@email.com
+  signup:
+    title: Fiók létrehozása
+    sub: Regisztráljon a rettX-be, hogy továbblépjen a rettX-hez.
+    email: E-mail-cím*
+    next: Folytatás
+    have: Már van fiókja?
+    login: Bejelentkezés
+    verify: Személyazonosság ellenőrzése
+    sent: "E-mailt küldtünk a kódjával ide:"
+    code: Adja meg a kódot
+    none: Nem kapott e-mailt?
+    resend: Újraküldés
+  picker:
+    title: Fájl kiválasztása
+    recent: Legutóbbiak
+    dl: Letöltések
+    cam: Kamera

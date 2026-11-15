@@ -6,7 +6,7 @@ chapters:
     of: no
     next: Tālāk
     prev: Atpakaļ
-    all: Visi soļi
+    all: Visas demonstrācijas
     desktop: Dators
     mobile: Tālrunis
     both: Blakus
@@ -62,3 +62,80 @@ chapters:
       text: Pēc apstiprināšanas pacients saņem RETTXID, un apstiprinātā mutācija tiek pievienota ierakstam.
     - title: Labi zināt
       text: rettX nav medicīnas ierīce. Apstiprināšana apliecina tikai reģistra datus; tā nav medicīnisks padoms, diagnoze vai ārstēšanas ieteikums.
+story:
+  ui:
+    step: Solis
+    next: Kas tālāk
+    tapContinue: Pieskarieties, lai turpinātu
+    tapStart: Pieskarieties, lai sāktu
+    replay: Skatīt vēlreiz
+    title: rettX · Kā reģistrēties
+  cards:
+    go-to-app:
+      title: Atveriet app.rettx.eu
+      text: Atveriet app.rettx.eu savā tālrunī vai datorā. Tās ir Eiropas Retta sindroma reģistra mājas. Lai reģistrētos, pieskarieties „Pievienoties rettX“.
+    create-account:
+      title: Izveidojiet savu kontu
+      text: Ekrānā „Izveidojiet savu kontu“ ievadiet savu e-pasta adresi un pieskarieties „Turpināt“. Lūdzu, izmantojiet savu e-pastu, nevis tādu, kas izveidots Jūsu tuvajam cilvēkam.
+    no-password:
+      title: Parole nav vajadzīga
+      text: rettX nekad neprasa paroli. Katru reizi, kad piesakāties, uz Jūsu e-pastu tiek nosūtīts jauns vienreizējs kods. Nekas nav jāatceras, nekas nav jāizmanto atkārtoti un nav ko nozagt. Pieteikties var tikai tas, kam ir piekļuve Jūsu pastkastei, tāpēc tas ir vēl drošāk.
+    enter-code:
+      title: Ievadiet kodu no e-pasta
+      text: Atveriet pastkasti, atrodiet rettX e-pastu un ievadiet kodu ekrānā „Apstipriniet savu identitāti“.
+    set-up-account:
+      title: Iestatiet savu kontu
+      text: Jūsu konts ir izveidots. Tagad rettX jautā Jūsu vēlamo valodu, vārdu un dzīvesvietu.
+    privacy:
+      title: Pieņemiet privātuma politiku
+      text: Izlasiet, kā tiek aizsargāti Jūsu dati, un pēc tam, lai turpinātu, pieņemiet privātuma politiku.
+    welcome:
+      title: Laipni lūdzam rettX!
+      text: "Jūs esat iekšā. Tagad izveidojiet sava tuvā cilvēka profilu ar pamatinformāciju: vārdu, uzvārdu, dzimšanas datumu un Jūsu saikni ar viņu."
+    consent:
+      title: Dodiet savu piekrišanu
+      text: Pārskatiet sava tuvā cilvēka piekrišanas veidlapu un pieņemiet to. Pēc tam profils tiek izveidots.
+    upload-report:
+      title: Augšupielādējiet ģenētiskās analīzes rezultātu
+      text: "rettX ir nepieciešams ģenētiskās analīzes rezultāts, kas apstiprina Retta sindroma diagnozi. Tajā jābūt norādītam Jūsu tuvā cilvēka vārdam, dzimšanas datumam un gēna mutācijai. To var pievienot divos veidos: izvēlēties failu, kas jau ir Jūsu tālrunī, vai noskenēt papīra dokumentu ar kameru."
+    option-file:
+      title: "1. iespēja: pievienojiet failu"
+      text: Ja rezultāts Jums ir tālrunī PDF vai fotoattēla veidā, piemēram, no e-pasta, pieskarieties „Augšupielādēt diagnozes failu“ un izvēlieties to.
+    option-scan:
+      title: "2. iespēja: noskenējiet papīra dokumentu"
+      text: Ja rezultāts Jums ir tikai uz papīra, pieskarieties „Skatīt dokumentu“. Novietojiet dokumentu uz līdzenas virsmas un nofotografējiet katru lappusi. Kad visas lappuses ir uzņemtas, pieskarieties „Pabeigt“, un rettX tās apvienos vienā PDF failā.
+    sent:
+      title: Droši nosūtīts
+      text: Neatkarīgi no izvēlētās iespējas rezultāts tiek droši augšupielādēts un apstrādāts. Tagad to pārskata rettX komanda.
+    validation:
+      title: rettX komanda apstiprina diagnozi
+      text: Kāds no rettX komandas izlasa rezultātu un pārbauda, vai tas attiecas uz Jūsu tuvo cilvēku un apstiprina Retta sindromu ar gēna mutāciju. Kamēr dokuments ir statusā „Tiek pārbaudīts“, profilu nevar mainīt. Jums nekas cits nav jādara.
+    confirmed:
+      title: Diagnoze apstiprināta
+      text: Pēc apstiprināšanas profils tiek atzīmēts kā apstiprināts, un Jūsu reģistrācija ir pabeigta.
+    mutation:
+      title: Gēna mutācija ir profilā
+      text: "Apstiprinātā gēna mutācija no rezultāta tagad ir daļa no Jūsu tuvā cilvēka profila. Tajā redzama detalizēta informācija: kodējošās secības izmaiņa, proteīna izmaiņa un genoma pozīcija."
+    thank-you:
+      title: Laipni lūdzam rettX kopienā
+      text: "Paldies par reģistrēšanos! Jūsu tuvais cilvēks tagad ir daļa no Eiropas Retta sindroma reģistra. Ievērībai: rettX nav medicīniska ierīce. Validācija apstiprina tikai reģistra datus; tas nav medicīnisks padoms."
+      kick: Viss gatavs
+mock:
+  email: jusu.epasts@email.com
+  signup:
+    title: Izveidojiet savu kontu
+    sub: Reģistrējieties rettX, lai turpinātu darbu rettX.
+    email: E-pasta adrese*
+    next: Turpināt
+    have: Vai jums jau ir konts?
+    login: Pieteikties
+    verify: Apstipriniet savu identitāti
+    sent: Mēs nosūtījām e-pasta ziņojumu ar kodu uz
+    code: Ievadiet kodu
+    none: Vai nesaņēmāt e-pastu?
+    resend: Sūtīt vēlreiz
+  picker:
+    title: Izvēlieties failu
+    recent: Nesenie
+    dl: Lejupielādes
+    cam: Kamera

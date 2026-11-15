@@ -40,9 +40,10 @@ video.on{visibility:visible}
 .bar i b{display:block;height:100%;width:0;background:var(--brand)}
 .bar i.card-seg{flex:.35}
 .ctl{display:flex;gap:10px}
-.ctl button{width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:18px;cursor:pointer;
+.ctl button,.ctl a{width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:18px;cursor:pointer;
   box-shadow:0 2px 8px rgba(41,27,108,.12)}
-.ctl button:focus-visible,.ctl select:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.ctl a{display:grid;place-items:center}
+.ctl button:focus-visible,.ctl a:focus-visible,.ctl select:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
 .ctl select{height:46px;border-radius:999px;border:0;background:#fff;color:var(--ink);font:500 15px Chillax,sans-serif;
   padding:0 14px;cursor:pointer;box-shadow:0 2px 8px rgba(41,27,108,.12)}
 .ctl select[hidden]{display:none}
@@ -51,13 +52,15 @@ video.on{visibility:visible}
   body{padding:0;gap:0;justify-content:flex-start;background:#fff}
   .phone{height:auto;flex:1;width:100%;border:0;border-radius:0;box-shadow:none;aspect-ratio:auto}
   .bar{width:100%;padding:8px 10px 0;gap:2px}
-  .ctl{padding:8px 0 calc(8px + env(safe-area-inset-bottom))}
+  .ctl{padding:8px 0 calc(8px + env(safe-area-inset-bottom));gap:6px;flex-wrap:wrap;justify-content:center}
+  .ctl select{padding:0 8px;max-width:118px}
 }
 </style></head><body>
 <div class="phone" id="phone"><div class="screen" id="screen"></div>
   <div class="start" id="start" role="button" aria-label="Start"><span><svg width="30" height="30" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#435bd0"/></svg></span></div></div>
 <div class="bar" id="bar" aria-hidden="true"></div>
 <div class="ctl">
+  <a id="home" href="../" aria-label="All demos"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8M5 9.5V21h5v-6h4v6h5V9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a>
   <button id="prev" aria-label="Previous">⏮</button><button id="pp" aria-label="Play">▶</button>
   <button id="next" aria-label="Next">⏭</button><button id="fs" aria-label="Fullscreen">⛶</button>
   <select id="lang" aria-label="Language"></select>
@@ -168,6 +171,7 @@ video.on{visibility:visible}
   codes.forEach((l) => sel.add(new Option(window.STORY_UI[l].name || l, l, false, l === LANG)));
   sel.hidden = codes.length < 2;
   sel.onchange = () => { q.set('lang', sel.value); location.search = q.toString(); };
+  const home = document.getElementById('home'); if (T.home) { home.setAttribute('aria-label', T.home); home.title = T.home; }
 
   go(0); requestAnimationFrame(tick);
 })();

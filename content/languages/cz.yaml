@@ -6,7 +6,7 @@ chapters:
     of: z
     next: Další
     prev: Zpět
-    all: Všechny kroky
+    all: Všechna dema
     desktop: Počítač
     mobile: Telefon
     both: Vedle sebe
@@ -62,3 +62,80 @@ chapters:
       text: Po ověření pacient obdrží RETTXID a potvrzená mutace se přidá do jeho záznamu.
     - title: Dobré vědět
       text: rettX není zdravotnický prostředek. Ověření potvrzuje pouze údaje v registru; není to lékařská rada, diagnóza ani doporučení léčby.
+story:
+  ui:
+    step: Krok
+    next: Co dál
+    tapContinue: Klepnutím pokračujte
+    tapStart: Klepnutím začněte
+    replay: Přehrát znovu
+    title: rettX · Jak se zaregistrovat
+  cards:
+    go-to-app:
+      title: Přejděte na app.rettx.eu
+      text: Otevřete app.rettx.eu v telefonu nebo v počítači. Je to domov evropského registru Rettova syndromu. Pro registraci klepněte na „Připojit se k rettX“.
+    create-account:
+      title: Vytvořte si účet
+      text: Na obrazovce „Vytvořte si účet“ zadejte svou vlastní e-mailovou adresu a klepněte na „Pokračovat“. Použijte prosím svůj vlastní e-mail, ne adresu založenou pro vašeho blízkého.
+    no-password:
+      title: Heslo není potřeba
+      text: rettX po vás nikdy nechce heslo. Při každém přihlášení vám na e-mail přijde nový jednorázový kód. Nemusíte si nic pamatovat, nic se znovu nepoužívá a nic nelze ukrást. Přihlásit se může jen ten, kdo má přístup k vaší e-mailové schránce, a proto je to ještě bezpečnější.
+    enter-code:
+      title: Zadejte kód z e-mailu
+      text: Otevřete svou e-mailovou schránku, najděte e-mail od rettX a zadejte kód na obrazovce „Ověřte svou identitu“.
+    set-up-account:
+      title: Nastavte si účet
+      text: Váš účet je vytvořen. rettX se vás nyní zeptá na preferovaný jazyk, vaše jméno a místo bydliště.
+    privacy:
+      title: Přijměte zásady ochrany osobních údajů
+      text: Přečtěte si, jak jsou vaše údaje chráněny, a poté pro pokračování přijměte zásady ochrany osobních údajů.
+    welcome:
+      title: Vítejte v rettX!
+      text: "Jste přihlášeni. Nyní vytvořte profil svého blízkého se základními údaji: jméno, příjmení, datum narození a váš vztah k němu."
+    consent:
+      title: Udělte souhlas
+      text: Projděte si formulář souhlasu za svého blízkého a přijměte ho. Profil se tím vytvoří.
+    upload-report:
+      title: Nahrajte genetickou zprávu
+      text: "rettX potřebuje zprávu z genetického testu, která potvrzuje diagnózu Rettova syndromu. Musí v ní být jméno vašeho blízkého, datum narození a genová mutace. Přidat ji můžete dvěma způsoby: vyberte soubor, který už máte v telefonu, nebo papírovou zprávu naskenujte fotoaparátem."
+    option-file:
+      title: "Možnost 1: přidejte soubor"
+      text: Pokud máte zprávu jako PDF nebo fotku v telefonu, například z e-mailu, klepněte na „Nahrát soubor s diagnózou“ a vyberte ji v telefonu.
+    option-scan:
+      title: "Možnost 2: naskenujte papírovou zprávu"
+      text: Pokud máte zprávu jen na papíře, klepněte na „Naskenovat dokument“. Položte zprávu na rovný povrch a vyfoťte každou stránku. Až budou všechny stránky nasnímané, klepněte na „Dokončit“ a rettX z nich vytvoří jedno PDF.
+    sent:
+      title: Bezpečně odesláno
+      text: Ať zvolíte kteroukoli možnost, zpráva se bezpečně nahraje a zpracuje. Tým rettX ji nyní zkontroluje.
+    validation:
+      title: Tým rettX ověří diagnózu
+      text: Člověk z týmu rettX zprávu přečte a zkontroluje, že patří vašemu blízkému a potvrzuje Rettův syndrom s genovou mutací. Během kontroly zprávy nelze profil měnit. Nemusíte dělat nic dalšího.
+    confirmed:
+      title: Diagnóza potvrzena
+      text: Po ověření je profil označen jako potvrzený a vaše registrace je dokončena.
+    mutation:
+      title: Genová mutace je v profilu
+      text: "Potvrzená genová mutace ze zprávy je nyní součástí profilu vašeho blízkého. Zobrazuje podrobnosti: změnu v kódující sekvenci, změnu proteinu a genomovou pozici."
+    thank-you:
+      title: Vítejte v komunitě rettX
+      text: "Děkujeme za registraci! Váš blízký je nyní součástí evropského registru Rettova syndromu. Upozornění: rettX není zdravotnický prostředek. Ověření potvrzuje pouze údaje v registru; nejde o lékařskou radu."
+      kick: Hotovo
+mock:
+  email: vas.email@email.com
+  signup:
+    title: Vytvořte si účet
+    sub: Zaregistrujte se do rettX a pokračujte do rettX.
+    email: E-mailová adresa*
+    next: Pokračovat
+    have: Už máte účet?
+    login: Přihlásit se
+    verify: Ověřte svou identitu
+    sent: Odeslali jsme e-mail s kódem na adresu
+    code: Zadejte kód
+    none: Nepřišel vám e-mail?
+    resend: Odeslat znovu
+  picker:
+    title: Vyberte soubor
+    recent: Nedávné
+    dl: Stažené soubory
+    cam: Fotoaparát

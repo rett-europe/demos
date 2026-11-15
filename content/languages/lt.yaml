@@ -6,7 +6,7 @@ chapters:
     of: iš
     next: Toliau
     prev: Atgal
-    all: Visi žingsniai
+    all: Visos demonstracijos
     desktop: Kompiuteris
     mobile: Telefonas
     both: Greta
@@ -62,3 +62,80 @@ chapters:
       text: Patvirtinus pacientui suteikiamas RETTXID, o patvirtinta mutacija įtraukiama į įrašą.
     - title: Verta žinoti
       text: rettX nėra medicinos priemonė. Patvirtinimas tik patvirtina registro duomenis; tai nėra medicininis patarimas, diagnozė ar gydymo rekomendacija.
+story:
+  ui:
+    step: Žingsnis
+    next: Kas toliau
+    tapContinue: Palieskite, kad tęstumėte
+    tapStart: Palieskite, kad pradėtumėte
+    replay: Žiūrėti dar kartą
+    title: rettX · Kaip užsiregistruoti
+  cards:
+    go-to-app:
+      title: Eikite į app.rettx.eu
+      text: Atidarykite app.rettx.eu savo telefone ar kompiuteryje. Tai Europos Retto sindromo registro namai. Norėdami užsiregistruoti, palieskite „Prisijunkite prie rettX“.
+    create-account:
+      title: Susikurkite paskyrą
+      text: Ekrane „Susikurkite paskyrą“ įveskite savo el. pašto adresą ir palieskite „Tęsti“. Naudokite savo el. paštą, o ne adresą, sukurtą Jūsų artimam žmogui.
+    no-password:
+      title: Slaptažodžio nereikia
+      text: rettX niekada neprašo slaptažodžio. Kiekvieną kartą prisijungiant į Jūsų el. paštą atsiunčiamas naujas vienkartinis kodas. Nieko nereikia įsiminti, nieko nereikia naudoti pakartotinai ir nėra ko pavogti. Prisijungti gali tik tas, kas turi prieigą prie Jūsų pašto dėžutės, todėl tai dar saugiau.
+    enter-code:
+      title: Įveskite kodą iš el. laiško
+      text: Atidarykite pašto dėžutę, suraskite rettX laišką ir įveskite kodą ekrane „Patvirtinkite savo tapatybę“.
+    set-up-account:
+      title: Nustatykite paskyrą
+      text: Jūsų paskyra sukurta. Dabar rettX paprašys nurodyti pageidaujamą kalbą, vardą ir gyvenamąją vietą.
+    privacy:
+      title: Sutikite su privatumo politika
+      text: Perskaitykite, kaip saugomi Jūsų duomenys, ir, norėdami tęsti, sutikite su privatumo politika.
+    welcome:
+      title: Sveiki atvykę į rettX!
+      text: "Jūs prisijungėte. Dabar sukurkite savo artimo žmogaus profilį su pagrindine informacija: vardu, pavarde, gimimo data ir Jūsų ryšiu."
+    consent:
+      title: Duokite sutikimą
+      text: Peržiūrėkite savo artimo žmogaus sutikimo formą ir ją priimkite. Tada profilis bus sukurtas.
+    upload-report:
+      title: Įkelkite genetinio tyrimo išvadą
+      text: "rettX reikia genetinio tyrimo išvados, patvirtinančios Retto sindromo diagnozę. Joje turi būti nurodytas Jūsų artimo žmogaus vardas, gimimo data ir genų mutacija. Ją galima pridėti dviem būdais: pasirinkti failą, kuris jau yra Jūsų telefone, arba nuskenuoti popierinę išvadą kamera."
+    option-file:
+      title: "1 būdas: pridėkite failą"
+      text: Jei išvadą turite telefone kaip PDF failą ar nuotrauką, pavyzdžiui, gautą el. paštu, palieskite „Įkelti diagnozės dokumentą“ ir pasirinkite ją telefone.
+    option-scan:
+      title: "2 būdas: nuskenuokite popierinę išvadą"
+      text: Jei išvadą turite tik popierinę, palieskite „Nufotografuoti dokumentą“. Padėkite išvadą ant lygaus paviršiaus ir nufotografuokite kiekvieną puslapį. Kai visi puslapiai nufotografuoti, palieskite „Užbaigti“, ir rettX sujungs juos į vieną PDF failą.
+    sent:
+      title: Saugiai išsiųsta
+      text: Kad ir kurį būdą pasirinktumėte, išvada saugiai įkeliama ir apdorojama. Dabar ją peržiūri rettX komanda.
+    validation:
+      title: rettX komanda patvirtina diagnozę
+      text: rettX komandos narys perskaito išvadą ir patikrina, ar ji priklauso Jūsų artimam žmogui ir ar patvirtina Retto sindromą su genų mutacija. Kol išvada „Peržiūrima“, profilio keisti negalima. Jums daugiau nieko daryti nereikia.
+    confirmed:
+      title: Diagnozė patvirtinta
+      text: Po patvirtinimo profilis pažymimas kaip patvirtintas, ir Jūsų registracija baigta.
+    mutation:
+      title: Genų mutacija matoma profilyje
+      text: "Patvirtinta genų mutacija iš išvados dabar yra Jūsų artimo žmogaus profilio dalis. Matoma išsami informacija: kodavimo pokytis, baltymo pokytis ir genominė padėtis."
+    thank-you:
+      title: Sveiki atvykę į rettX bendruomenę
+      text: "Dėkojame, kad užsiregistravote! Jūsų artimas žmogus dabar yra Europos Retto sindromo registro dalis. Svarbu: rettX nėra medicinos priemonė. Validacija patvirtina tik registro duomenis; tai nėra medicininė konsultacija."
+      kick: Viskas atlikta
+mock:
+  email: jusu.email@email.com
+  signup:
+    title: Susikurkite paskyrą
+    sub: Užsiregistruokite rettX, kad galėtumėte tęsti rettX.
+    email: El. pašto adresas*
+    next: Tęsti
+    have: Jau turite paskyrą?
+    login: Prisijungti
+    verify: Patvirtinkite savo tapatybę
+    sent: Išsiuntėme el. laišką su kodu adresu
+    code: Įveskite kodą
+    none: Negavote el. laiško?
+    resend: Siųsti dar kartą
+  picker:
+    title: Pasirinkite failą
+    recent: Naujausi
+    dl: Atsisiuntimai
+    cam: Kamera

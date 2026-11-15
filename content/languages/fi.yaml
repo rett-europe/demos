@@ -6,7 +6,7 @@ chapters:
     of: /
     next: Seuraava
     prev: Takaisin
-    all: Kaikki vaiheet
+    all: Kaikki demot
     desktop: Tietokone
     mobile: Mobiili
     both: Rinnakkain
@@ -62,3 +62,80 @@ chapters:
       text: Vahvistuksen jälkeen potilas saa RETTXID-tunnuksen ja vahvistettu mutaatio lisätään potilastietoihin.
     - title: Hyvä tietää
       text: rettX ei ole lääkinnällinen laite. Vahvistus koskee vain rekisterin tietoja; se ei ole lääketieteellinen neuvo, diagnoosi tai hoitosuositus.
+story:
+  ui:
+    step: Vaihe
+    next: Mitä seuraavaksi
+    tapContinue: Napauta jatkaaksesi
+    tapStart: Napauta aloittaaksesi
+    replay: Katso uudelleen
+    title: rettX · Näin rekisteröidyt
+  cards:
+    go-to-app:
+      title: Siirry osoitteeseen app.rettx.eu
+      text: Avaa app.rettx.eu puhelimella tai tietokoneella. Se on eurooppalaisen Rettin oireyhtymän rekisterin koti. Rekisteröidy napauttamalla ”Liity rettX:ään”.
+    create-account:
+      title: Luo tili
+      text: Kirjoita ”Luo tili” -näytöllä oma sähköpostiosoitteesi ja napauta ”Jatka”. Käytä omaa sähköpostiasi, älä läheisellesi luotua osoitetta.
+    no-password:
+      title: Salasanaa ei tarvita
+      text: rettX ei koskaan kysy salasanaa. Joka kerta kun kirjaudut sisään, sähköpostiisi lähetetään uusi kertakäyttöinen koodi. Mitään ei tarvitse muistaa, mitään ei käytetä uudelleen eikä mitään voi varastaa. Vain se, jolla on pääsy sähköpostiisi, voi kirjautua, mikä tekee siitä vielä turvallisemman.
+    enter-code:
+      title: Syötä sähköpostin koodi
+      text: Avaa sähköpostisi, etsi rettX:n lähettämä viesti ja syötä koodi ”Vahvista henkilöllisyytesi” -näytöllä.
+    set-up-account:
+      title: Määritä tilisi
+      text: Tilisi on luotu. rettX kysyy nyt haluamaasi kieltä, nimeäsi ja asuinpaikkaasi.
+    privacy:
+      title: Hyväksy tietosuojakäytäntö
+      text: Lue, miten tietojasi suojataan, ja hyväksy sitten tietosuojakäytäntö jatkaaksesi.
+    welcome:
+      title: Tervetuloa rettX:ään!
+      text: "Olet sisällä. Luo seuraavaksi läheisesi profiili perustiedoilla: etunimi, sukunimi, syntymäaika ja suhteenne."
+    consent:
+      title: Anna suostumuksesi
+      text: Lue läheisesi suostumuslomake ja hyväksy se. Sen jälkeen profiili luodaan.
+    upload-report:
+      title: Lataa geneettinen raportti
+      text: "rettX tarvitsee geenitestin raportin, joka vahvistaa Rettin oireyhtymän diagnoosin. Siinä on oltava läheisesi nimi, syntymäaika ja geenimutaatio. Sen voi lisätä kahdella tavalla: valitse puhelimessa jo oleva tiedosto tai skannaa paperinen raportti kameralla."
+    option-file:
+      title: "Vaihtoehto 1: lisää tiedosto"
+      text: Jos raportti on puhelimessasi PDF-tiedostona tai kuvana, esimerkiksi sähköpostista, napauta ”Lataa diagnoositiedosto” ja valitse se puhelimesta.
+    option-scan:
+      title: "Vaihtoehto 2: skannaa paperinen raportti"
+      text: Jos raportti on vain paperilla, napauta ”Skannaa asiakirja”. Aseta raportti tasaiselle alustalle ja ota kuva jokaisesta sivusta. Kun kaikki sivut on kuvattu, napauta ”Valmis”, niin rettX yhdistää ne yhdeksi PDF-tiedostoksi.
+    sent:
+      title: Lähetetty turvallisesti
+      text: Valitsitpa kumman tahansa vaihtoehdon, raportti ladataan turvallisesti ja käsitellään. rettX-tiimi tarkistaa sen nyt.
+    validation:
+      title: rettX-tiimi vahvistaa diagnoosin
+      text: rettX-tiimin jäsen lukee raportin ja tarkistaa, että se kuuluu läheisellesi ja vahvistaa Rettin oireyhtymän geenimutaatioineen. Kun raportti on tarkistettavana, profiilia ei voi muuttaa. Sinun ei tarvitse tehdä muuta.
+    confirmed:
+      title: Diagnoosi vahvistettu
+      text: Kun raportti on vahvistettu, profiili merkitään vahvistetuksi ja rekisteröintisi on valmis.
+    mutation:
+      title: Geenimutaatio on profiilissa
+      text: "Raportin vahvistettu geenimutaatio on nyt osa läheisesi profiilia. Siinä näkyvät tiedot: koodaava muutos, proteiinimuutos ja genominen sijainti."
+    thank-you:
+      title: Tervetuloa rettX-yhteisöön
+      text: "Kiitos rekisteröitymisestä! Läheisesi on nyt osa eurooppalaista Rettin oireyhtymän rekisteriä. Huomaa: rettX ei ole lääkinnällinen laite. Vahvistus koskee vain rekisterin tietoja; se ei ole lääketieteellinen neuvo."
+      kick: Valmista
+mock:
+  email: oma.email@email.com
+  signup:
+    title: Luo tili
+    sub: Rekisteröidy rettX-palveluun jatkaaksesi rettX-palveluun.
+    email: Sähköpostiosoite*
+    next: Jatka
+    have: Onko sinulla jo tili?
+    login: Kirjaudu sisään
+    verify: Vahvista henkilöllisyytesi
+    sent: Lähetimme koodin sisältävän sähköpostin osoitteeseen
+    code: Syötä koodi
+    none: Etkö saanut sähköpostia?
+    resend: Lähetä uudelleen
+  picker:
+    title: Valitse tiedosto
+    recent: Viimeisimmät
+    dl: Lataukset
+    cam: Kamera
