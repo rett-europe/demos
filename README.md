@@ -4,7 +4,8 @@ Interactive HTML demos of how families register on rettX, published at **https:/
 
 | Demo | Link |
 | --- | --- |
-| Step-by-step chapters (desktop, mobile, side by side), 19 languages | [/demos/](https://rett-europe.github.io/demos/) |
+| Home page listing all demos | [/demos/](https://rett-europe.github.io/demos/) |
+| Step-by-step chapters (desktop, mobile, side by side), 19 languages | [/demos/onboarding/](https://rett-europe.github.io/demos/onboarding/) |
 | Mobile story (tap through, like an app), 7 languages | [/demos/story/](https://rett-europe.github.io/demos/story/) |
 
 Story links accept `?lang=fr` (en, es, fr, de, it, pl, gr) and `?fs=1` (start in full screen).
@@ -18,6 +19,7 @@ This is "demo as code": the texts and the story are plain files, and a script re
 
 ```
 content/
+  home.yaml               the home page: one card per demo
   story.yaml              the mobile story: order of explanation cards and video clips
   languages/<lang>.yaml   every text, one file per language
 engine/                   recorder and site builder (developers only)
@@ -51,6 +53,12 @@ After merging, run *Publish demos* with that language in *languages* (e.g. `pt`)
 Copy `en.yaml` to `<code>.yaml`, translate it, set `name:` (the language in itself, e.g. `Français`).
 `story` and `mock` are optional: without them, the language gets the chapters only.
 The rettxweb app must support the language too, or the recording will show English.
+
+### Change the home page or add a demo to it
+
+Edit `content/home.yaml`: each demo has a title, a short text, tags and a poster (a frame from a published
+video, e.g. `story/media/signup-en.webm#5` = second 5). The link and the number of languages of the built-in demos
+are filled in automatically; a new kind of demo can point anywhere with `link:`.
 
 ### Change the story
 

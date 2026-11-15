@@ -51,6 +51,16 @@ STORY.forEach((s, i) => {
 });
 for (const id of Object.keys(en.story.cards)) if (!used.has(id)) errors.push(`languages/en.yaml: story.cards.${id} is not used in story.yaml`);
 
+const { HOME } = await import('./lib/content.mjs');
+for (const k of ['title', 'intro']) if (!HOME?.[k]) errors.push(`home.yaml: ${k}: missing`);
+(HOME?.demos || []).forEach((d, i) => {
+  const where = `home.yaml demo ${i + 1}`;
+  if (!d.title || !d.text) errors.push(`${where}: needs title and text`);
+  if (d.demo ? !['chapters', 'story'].includes(d.demo) : !d.link) errors.push(`${where}: needs "demo: chapters|story" or "link:"`);
+  if (d.poster && !/^[\w./-]+\.webm(#[\d.]+)?$/.test(d.poster)) errors.push(`${where}: poster should look like story/media/signup-en.webm#5`);
+});
+if (!HOME?.demos?.length) errors.push('home.yaml: demos: list is empty');
+
 if (errors.length) {
   for (const e of errors) console.error('✗', e);
   console.error(`\n${errors.length} problem(s) found.`);

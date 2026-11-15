@@ -1,0 +1,25 @@
+# The home page (https://rett-europe.github.io/demos/): one card per demo, in this order.
+#   demo     chapters (the step-by-step demo) or story (the mobile story); the link and language count are automatic
+#   link     instead of demo: any other page, e.g. a new demo folder or an external URL
+#   poster   picture on the card: a published video and the second to take it from
+title: rettX demos
+intro: >-
+  See how families register on rettX, the European Rett syndrome registry, step by step.
+  The videos show the real app with example data only.
+note: >-
+  All data shown is synthetic. No patient or personal data is used. rettX is not a medical device.
+demos:
+  - demo: story
+    title: Register on your phone
+    text: >-
+      A short story you tap through like an app: from creating an account to the confirmed diagnosis.
+      Best on a mobile phone.
+    tags: [Mobile]
+    poster: story/media/upload-file-en.webm#6
+  - demo: chapters
+    title: Step-by-step guide
+    text: >-
+      Five chapters with videos of every screen, on desktop and mobile side by side.
+      Good for presentations and for helping families on a call.
+    tags: [Desktop, Mobile]
+    poster: completed/media/completed-en.webm#5

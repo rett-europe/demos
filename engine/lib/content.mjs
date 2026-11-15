@@ -18,6 +18,9 @@ export const LANGUAGES = Object.fromEntries(fs.readdirSync(DIR).filter((f) => f.
 /** Structure of the mobile story: [{card, step, url?, end?} | {clip, from?, to?}] */
 export const STORY = load(path.join(CONTENT, 'story.yaml'));
 
+/** The home page: { title, intro, note, demos: [{demo|link, title, text, tags?, poster?}] } */
+export const HOME = load(path.join(CONTENT, 'home.yaml'));
+
 /** Languages that have story texts, i.e. appear in the mobile story. */
 export const STORY_LANGS = Object.keys(LANGUAGES).filter((l) => LANGUAGES[l].story);
 
