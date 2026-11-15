@@ -140,7 +140,8 @@ export async function record(scenario, lang, mobile) {
   h.click = async (loc) => { await loc.waitFor(); await loc.scrollIntoViewIfNeeded(); await wait(500);   await h.move(loc); await loc.click({ timeout: 4000 }).catch(() => loc.click({ force: true })); };
   h.pick = async (loc) => { await loc.scrollIntoViewIfNeeded(); await h.move(loc); await loc.click(); };
 
-  await scenario.run(h);
+  // A failed attempt must not leave Chromium running, or the process never exits
+  try { await scenario.run(h); } catch (e) { await browser.close().catch(() => {}); throw e; }
 
   const total = (Date.now() - t0) / 1000;
   const video = page.video();

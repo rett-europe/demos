@@ -28,3 +28,4 @@ for (const lang of langs) {
   }
 }
 if (failed.length) { console.error('Failed:', failed.join('; ')); process.exit(1); }
+process.exit(0);
