@@ -31,10 +31,10 @@ function media(recBase, dir, name) {
     const old = fs.existsSync(dest + '.json') && fs.existsSync(dest + '.webm') ? readJson(dest + '.json') : null;
     if (old?.stamp === stamp) return old;
     fs.mkdirSync(dir, { recursive: true });
-    console.log('  encoding', name);
-    shrink(recBase + '.webm', dest + '.webm');
-    encoded++;
-    const meta = { ...readJson(recBase + '.json'), stamp };
+    const { shrunk, ...rec } = readJson(recBase + '.json');
+    if (shrunk) fs.copyFileSync(recBase + '.webm', dest + '.webm');
+    else { console.log('  encoding', name); shrink(recBase + '.webm', dest + '.webm'); encoded++; }
+    const meta = { ...rec, stamp };
     fs.writeFileSync(dest + '.json', JSON.stringify(meta));
     return meta;
   }

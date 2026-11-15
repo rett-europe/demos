@@ -157,8 +157,9 @@ export async function record(scenario, lang, mobile) {
   const hms = [...probe.matchAll(/time=(\d+):(\d+):([\d.]+)/g)].pop();
   const rawDur = hms ? +hms[1] * 3600 + +hms[2] * 60 + +hms[3] : 0;
   const trim = Math.max(0, rawDur ? rawDur - total : (t0 - tStart) / 1000).toFixed(3);
-  ffmpeg(['-ss', trim, '-i', raw, '-c:v', 'libvpx-vp9', '-crf', '36', '-b:v', '0', '-deadline', 'good', '-cpu-used', '4', '-an', dest], 'trim');
+  // Encoded at final site quality here (recordings run in parallel per language), so build.mjs only copies
+  ffmpeg(['-ss', trim, '-i', raw, '-c:v', 'libvpx-vp9', '-crf', '40', '-b:v', '0', '-deadline', 'good', '-cpu-used', '4', '-an', dest], 'trim');
   fs.rmSync(raw);
-  fs.writeFileSync(path.join(out, `${scenario.name}-${lang}${suf}.json`), JSON.stringify({ lang, total, timeline }, null, 2));
+  fs.writeFileSync(path.join(out, `${scenario.name}-${lang}${suf}.json`), JSON.stringify({ lang, total, timeline, shrunk: true }, null, 2));
   console.log('saved', dest, timeline.length, 'cues');
 }
