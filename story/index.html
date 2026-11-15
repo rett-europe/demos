@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>rettX · How to register</title>
+<style>
+@font-face{font-family:Chillax;src:url(fonts/Chillax-Regular.woff2) format('woff2');font-weight:400}
+@font-face{font-family:Chillax;src:url(fonts/Chillax-Semibold.woff2) format('woff2');font-weight:600 700}
+:root{--ink:#1a1a2e;--brand:#435bd0;--deep:#291b6c;--coral:#f45d7b;--page:#fafbff;--hair:#f0eef5}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{font-family:Chillax,sans-serif;background:var(--page);color:var(--ink);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:16px}
+.phone{position:relative;height:min(82vh,780px);aspect-ratio:390/780;border:12px solid var(--ink);border-radius:42px;
+  background:#fff;overflow:hidden;box-shadow:0 30px 60px rgba(41,27,108,.25)}
+.screen{position:absolute;inset:0}
+video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;visibility:hidden}
+video.on{visibility:visible}
+.card{position:absolute;inset:0;display:flex;flex-direction:column;padding:56px 28px 28px;color:#fff;cursor:pointer;
+  background:linear-gradient(160deg,var(--deep) 0%,var(--brand) 60%,var(--coral) 125%);opacity:0;pointer-events:none;transition:opacity .45s}
+.card.on{opacity:1;pointer-events:auto}
+.brand{height:30px;display:block}
+.body{margin-top:auto;margin-bottom:auto}
+.kick{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  background:rgba(255,255,255,.16);padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.card h2{font-size:30px;line-height:1.15;margin:0 0 16px;font-weight:700;text-wrap:balance}
+.card p{font-size:17px;line-height:1.5;margin:0;opacity:.92;text-wrap:pretty}
+.url{display:flex;align-items:center;gap:8px;margin-top:26px;background:#fff;color:#3c3c43;border-radius:14px;
+  padding:13px 16px;font-size:17px;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.url svg{flex:none}
+.foot{display:flex;flex-direction:column;gap:10px;font-size:13px;opacity:.8}
+.timer{height:3px;background:rgba(255,255,255,.25);border-radius:2px;overflow:hidden}
+.timer b{display:block;height:100%;width:0;background:#fff}
+.replay{align-self:flex-start;margin-top:26px;border:0;border-radius:999px;background:#fff;color:var(--brand);
+  font:600 16px inherit;font-family:inherit;padding:12px 22px;cursor:pointer}
+.start{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(41,27,108,.35);cursor:pointer}
+.start span{width:76px;height:76px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.start[hidden]{display:none}
+.bar{display:flex;gap:3px;width:min(46vh,390px)}
+.bar i{flex:1;height:4px;border-radius:2px;background:var(--hair);overflow:hidden}
+.bar i b{display:block;height:100%;width:0;background:var(--brand)}
+.bar i.card-seg{flex:.35}
+.ctl{display:flex;gap:10px}
+.ctl button,.ctl a{width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:18px;cursor:pointer;
+  box-shadow:0 2px 8px rgba(41,27,108,.12)}
+.ctl a{display:grid;place-items:center}
+.ctl button:focus-visible,.ctl a:focus-visible,.ctl select:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.ctl select{height:46px;border-radius:999px;border:0;background:#fff;color:var(--ink);font:500 15px Chillax,sans-serif;
+  padding:0 14px;cursor:pointer;box-shadow:0 2px 8px rgba(41,27,108,.12)}
+.ctl select[hidden]{display:none}
+.phone:fullscreen{border:0;border-radius:0;height:100%;width:100%;aspect-ratio:auto;background:#000}
+@media (max-width:520px){
+  body{padding:0;gap:0;justify-content:flex-start;background:#fff}
+  .phone{height:auto;flex:1;width:100%;border:0;border-radius:0;box-shadow:none;aspect-ratio:auto}
+  .bar{width:100%;padding:8px 10px 0;gap:2px}
+  .ctl{padding:8px 0 calc(8px + env(safe-area-inset-bottom));gap:6px;flex-wrap:wrap;justify-content:center}
+  .ctl select{padding:0 8px;max-width:118px}
+}
+</style></head><body>
+<div class="phone" id="phone"><div class="screen" id="screen"></div>
+  <div class="start" id="start" role="button" aria-label="Start"><span><svg width="30" height="30" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#435bd0"/></svg></span></div></div>
+<div class="bar" id="bar" aria-hidden="true"></div>
+<div class="ctl">
+  <a id="home" href="../" aria-label="All demos"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8M5 9.5V21h5v-6h4v6h5V9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a>
+  <button id="prev" aria-label="Previous">⏮</button><button id="pp" aria-label="Play">▶</button>
+  <button id="next" aria-label="Next">⏭</button><button id="fs" aria-label="Fullscreen">⛶</button>
+  <select id="lang" aria-label="Language"></select>
+</div>
+<script src="story.js"></script>
+<script>
+(() => {
+  const q = new URLSearchParams(location.search);
+  const LANG = window.STORIES[q.get('lang')] ? q.get('lang') : 'en', T = window.STORY_UI[LANG];
+  document.documentElement.lang = ({ gr: 'el' })[LANG] || LANG; document.title = T.title;
+  const S = window.STORIES[LANG], screen = document.getElementById('screen'), bar = document.getElementById('bar');
+  const pp = document.getElementById('pp'), start = document.getElementById('start'), phone = document.getElementById('phone');
+  const videos = {}, cards = [], segs = [];
+  const lock = '<svg width="16" height="16" viewBox="0 0 24 24"><path d="M17 9h-1V7a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4z" fill="#3c3c43"/></svg>';
+  const words = (s) => s.split(/\s+/).length;
+
+  S.forEach((it, i) => {
+    const seg = document.createElement('i'); seg.innerHTML = '<b></b>'; if (it.kind === 'card') seg.className = 'card-seg';
+    bar.appendChild(seg); segs.push(seg.firstChild);
+    if (it.kind === 'clip') {
+      if (!videos[it.src]) {
+        const v = document.createElement('video'); v.src = it.src; v.muted = true; v.playsInline = true; v.preload = 'auto';
+        v.onclick = () => toggle(); screen.appendChild(v); videos[it.src] = v;
+      }
+      return;
+    }
+    it.dur = it.end ? 0 : Math.max(5, 2.5 + words(it.title + ' ' + it.text) * 0.32);
+    const c = document.createElement('div'); c.className = 'card';
+    c.innerHTML = `<img class="brand" src="rettx-logo.svg" alt="rettX"><div class="body">
+      <span class="kick">${it.kick || (it.end ? T.next : T.step + ' ' + it.step)}</span><h2></h2><p></p>
+      ${it.url ? `<div class="url">${lock}<span>${it.url}</span></div>` : ''}
+      ${it.end ? `<button class="replay">↺ ${T.replay}</button>` : ''}</div>
+      ${it.end ? '' : `<div class="foot"><div class="timer"><b></b></div><span>${T.tapContinue}</span></div>`}`;
+    c.querySelector('h2').textContent = it.title; c.querySelector('p').textContent = it.text;
+    c.onclick = (e) => { if (e.target.closest('.replay')) return go(0, true); if (!playing) return setPlaying(true); if (!it.end) go(cur + 1); };
+    screen.appendChild(c); cards[i] = c;
+  });
+
+  let cur = 0, playing = false, cardT = 0, last = 0;
+
+  function show(i) {
+    const it = S[i];
+    cards.forEach((c, j) => c && c.classList.toggle('on', j === i));
+    Object.values(videos).forEach((v) => { if (it.kind !== 'clip' || v !== videos[it.src]) { v.pause(); v.classList.remove('on'); } });
+    segs.forEach((b, j) => { b.style.width = j < i ? '100%' : '0'; });
+    cards.forEach((c) => { const t = c && c.querySelector('.timer b'); if (t) t.style.width = '0'; });
+    // Cue up the next clip behind the card so it never starts on a blank frame
+    const nx = S[i + 1];
+    if (it.kind === 'card' && nx && nx.kind === 'clip') videos[nx.src].currentTime = nx.from;
+  }
+
+  function go(i, autoplay) {
+    if (i < 0 || i >= S.length) return;
+    cur = i; cardT = 0; show(i);
+    const it = S[i];
+    if (it.kind === 'clip') {
+      const v = videos[it.src];
+      if (Math.abs(v.currentTime - it.from) > 0.3) v.currentTime = it.from;
+      v.classList.add('on');
+    }
+    setPlaying(it.end ? false : (autoplay || playing));
+  }
+
+  function setPlaying(p) {
+    playing = p; pp.textContent = p ? '❚❚' : '▶'; pp.setAttribute('aria-label', p ? 'Pause' : 'Play');
+    start.hidden = p || S[cur].kind === 'card';
+    cards.forEach((c) => { const h = c && c.querySelector('.foot span'); if (h) h.textContent = p ? T.tapContinue : T.tapStart; });
+    const it = S[cur];
+    if (it.kind === 'clip') { const v = videos[it.src]; p ? v.play().catch(() => {}) : v.pause(); }
+    last = performance.now();
+  }
+  const toggle = () => setPlaying(!playing);
+
+  function tick(now) {
+    const it = S[cur], dt = (now - last) / 1000; last = now;
+    if (playing) {
+      if (it.kind === 'card' && it.dur) {
+        cardT += dt; const f = Math.min(1, cardT / it.dur);
+        segs[cur].style.width = f * 100 + '%';
+        const t = cards[cur].querySelector('.timer b'); if (t) t.style.width = f * 100 + '%';
+        if (f >= 1) go(cur + 1);
+      } else if (it.kind === 'clip') {
+        const v = videos[it.src];
+        segs[cur].style.width = Math.max(0, Math.min(100, (v.currentTime - it.from) / (it.to - it.from) * 100)) + '%';
+        if (v.currentTime >= it.to - 0.05 || v.ended) go(cur + 1);
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  start.onclick = toggle; pp.onclick = toggle;
+  document.getElementById('prev').onclick = () => go(cur - 1);
+  document.getElementById('next').onclick = () => go(cur + 1);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === ' ') { e.preventDefault(); toggle(); }
+    if (e.key === 'ArrowRight') go(cur + 1);
+    if (e.key === 'ArrowLeft') go(cur - 1);
+  });
+  const fs = document.getElementById('fs');
+  if (!phone.requestFullscreen) fs.hidden = true;
+  fs.onclick = () => document.fullscreenElement ? document.exitFullscreen() : phone.requestFullscreen().catch(() => {});
+  // ?fs=1 enters fullscreen on the first tap (browsers only allow it after a user gesture)
+  if (q.get('fs') === '1' && phone.requestFullscreen) {
+    document.addEventListener('pointerup', () => { if (!document.fullscreenElement) phone.requestFullscreen().catch(() => {}); }, { once: true, capture: true });
+  }
+
+  const sel = document.getElementById('lang'), codes = Object.keys(window.STORIES);
+  codes.forEach((l) => sel.add(new Option(window.STORY_UI[l].name || l, l, false, l === LANG)));
+  sel.hidden = codes.length < 2;
+  sel.onchange = () => { q.set('lang', sel.value); location.search = q.toString(); };
+  const home = document.getElementById('home'); if (T.home) { home.setAttribute('aria-label', T.home); home.title = T.home; }
+
+  go(0); requestAnimationFrame(tick);
+})();
+</script></body></html>

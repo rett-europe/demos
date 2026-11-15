@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>rettX demos</title><meta name="description" content="See how families register on rettX, the European Rett syndrome registry, step by step. The videos show the real app with example data only.">
+<style>
+@font-face{font-family:Chillax;src:url(assets/fonts/Chillax-Regular.woff2) format('woff2');font-weight:400}
+@font-face{font-family:Chillax;src:url(assets/fonts/Chillax-Semibold.woff2) format('woff2');font-weight:600 700}
+:root{--ink:#1a1a2e;--brand:#435bd0;--deep:#291b6c;--coral:#f45d7b;--page:#fafbff;--hair:#e6e3f0}
+*{box-sizing:border-box}
+body{margin:0;font-family:Chillax,sans-serif;background:var(--page);color:var(--ink);line-height:1.5}
+header{background:linear-gradient(135deg,var(--deep),var(--brand));color:#fff;padding:40px 24px 88px;text-align:center}
+header img{height:44px;filter:brightness(0) invert(1)}
+h1{font-size:clamp(28px,5vw,40px);margin:18px 0 8px;font-weight:600}
+header p{max-width:620px;margin:0 auto;opacity:.9;font-size:17px}
+main{max-width:980px;margin:-56px auto 0;padding:0 20px 40px;display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{display:flex;flex-direction:column;background:#fff;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;
+  box-shadow:0 6px 24px rgba(41,27,108,.12);transition:transform .15s,box-shadow .15s}
+.card:hover,.card:focus-visible{transform:translateY(-3px);box-shadow:0 12px 32px rgba(41,27,108,.2);outline:none}
+.card:focus-visible{box-shadow:0 0 0 3px var(--coral)}
+.pic{background:var(--hair);height:220px;display:flex;justify-content:center;overflow:hidden}
+.pic img{height:100%;max-width:100%;object-fit:cover;object-position:top}
+.body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+h2{margin:0 0 6px;font-size:21px;font-weight:600;color:var(--deep)}
+.body p{margin:0 0 16px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:13px;padding:3px 10px;border-radius:99px;background:#eef0fb;color:var(--brand);font-weight:600}
+footer{text-align:center;font-size:13px;color:#666;padding:0 24px 32px;max-width:620px;margin:0 auto}
+</style></head><body>
+<header><img src="assets/rettx-logo.svg" alt="rettX"><h1>rettX demos</h1><p>See how families register on rettX, the European Rett syndrome registry, step by step. The videos show the real app with example data only.</p></header>
+<main>
+<a class="card" href="story/" data-keep-lang><div class="pic"><img src="assets/home/1.png" alt=""></div><div class="body">
+<h2>Register on your phone</h2><p>A short story you tap through like an app: from creating an account to the confirmed diagnosis. Best on a mobile phone.</p>
+<div class="tags"><span>Mobile</span><span>19 languages</span></div></div></a>
+<a class="card" href="onboarding/" data-keep-lang><div class="pic"><img src="assets/home/2.png" alt=""></div><div class="body">
+<h2>Step-by-step guide</h2><p>Five chapters with videos of every screen, on desktop and mobile side by side. Good for presentations and for helping families on a call.</p>
+<div class="tags"><span>Desktop</span><span>Mobile</span><span>19 languages</span></div></div></a>
+</main>
+<footer>All data shown is synthetic. No patient or personal data is used. rettX is not a medical device.</footer>
+<script>if (location.search) document.querySelectorAll('[data-keep-lang]').forEach((a) => (a.href += location.search));</script>
+</body></html>
