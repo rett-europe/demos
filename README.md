@@ -13,6 +13,9 @@ Story links accept `?lang=fr` (en, es, fr, de, it, pl, gr) and `?fs=1` (start in
 The videos are recordings of the **real rettxweb app**, with sign-in and the API replaced by fake responses.
 All data shown is synthetic: no patient or personal data is used. rettX is not a medical device.
 
+Using an AI agent (Copilot, Claude…)? Its instructions are in [AGENTS.md](AGENTS.md) and
+[.github/copilot-instructions.md](.github/copilot-instructions.md).
+
 ## How it works
 
 This is "demo as code": the texts and the story are plain files, and a script records the app and builds the site.
