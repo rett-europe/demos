@@ -1,0 +1,64 @@
+name: Čeština
+chapters:
+  title: Zaregistrujte se v rettX
+  ui:
+    step: Krok
+    of: z
+    next: Další
+    prev: Zpět
+    all: Všechny kroky
+    desktop: Počítač
+    mobile: Telefon
+    both: Vedle sebe
+    steps: Kroky
+    soon: Již brzy
+  steps:
+    onboarding: První kroky
+    create-patient: Vytvoření pacienta
+    upload-diagnosis: Nahrání diagnózy
+    validation: Ověření diagnózy
+    completed: Registrace dokončena
+  captions:
+    onboarding:
+      - Vyberte preferovaný jazyk
+      - Pokračujte na další krok
+      - Řekněte nám něco o sobě
+      - Vyberte svou zemi a region
+      - Pokračovat
+      - Přečtěte si zásady ochrany osobních údajů
+      - Posuňte se na konec a souhlaste
+      - Vše připraveno – vítejte v rettX!
+    create-patient:
+      home: Přidejte pacienta z domovské stránky
+      names: Zadejte jméno pacienta
+      details: Vyberte pohlaví a zemi narození
+      birthdate: Vyberte datum narození
+      relationship: Uveďte svůj vztah k pacientovi
+      next: Pokračujte k souhlasu
+      consent: Přečtěte si formulář souhlasu
+      accept: Souhlaste a vytvořte pacienta
+      created: Pacient vytvořen – dále diagnóza
+    upload-diagnosis:
+      patient: Váš pacient nyní potřebuje diagnózu
+      instructions: Zpráva musí obsahovat jméno, datum narození a diagnózu Rettova syndromu s testem genové mutace
+      add: Přidejte soubor s diagnózou (PDF nebo obrázek)
+      source: Naskenujte jej fotoaparátem telefonu nebo vyberte soubor ze složek v zařízení
+      processing: Soubor se bezpečně nahraje a zpracuje
+      review: Odesláno! Tým rettX ji nyní zkontroluje
+    completed:
+      patient: Tým rettX diagnózu zkontroloval
+      banner: Ověřeno! Vaše registrace je dokončena
+      mutation: Potvrzená genová mutace je nyní součástí záznamu pacienta
+  validation:
+    - title: Tým rettX ji zkontroluje
+      text: Každou nahranou diagnózu zkontroluje člen týmu rettX, než je pacient potvrzen.
+    - title: Na co se zaměřujeme
+      text: Zpráva musí obsahovat jméno pacienta, datum narození a diagnózu Rettova syndromu včetně výsledku testu genové mutace.
+    - title: V kontrole
+      text: Během kontroly je pacient zobrazen jako „V kontrole“. Aplikaci můžete dál používat a o jakékoli změně budete informováni.
+    - title: Chybí informace?
+      text: Pokud něco chybí nebo je nejasné, stav se změní na „Vyžadovány další informace“ a můžete nahrát aktualizovanou zprávu.
+    - title: Potvrzeno
+      text: Po ověření pacient obdrží RETTXID a potvrzená mutace se přidá do jeho záznamu.
+    - title: Dobré vědět
+      text: rettX není zdravotnický prostředek. Ověření potvrzuje pouze údaje v registru; není to lékařská rada, diagnóza ani doporučení léčby.

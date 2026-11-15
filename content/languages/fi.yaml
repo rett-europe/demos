@@ -1,0 +1,64 @@
+name: Suomi
+chapters:
+  title: Rekisteröidy rettX:ään
+  ui:
+    step: Vaihe
+    of: /
+    next: Seuraava
+    prev: Takaisin
+    all: Kaikki vaiheet
+    desktop: Tietokone
+    mobile: Mobiili
+    both: Rinnakkain
+    steps: Vaiheet
+    soon: Tulossa pian
+  steps:
+    onboarding: Ensiaskeleet
+    create-patient: Potilaan luominen
+    upload-diagnosis: Diagnoosin lataaminen
+    validation: Diagnoosin vahvistaminen
+    completed: Rekisteröityminen valmis
+  captions:
+    onboarding:
+      - Valitse haluamasi kieli
+      - Siirry seuraavaan vaiheeseen
+      - Kerro meille hieman itsestäsi
+      - Valitse maasi ja alueesi
+      - Jatka
+      - Lue tietosuojakäytäntö
+      - Vieritä loppuun ja hyväksy
+      - Kaikki valmista – tervetuloa rettX:ään!
+    create-patient:
+      home: Lisää potilas aloitussivulta
+      names: Kirjoita potilaan nimi
+      details: Valitse sukupuoli ja syntymämaa
+      birthdate: Valitse syntymäaika
+      relationship: Kerro suhteesi potilaaseen
+      next: Jatka suostumukseen
+      consent: Lue suostumuslomake
+      accept: Hyväksy luodaksesi potilaan
+      created: Potilas luotu – seuraavaksi diagnoosi
+    upload-diagnosis:
+      patient: Potilaasi tarvitsee nyt diagnoosin
+      instructions: Raportissa on oltava nimi, syntymäaika ja Rettin oireyhtymän diagnoosi geenimutaatiotestin kanssa
+      add: Lisää diagnoositiedosto (PDF tai kuva)
+      source: Skannaa se puhelimen kameralla tai valitse tiedosto laitteesi kansioista
+      processing: Tiedosto ladataan turvallisesti ja käsitellään
+      review: Lähetetty! rettX-tiimi tarkistaa sen nyt
+    completed:
+      patient: rettX-tiimi on tarkistanut diagnoosin
+      banner: Vahvistettu! Rekisteröitymisesi on valmis
+      mutation: Vahvistettu geenimutaatio on nyt osa potilaan tietoja
+  validation:
+    - title: rettX-tiimi tarkistaa sen
+      text: rettX-tiimin jäsen tarkistaa jokaisen ladatun diagnoosin, ennen kuin potilas vahvistetaan.
+    - title: Mitä tarkistamme
+      text: Raportissa on oltava potilaan nimi, syntymäaika ja Rettin oireyhtymän diagnoosi, mukaan lukien geenimutaatiotestin tulos.
+    - title: Tarkistettavana
+      text: Tarkistuksen aikana potilas näkyy tilassa “Tarkistettavana”. Voit jatkaa sovelluksen käyttöä, ja saat ilmoituksen kaikista muutoksista.
+    - title: Tarvitaanko lisätietoja?
+      text: Jos jotain puuttuu tai on epäselvää, tilaksi muuttuu “Lisätietoja tarvitaan” ja voit ladata päivitetyn raportin.
+    - title: Vahvistettu
+      text: Vahvistuksen jälkeen potilas saa RETTXID-tunnuksen ja vahvistettu mutaatio lisätään potilastietoihin.
+    - title: Hyvä tietää
+      text: rettX ei ole lääkinnällinen laite. Vahvistus koskee vain rekisterin tietoja; se ei ole lääketieteellinen neuvo, diagnoosi tai hoitosuositus.

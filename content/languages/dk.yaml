@@ -1,0 +1,64 @@
+name: Dansk
+chapters:
+  title: Tilmeld dig rettX
+  ui:
+    step: Trin
+    of: af
+    next: Næste
+    prev: Tilbage
+    all: Alle trin
+    desktop: Computer
+    mobile: Mobil
+    both: Side om side
+    steps: Trin
+    soon: Kommer snart
+  steps:
+    onboarding: Første skridt
+    create-patient: Opret patienten
+    upload-diagnosis: Upload diagnosen
+    validation: Validering af diagnosen
+    completed: Tilmeldingen er fuldført
+  captions:
+    onboarding:
+      - Vælg dit foretrukne sprog
+      - Fortsæt til næste trin
+      - Fortæl os lidt om dig selv
+      - Vælg dit land og din region
+      - Fortsæt
+      - Læs privatlivspolitikken
+      - Rul til bunden og accepter
+      - Alt er klart – velkommen til rettX!
+    create-patient:
+      home: Tilføj en patient fra din startside
+      names: Indtast patientens navn
+      details: Vælg køn og fødeland
+      birthdate: Vælg fødselsdato
+      relationship: Angiv din relation til patienten
+      next: Fortsæt til samtykket
+      consent: Læs samtykkeformularen
+      accept: Accepter for at oprette patienten
+      created: Patienten er oprettet – næste trin er diagnosen
+    upload-diagnosis:
+      patient: Din patient har nu brug for en diagnose
+      instructions: Rapporten skal indeholde navn, fødselsdato og Rett syndrom-diagnosen med genmutationstesten
+      add: Tilføj diagnosefilen (PDF eller billede)
+      source: Scan den med telefonens kamera, eller vælg filen fra enhedens mapper
+      processing: Filen uploades sikkert og behandles
+      review: Sendt! rettX-teamet gennemgår den nu
+    completed:
+      patient: rettX-teamet har gennemgået diagnosen
+      banner: Valideret! Din tilmelding er fuldført
+      mutation: Den bekræftede genmutation er nu en del af patientens journal
+  validation:
+    - title: rettX-teamet gennemgår den
+      text: Hver uploadet diagnose kontrolleres af en person i rettX-teamet, før patienten bekræftes.
+    - title: Hvad vi kigger efter
+      text: Rapporten skal vise patientens navn, fødselsdato og Rett syndrom-diagnosen, inklusive resultatet af genmutationstesten.
+    - title: Under gennemgang
+      text: Mens vi gennemgår den, vises patienten som “Under gennemgang”. Du kan fortsætte med at bruge appen og får besked, hvis der sker ændringer.
+    - title: Mangler der oplysninger?
+      text: Hvis noget mangler eller er uklart, skifter status til “Flere oplysninger påkrævet”, og du kan uploade en opdateret rapport.
+    - title: Bekræftet
+      text: Når diagnosen er valideret, får patienten et RETTXID, og den bekræftede mutation føjes til journalen.
+    - title: Godt at vide
+      text: rettX er ikke et medicinsk udstyr. Valideringen bekræfter kun registerets data; den er hverken lægelig rådgivning, en diagnose eller en behandlingsanbefaling.

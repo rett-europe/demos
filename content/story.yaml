@@ -1,0 +1,66 @@
+# The mobile story (/story/): explanation cards and pieces of recordings, in order.
+#   card: <id>       text for the card lives in languages/<lang>.yaml under story.cards.<id>
+#     step: <n>      number shown on the card ("Step 3")
+#     url / end      optional: show a link chip / mark the final card
+#   clip: <name>     a recording (engine/scenarios/<name>.mjs, mobile view)
+#     from / to      optional cue ids in that recording; play only that part
+# Changing clips or cues needs the affected recordings to exist (see README).
+- card: go-to-app
+  step: 1
+  url: app.rettx.eu
+- clip: signup
+  to: account
+- card: create-account
+  step: 2
+- clip: signup
+  from: account
+  to: code
+- card: no-password
+  step: 3
+- card: enter-code
+  step: 3
+- clip: signup
+  from: code
+- card: set-up-account
+  step: 4
+- clip: onboarding
+  to: privacy
+- card: privacy
+  step: 4
+- clip: onboarding
+  from: privacy
+- card: welcome
+  step: 5
+- clip: create-patient
+  to: consent
+- card: consent
+  step: 5
+- clip: create-patient
+  from: consent
+- card: upload-report
+  step: 6
+- card: option-file
+  step: 6
+- clip: upload-file
+  to: processing
+- card: option-scan
+  step: 6
+- clip: upload-scan
+  to: processing
+- card: sent
+  step: 6
+- clip: upload-scan
+  from: processing
+- card: validation
+  step: 7
+- card: confirmed
+  step: 8
+- clip: completed
+  to: mutation
+- card: mutation
+  step: 8
+- clip: completed
+  from: mutation
+- card: thank-you
+  step: 9
+  end: true

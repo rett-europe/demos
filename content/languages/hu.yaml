@@ -1,0 +1,64 @@
+name: Magyar
+chapters:
+  title: Regisztráljon a rettX-en
+  ui:
+    step: Lépés
+    of: /
+    next: Tovább
+    prev: Vissza
+    all: Minden lépés
+    desktop: Asztali
+    mobile: Mobil
+    both: Egymás mellett
+    steps: Lépések
+    soon: Hamarosan
+  steps:
+    onboarding: Első lépések
+    create-patient: Beteg létrehozása
+    upload-diagnosis: Diagnózis feltöltése
+    validation: A diagnózis ellenőrzése
+    completed: A regisztráció befejeződött
+  captions:
+    onboarding:
+      - Válassza ki a kívánt nyelvet
+      - Tovább a következő lépésre
+      - Meséljen egy kicsit magáról
+      - Válassza ki az országot és a régiót
+      - Tovább
+      - Olvassa el az adatvédelmi tájékoztatót
+      - Görgessen a végéig, és fogadja el
+      - Minden kész – üdvözöljük a rettX-ben!
+    create-patient:
+      home: Adjon hozzá egy beteget a kezdőoldalról
+      names: Adja meg a beteg nevét
+      details: Válassza ki a nemet és a születési országot
+      birthdate: Válassza ki a születési dátumot
+      relationship: Adja meg, mi a kapcsolata a beteggel
+      next: Tovább a hozzájáruláshoz
+      consent: Olvassa el a hozzájáruló nyilatkozatot
+      accept: Fogadja el a beteg létrehozásához
+      created: A beteg létrejött – következik a diagnózis
+    upload-diagnosis:
+      patient: A betegnek most diagnózisra van szüksége
+      instructions: A leletnek tartalmaznia kell a nevet, a születési dátumot és a Rett-szindróma diagnózisát a génmutáció-teszttel
+      add: Adja hozzá a diagnózis fájlját (PDF vagy kép)
+      source: Szkennelje be telefonja kamerájával, vagy válassza ki a fájlt az eszköz mappáiból
+      processing: A fájl biztonságosan feltöltődik és feldolgozásra kerül
+      review: Elküldve! A rettX csapata most átnézi
+    completed:
+      patient: A rettX csapata átnézte a diagnózist
+      banner: Ellenőrizve! A regisztrációja befejeződött
+      mutation: A megerősített génmutáció mostantól a beteg adatlapjának része
+  validation:
+    - title: A rettX csapata átnézi
+      text: Minden feltöltött diagnózist a rettX csapatának egy tagja ellenőriz, mielőtt a beteget megerősítenék.
+    - title: Mit ellenőrzünk
+      text: A leleten szerepelnie kell a beteg nevének, születési dátumának és a Rett-szindróma diagnózisának, beleértve a génmutáció-teszt eredményét.
+    - title: Ellenőrzés alatt
+      text: Az ellenőrzés idején a beteg „Ellenőrzés alatt” állapotban látszik. Tovább használhatja az alkalmazást, és értesítést kap minden változásról.
+    - title: További információ kell?
+      text: Ha valami hiányzik vagy nem egyértelmű, az állapot „További információ szükséges” értékre változik, és feltölthet egy frissített leletet.
+    - title: Megerősítve
+      text: Az ellenőrzés után a beteg RETTXID azonosítót kap, a megerősített mutáció pedig bekerül az adatlapjára.
+    - title: Jó tudni
+      text: A rettX nem orvostechnikai eszköz. Az ellenőrzés csak a nyilvántartás adatait erősíti meg; nem orvosi tanács, diagnózis vagy kezelési javaslat.

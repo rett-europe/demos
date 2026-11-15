@@ -1,0 +1,15 @@
+{
+  "name": "rettx-demos-engine",
+  "private": true,
+  "type": "module",
+  "description": "Records the real rettxweb app (Auth0 and API mocked, synthetic data only) and builds the rettX demo site from content/*.yaml",
+  "scripts": {
+    "record": "node record.mjs",
+    "build": "node build.mjs",
+    "check": "node check.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1",
+    "yaml": "^2.8.1"
+  }
+}

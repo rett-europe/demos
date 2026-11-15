@@ -1,0 +1,141 @@
+name: English
+chapters:
+  title: Register with rettX
+  ui:
+    step: Step
+    of: of
+    next: Next
+    prev: Back
+    all: All steps
+    desktop: Desktop
+    mobile: Mobile
+    both: Side by side
+    steps: Steps
+    soon: Coming soon
+  steps:
+    onboarding: Onboarding
+    create-patient: Create the patient
+    upload-diagnosis: Upload the diagnosis
+    validation: Diagnosis validation
+    completed: Registration completed
+  captions:
+    onboarding:
+      - Choose your preferred language
+      - Continue to the next step
+      - Tell us a little about yourself
+      - Select your country and region
+      - Continue
+      - Read the privacy policy
+      - Scroll to the end and accept
+      - All set – welcome to rettX!
+    create-patient:
+      home: Add a patient from your home page
+      names: Enter the patient's name
+      details: Select gender and country of birth
+      birthdate: Pick the date of birth
+      relationship: Tell us your relationship
+      next: Continue to the consent
+      consent: Read the consent form
+      accept: Accept to create the patient
+      created: Patient created – next, the diagnosis
+    upload-diagnosis:
+      patient: Your patient now needs a diagnosis
+      instructions: The report must include name, birth date and the Rett Syndrome diagnosis with the gene mutation test
+      add: Add the diagnosis file (PDF or image)
+      source: Scan it with your phone camera, or pick the file from your device folders
+      processing: The file is uploaded securely and processed
+      review: Sent! The rettX team will now review it
+    completed:
+      patient: The rettX team has reviewed the diagnosis
+      banner: Validated! Your registration is complete
+      mutation: The confirmed gene mutation is now part of the patient record
+  validation:
+    - title: The rettX team reviews it
+      text: Every uploaded diagnosis is checked by a person on the rettX team before the patient is confirmed.
+    - title: What we look for
+      text: The report must show the patient’s name, date of birth and the Rett syndrome diagnosis, including the gene mutation test result.
+    - title: Under review
+      text: While we review, the patient shows as “Under review”. You can keep using the app and you will be notified of any change.
+    - title: More information needed?
+      text: If something is missing or unclear, the status changes to “More information required” and you can upload an updated report.
+    - title: Confirmed
+      text: Once validated, the patient receives a RETTXID and the confirmed mutation is added to the record.
+    - title: Good to know
+      text: rettX is not a medical device. The validation confirms the registry data only; it is not medical advice, a diagnosis or a treatment recommendation.
+story:
+  ui:
+    step: Step
+    next: What's next
+    tapContinue: Tap to continue
+    tapStart: Tap to start
+    replay: Watch again
+    title: rettX · How to register
+  cards:
+    go-to-app:
+      title: Go to app.rettx.eu
+      text: Open app.rettx.eu on your phone or computer. It is the home of the European Rett Syndrome registry. To register, tap "Join rettX".
+    create-account:
+      title: Create your account
+      text: On the "Create Your Account" screen, type your own email address and tap "Continue". Please use your own email, not one created for your loved one.
+    no-password:
+      title: No password needed
+      text: rettX never asks for a password. Every time you sign in, a fresh one-time code is sent to your email. There is nothing to remember, nothing to reuse and nothing to steal. Only someone with access to your inbox can sign in, which makes it even more secure.
+    enter-code:
+      title: Enter the code from your email
+      text: Open your inbox, find the email from rettX and type the code on the "Verify Your Identity" screen.
+    set-up-account:
+      title: Set up your account
+      text: Your account is created. rettX now asks for your preferred language, your name and where you live.
+    privacy:
+      title: Accept the privacy policy
+      text: Read how your data is protected, then accept the privacy policy to continue.
+    welcome:
+      title: Welcome to rettX!
+      text: "You are in. Next, create your loved one's profile with the basics: name, surname, date of birth and your relationship."
+    consent:
+      title: Give your consent
+      text: Review the consent form for your loved one and accept it. The profile is then created.
+    upload-report:
+      title: Upload the genetic report
+      text: "rettX needs the genetic test report that confirms the Rett syndrome diagnosis. It must show your loved one's name, date of birth and the gene mutation. There are two ways to add it: pick a file that is already on your phone, or scan the paper report with your camera."
+    option-file:
+      title: "Option 1: add a file"
+      text: If you have the report as a PDF or a photo on your phone, for example from an email, tap "Upload diagnosis file" and choose it from your phone.
+    option-scan:
+      title: "Option 2: scan the paper report"
+      text: If you only have the report on paper, tap "Scan document". Place the report on a flat surface and take a photo of each page. When all pages are captured, tap "Complete" and rettX turns them into a single PDF.
+    sent:
+      title: Sent securely
+      text: Whichever option you choose, the report is uploaded securely and processed. The rettX team now reviews it.
+    validation:
+      title: The rettX team validates the diagnosis
+      text: A person from the rettX team reads the report and checks that it belongs to your loved one and confirms Rett syndrome with the gene mutation. While the report is under review, the profile cannot be changed. You don't need to do anything else.
+    confirmed:
+      title: Diagnosis confirmed
+      text: Once validated, the profile is marked as confirmed and your registration is complete.
+    mutation:
+      title: The gene mutation is on the profile
+      text: "The confirmed gene mutation from the report is now part of your loved one's profile. It shows the details: the coding change, the protein change and the genomic position."
+    thank-you:
+      title: Welcome to the rettX community
+      text: "Thank you for registering! Your loved one is now part of the European Rett syndrome registry. Note: rettX is not a medical device. The validation confirms the registry data only; it is not medical advice."
+      kick: All done
+mock:
+  email: your.email@email.com
+  signup:
+    title: Create Your Account
+    sub: Sign Up to rettX to continue to rettX.
+    email: Email address*
+    next: Continue
+    have: Already have an account?
+    login: Log in
+    verify: Verify Your Identity
+    sent: We've sent an email with your code to
+    code: Enter the code
+    none: Didn't receive an email?
+    resend: Resend
+  picker:
+    title: Choose a file
+    recent: Recent
+    dl: Downloads
+    cam: Camera

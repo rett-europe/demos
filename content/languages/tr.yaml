@@ -1,0 +1,64 @@
+name: Türkçe
+chapters:
+  title: rettX’e kaydolun
+  ui:
+    step: Adım
+    of: /
+    next: İleri
+    prev: Geri
+    all: Tüm adımlar
+    desktop: Masaüstü
+    mobile: Mobil
+    both: Yan yana
+    steps: Adımlar
+    soon: Çok yakında
+  steps:
+    onboarding: İlk adımlar
+    create-patient: Hasta oluşturma
+    upload-diagnosis: Tanıyı yükleme
+    validation: Tanının doğrulanması
+    completed: Kayıt tamamlandı
+  captions:
+    onboarding:
+      - Tercih ettiğiniz dili seçin
+      - Sonraki adıma geçin
+      - Bize kendinizden biraz bahsedin
+      - Ülkenizi ve bölgenizi seçin
+      - Devam
+      - Gizlilik politikasını okuyun
+      - Sonuna kadar kaydırın ve kabul edin
+      - Her şey hazır – rettX’e hoş geldiniz!
+    create-patient:
+      home: Ana sayfanızdan bir hasta ekleyin
+      names: Hastanın adını girin
+      details: Cinsiyeti ve doğum ülkesini seçin
+      birthdate: Doğum tarihini seçin
+      relationship: Hastayla yakınlığınızı belirtin
+      next: Onay adımına geçin
+      consent: Onam formunu okuyun
+      accept: Hastayı oluşturmak için kabul edin
+      created: Hasta oluşturuldu – sıradaki adım tanı
+    upload-diagnosis:
+      patient: Hastanız için şimdi bir tanı gerekiyor
+      instructions: Raporda ad, doğum tarihi ve gen mutasyonu testiyle birlikte Rett sendromu tanısı yer almalıdır
+      add: Tanı dosyasını ekleyin (PDF veya görsel)
+      source: Telefon kameranızla tarayın ya da dosyayı cihazınızın klasörlerinden seçin
+      processing: Dosya güvenli şekilde yüklenir ve işlenir
+      review: Gönderildi! rettX ekibi şimdi inceleyecek
+    completed:
+      patient: rettX ekibi tanıyı inceledi
+      banner: Doğrulandı! Kaydınız tamamlandı
+      mutation: Doğrulanan gen mutasyonu artık hasta kaydının bir parçası
+  validation:
+    - title: rettX ekibi inceler
+      text: Yüklenen her tanı, hasta onaylanmadan önce rettX ekibinden bir kişi tarafından kontrol edilir.
+    - title: Nelere bakıyoruz
+      text: Raporda hastanın adı, doğum tarihi ve gen mutasyonu testi sonucu dahil Rett sendromu tanısı yer almalıdır.
+    - title: İnceleniyor
+      text: İnceleme sırasında hasta “İnceleniyor” olarak görünür. Uygulamayı kullanmaya devam edebilirsiniz; herhangi bir değişiklikte bilgilendirilirsiniz.
+    - title: Daha fazla bilgi mi gerekiyor?
+      text: Bir şey eksik veya belirsizse durum “Daha fazla bilgi gerekli” olarak değişir ve güncellenmiş bir rapor yükleyebilirsiniz.
+    - title: Onaylandı
+      text: Doğrulandıktan sonra hasta bir RETTXID alır ve onaylanan mutasyon kayda eklenir.
+    - title: Bilmekte fayda var
+      text: rettX bir tıbbi cihaz değildir. Doğrulama yalnızca kayıt verilerini onaylar; tıbbi tavsiye, tanı veya tedavi önerisi değildir.

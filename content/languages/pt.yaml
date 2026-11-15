@@ -1,0 +1,64 @@
+name: Português
+chapters:
+  title: Registe-se na rettX
+  ui:
+    step: Passo
+    of: de
+    next: Seguinte
+    prev: Voltar
+    all: Todos os passos
+    desktop: Computador
+    mobile: Telemóvel
+    both: Lado a lado
+    steps: Passos
+    soon: Brevemente
+  steps:
+    onboarding: Primeiros passos
+    create-patient: Criar o paciente
+    upload-diagnosis: Carregar o diagnóstico
+    validation: Validação do diagnóstico
+    completed: Registo concluído
+  captions:
+    onboarding:
+      - Escolha o seu idioma preferido
+      - Continue para o passo seguinte
+      - Conte-nos um pouco sobre si
+      - Selecione o seu país e região
+      - Continuar
+      - Leia a política de privacidade
+      - Desloque até ao fim e aceite
+      - Tudo pronto – bem-vindo à rettX!
+    create-patient:
+      home: Adicione um paciente a partir da página inicial
+      names: Introduza o nome do paciente
+      details: Selecione o género e o país de nascimento
+      birthdate: Escolha a data de nascimento
+      relationship: Indique a sua relação com o paciente
+      next: Continue para o consentimento
+      consent: Leia o formulário de consentimento
+      accept: Aceite para criar o paciente
+      created: Paciente criado – agora, o diagnóstico
+    upload-diagnosis:
+      patient: O seu paciente precisa agora de um diagnóstico
+      instructions: O relatório deve incluir nome, data de nascimento e o diagnóstico de síndrome de Rett com o teste da mutação genética
+      add: Adicione o ficheiro do diagnóstico (PDF ou imagem)
+      source: Digitalize-o com a câmara do telemóvel ou escolha o ficheiro nas pastas do dispositivo
+      processing: O ficheiro é carregado em segurança e processado
+      review: Enviado! A equipa rettX vai agora analisá-lo
+    completed:
+      patient: A equipa rettX analisou o diagnóstico
+      banner: Validado! O seu registo está concluído
+      mutation: A mutação genética confirmada já faz parte da ficha do paciente
+  validation:
+    - title: A equipa rettX analisa-o
+      text: Cada diagnóstico carregado é verificado por uma pessoa da equipa rettX antes de o paciente ser confirmado.
+    - title: O que verificamos
+      text: O relatório deve mostrar o nome do paciente, a data de nascimento e o diagnóstico de síndrome de Rett, incluindo o resultado do teste da mutação genética.
+    - title: Em análise
+      text: Enquanto analisamos, o paciente aparece como “Em análise”. Pode continuar a usar a aplicação e será notificado de qualquer alteração.
+    - title: Faltam informações?
+      text: Se algo faltar ou não estiver claro, o estado muda para “São necessárias mais informações” e pode carregar um relatório atualizado.
+    - title: Confirmado
+      text: Depois de validado, o paciente recebe um RETTXID e a mutação confirmada é adicionada à sua ficha.
+    - title: Bom saber
+      text: A rettX não é um dispositivo médico. A validação confirma apenas os dados do registo; não é aconselhamento médico, diagnóstico nem recomendação de tratamento.

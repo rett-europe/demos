@@ -1,0 +1,64 @@
+name: Latviešu
+chapters:
+  title: Reģistrējieties rettX
+  ui:
+    step: Solis
+    of: no
+    next: Tālāk
+    prev: Atpakaļ
+    all: Visi soļi
+    desktop: Dators
+    mobile: Tālrunis
+    both: Blakus
+    steps: Soļi
+    soon: Drīzumā
+  steps:
+    onboarding: Pirmie soļi
+    create-patient: Pacienta izveide
+    upload-diagnosis: Diagnozes augšupielāde
+    validation: Diagnozes apstiprināšana
+    completed: Reģistrācija pabeigta
+  captions:
+    onboarding:
+      - Izvēlieties vēlamo valodu
+      - Pārejiet uz nākamo soli
+      - Pastāstiet mums mazliet par sevi
+      - Izvēlieties savu valsti un reģionu
+      - Turpināt
+      - Izlasiet privātuma politiku
+      - Ritiniet līdz beigām un piekrītiet
+      - Viss gatavs – laipni lūdzam rettX!
+    create-patient:
+      home: Pievienojiet pacientu savā sākumlapā
+      names: Ievadiet pacienta vārdu
+      details: Izvēlieties dzimumu un dzimšanas valsti
+      birthdate: Izvēlieties dzimšanas datumu
+      relationship: Norādiet, kas jūs esat pacientam
+      next: Turpiniet pie piekrišanas
+      consent: Izlasiet piekrišanas veidlapu
+      accept: Piekrītiet, lai izveidotu pacientu
+      created: Pacients izveidots – tālāk diagnoze
+    upload-diagnosis:
+      patient: Jūsu pacientam tagad vajadzīga diagnoze
+      instructions: Atzinumā jābūt vārdam, dzimšanas datumam un Reta sindroma diagnozei ar gēna mutācijas testu
+      add: Pievienojiet diagnozes failu (PDF vai attēls)
+      source: Noskenējiet to ar tālruņa kameru vai izvēlieties failu no ierīces mapēm
+      processing: Fails tiek droši augšupielādēts un apstrādāts
+      review: Nosūtīts! rettX komanda to tagad izskatīs
+    completed:
+      patient: rettX komanda ir izskatījusi diagnozi
+      banner: Apstiprināts! Jūsu reģistrācija ir pabeigta
+      mutation: Apstiprinātā gēna mutācija tagad ir pacienta ieraksta daļa
+  validation:
+    - title: rettX komanda to izskata
+      text: Katru augšupielādēto diagnozi pārbauda rettX komandas pārstāvis, pirms pacients tiek apstiprināts.
+    - title: Ko mēs pārbaudām
+      text: Atzinumā jābūt pacienta vārdam, dzimšanas datumam un Reta sindroma diagnozei, ieskaitot gēna mutācijas testa rezultātu.
+    - title: Tiek izskatīts
+      text: Kamēr izskatām, pacients tiek rādīts kā “Tiek izskatīts”. Varat turpināt lietot lietotni, un par jebkurām izmaiņām saņemsiet paziņojumu.
+    - title: Vajadzīga papildu informācija?
+      text: Ja kaut kas trūkst vai nav skaidrs, statuss mainās uz “Nepieciešama papildu informācija”, un varat augšupielādēt atjauninātu atzinumu.
+    - title: Apstiprināts
+      text: Pēc apstiprināšanas pacients saņem RETTXID, un apstiprinātā mutācija tiek pievienota ierakstam.
+    - title: Labi zināt
+      text: rettX nav medicīnas ierīce. Apstiprināšana apliecina tikai reģistra datus; tā nav medicīnisks padoms, diagnoze vai ārstēšanas ieteikums.

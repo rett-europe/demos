@@ -1,0 +1,134 @@
+name: Publish demos
+
+# Manual only. Leave "languages" empty to republish text changes without re-recording any video.
+on:
+  workflow_dispatch:
+    inputs:
+      languages:
+        description: 'Re-record these languages (e.g. "en,fr" or "all"). Empty = texts only, keep current videos.'
+        required: false
+        default: ''
+      scenarios:
+        description: 'Only these recordings (e.g. "onboarding,signup"). Empty = all.'
+        required: false
+        default: ''
+      rettxweb_ref:
+        description: 'rettxweb tag or branch to record. Empty = latest release.'
+        required: false
+        default: ''
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      langs: ${{ steps.plan.outputs.langs }}
+      ref: ${{ steps.plan.outputs.ref }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        env:
+          GH_TOKEN: ${{ secrets.RETTXWEB_TOKEN }}
+          LANGS: ${{ inputs.languages }}
+          REF: ${{ inputs.rettxweb_ref }}
+        run: |
+          if [ "$LANGS" = "all" ]; then
+            LANGS=$(ls content/languages | sed 's/\.yaml$//' | paste -sd, -)
+          fi
+          echo "langs=$(echo "$LANGS" | tr -d ' ' | jq -Rc 'split(",") | map(select(length > 0))')" >> "$GITHUB_OUTPUT"
+          if [ -z "$REF" ] && [ -n "$LANGS" ]; then
+            REF=$(gh release view --repo rett-europe/rettxweb --json tagName -q .tagName)
+          fi
+          echo "ref=$REF" >> "$GITHUB_OUTPUT"
+          echo "Recording [$LANGS] from rettxweb ${REF:-(none)}"
+
+  record:
+    needs: plan
+    if: needs.plan.outputs.langs != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: ${{ fromJson(needs.plan.outputs.langs) }}
+    env:
+      RETTXWEB_DIR: ${{ github.workspace }}/rettxweb
+      FFMPEG: ffmpeg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: rett-europe/rettxweb
+          ref: ${{ needs.plan.outputs.ref }}
+          token: ${{ secrets.RETTXWEB_TOKEN }}
+          path: rettxweb
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update -q && sudo apt-get install -yq ffmpeg
+
+      - name: Start rettxweb
+        working-directory: rettxweb
+        run: |
+          npm ci
+          # Production settings; the API base needs a trailing slash (the app appends paths directly)
+          cp src/environments/environment.prod.ts src/environments/environment.ts
+          sed -i "s#apiUrl: 'https://rettx.azurewebsites.net'#apiUrl: 'https://rettx.azurewebsites.net/'#; s#__APP_VERSION__#${{ needs.plan.outputs.ref }}#" src/environments/environment.ts
+          nohup npx ng serve --port 3000 > ../ng.log 2>&1 &
+          for i in $(seq 1 120); do curl -sf http://localhost:3000 > /dev/null && exit 0; sleep 5; done
+          cat ../ng.log; exit 1
+
+      - name: Record ${{ matrix.lang }}
+        working-directory: engine
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+          node record.mjs --langs ${{ matrix.lang }} ${{ inputs.scenarios && format('--scenarios {0}', inputs.scenarios) || '' }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recordings-${{ matrix.lang }}
+          path: engine/recordings
+          retention-days: 7
+
+  build:
+    needs: [plan, record]
+    # Texts-only runs skip "record"; partial recording failures still publish what succeeded
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    env:
+      FFMPEG: ffmpeg
+    steps:
+      - uses: actions/checkout@v4
+      - name: Current site
+        run: git clone --depth 1 --branch gh-pages "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" _site
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: recordings-*
+          path: engine/recordings
+          merge-multiple: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update -q && sudo apt-get install -yq ffmpeg
+      - working-directory: engine
+        run: |
+          npm ci --ignore-scripts
+          node check.mjs
+          node build.mjs
+      # gh-pages is one commit, replaced each time, so old videos never pile up in history
+      - name: Publish
+        working-directory: _site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan next
+          git add -A
+          git commit -qm "Publish demos from ${GITHUB_SHA::7}"
+          git push --force origin next:gh-pages

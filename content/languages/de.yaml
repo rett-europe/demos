@@ -1,0 +1,141 @@
+name: Deutsch
+chapters:
+  title: Bei rettX registrieren
+  ui:
+    step: Schritt
+    of: von
+    next: Weiter
+    prev: Zurück
+    all: Alle Schritte
+    desktop: Desktop
+    mobile: Mobil
+    both: Nebeneinander
+    steps: Schritte
+    soon: Demnächst
+  steps:
+    onboarding: Erste Schritte
+    create-patient: Patienten anlegen
+    upload-diagnosis: Diagnose hochladen
+    validation: Prüfung der Diagnose
+    completed: Registrierung abgeschlossen
+  captions:
+    onboarding:
+      - Wählen Sie Ihre bevorzugte Sprache
+      - Weiter zum nächsten Schritt
+      - Erzählen Sie uns ein wenig über sich
+      - Wählen Sie Ihr Land und Ihre Region
+      - Weiter
+      - Lesen Sie die Datenschutzerklärung
+      - Bis zum Ende scrollen und zustimmen
+      - Alles bereit – willkommen bei rettX!
+    create-patient:
+      home: Fügen Sie auf Ihrer Startseite einen Patienten hinzu
+      names: Geben Sie den Namen des Patienten ein
+      details: Wählen Sie Geschlecht und Geburtsland
+      birthdate: Wählen Sie das Geburtsdatum
+      relationship: Geben Sie Ihre Beziehung zum Patienten an
+      next: Weiter zur Einwilligung
+      consent: Lesen Sie die Einwilligungserklärung
+      accept: Zustimmen, um den Patienten anzulegen
+      created: Patient angelegt – als Nächstes die Diagnose
+    upload-diagnosis:
+      patient: Ihr Patient benötigt nun eine Diagnose
+      instructions: Der Bericht muss Name, Geburtsdatum und die Rett-Syndrom-Diagnose mit dem Gentest enthalten
+      add: Fügen Sie die Diagnosedatei hinzu (PDF oder Bild)
+      source: Scannen Sie sie mit der Handykamera oder wählen Sie die Datei aus den Ordnern Ihres Geräts
+      processing: Die Datei wird sicher hochgeladen und verarbeitet
+      review: Gesendet! Das rettX-Team prüft sie jetzt
+    completed:
+      patient: Das rettX-Team hat die Diagnose geprüft
+      banner: Bestätigt! Ihre Registrierung ist abgeschlossen
+      mutation: Die bestätigte Genmutation ist nun Teil der Patientenakte
+  validation:
+    - title: Das rettX-Team prüft sie
+      text: Jede hochgeladene Diagnose wird von einer Person im rettX-Team geprüft, bevor der Patient bestätigt wird.
+    - title: Worauf wir achten
+      text: Der Bericht muss den Namen, das Geburtsdatum und die Rett-Syndrom-Diagnose des Patienten enthalten, einschließlich des Ergebnisses des Gentests.
+    - title: In Prüfung
+      text: Während der Prüfung wird der Patient als „In Prüfung“ angezeigt. Sie können die App weiter nutzen und werden über Änderungen benachrichtigt.
+    - title: Weitere Angaben nötig?
+      text: Fehlt etwas oder ist etwas unklar, wechselt der Status auf „Weitere Informationen erforderlich“ und Sie können einen aktualisierten Bericht hochladen.
+    - title: Bestätigt
+      text: Nach der Bestätigung erhält der Patient eine RETTXID und die bestätigte Mutation wird der Akte hinzugefügt.
+    - title: Gut zu wissen
+      text: rettX ist kein Medizinprodukt. Die Prüfung bestätigt nur die Registerdaten; sie ist weder medizinische Beratung noch Diagnose oder Behandlungsempfehlung.
+story:
+  ui:
+    step: Schritt
+    next: Wie geht es weiter
+    tapContinue: Tippen zum Fortfahren
+    tapStart: Tippen zum Starten
+    replay: Noch einmal ansehen
+    title: rettX · So registrieren Sie sich
+  cards:
+    go-to-app:
+      title: Öffnen Sie app.rettx.eu
+      text: Öffnen Sie app.rettx.eu auf Ihrem Handy oder Computer. Hier ist das europäische Rett-Syndrom-Register zu Hause. Um sich zu registrieren, tippen Sie auf „Bei rettX mitmachen“.
+    create-account:
+      title: Erstellen Sie Ihr Konto
+      text: Geben Sie auf dem Bildschirm „Konto erstellen“ Ihre eigene E-Mail-Adresse ein und tippen Sie auf „Weiter“. Bitte verwenden Sie Ihre eigene Adresse, nicht eine für Ihren Angehörigen angelegte.
+    no-password:
+      title: Kein Passwort nötig
+      text: rettX fragt nie nach einem Passwort. Bei jeder Anmeldung erhalten Sie einen neuen Einmalcode per E-Mail. Nichts zu merken, nichts wiederzuverwenden, nichts zu stehlen. Nur wer Zugriff auf Ihr Postfach hat, kann sich anmelden – das ist sogar noch sicherer.
+    enter-code:
+      title: Code aus der E-Mail eingeben
+      text: Öffnen Sie Ihr Postfach, suchen Sie die E-Mail von rettX und geben Sie den Code auf dem Bildschirm „Bestätigen Sie Ihre Identität“ ein.
+    set-up-account:
+      title: Konto einrichten
+      text: Ihr Konto ist erstellt. rettX fragt nun nach Ihrer bevorzugten Sprache, Ihrem Namen und Ihrem Wohnort.
+    privacy:
+      title: Datenschutzerklärung akzeptieren
+      text: Lesen Sie, wie Ihre Daten geschützt werden, und akzeptieren Sie die Datenschutzerklärung, um fortzufahren.
+    welcome:
+      title: Willkommen bei rettX!
+      text: "Sie sind dabei. Legen Sie nun das Profil Ihres Angehörigen mit dem Wichtigsten an: Vorname, Nachname, Geburtsdatum und Ihre Beziehung zueinander."
+    consent:
+      title: Einwilligung erteilen
+      text: Lesen Sie die Einwilligungserklärung für Ihren Angehörigen und stimmen Sie zu. Danach wird das Profil angelegt.
+    upload-report:
+      title: Genetischen Befund hochladen
+      text: "rettX benötigt den Befund des Gentests, der die Diagnose Rett-Syndrom bestätigt. Er muss den Namen Ihres Angehörigen, das Geburtsdatum und die Genmutation enthalten. Es gibt zwei Wege: eine Datei auswählen, die schon auf Ihrem Handy ist, oder den Papierbefund mit der Kamera scannen."
+    option-file:
+      title: "Option 1: Datei hinzufügen"
+      text: Wenn Sie den Befund als PDF oder Foto auf dem Handy haben, zum Beispiel aus einer E-Mail, tippen Sie auf „Befund hochladen“ und wählen Sie ihn aus.
+    option-scan:
+      title: "Option 2: Papierbefund scannen"
+      text: Wenn Sie den Befund nur auf Papier haben, tippen Sie auf „Dokument scannen“. Legen Sie ihn auf eine ebene Fläche und fotografieren Sie jede Seite. Wenn alle Seiten erfasst sind, tippen Sie auf „Abschließen“ und rettX fügt sie zu einem einzigen PDF zusammen.
+    sent:
+      title: Sicher übermittelt
+      text: "Egal, welche Option Sie wählen: Der Befund wird sicher hochgeladen und verarbeitet. Anschließend prüft ihn das rettX-Team."
+    validation:
+      title: Das rettX-Team prüft die Diagnose
+      text: Eine Person aus dem rettX-Team liest den Befund und prüft, ob er zu Ihrem Angehörigen gehört und das Rett-Syndrom mit der Genmutation bestätigt. Während der Prüfung kann das Profil nicht geändert werden. Sie müssen nichts weiter tun.
+    confirmed:
+      title: Diagnose bestätigt
+      text: Nach der Prüfung wird das Profil als bestätigt markiert und Ihre Registrierung ist abgeschlossen.
+    mutation:
+      title: Die Genmutation steht im Profil
+      text: "Die bestätigte Genmutation aus dem Befund ist jetzt Teil des Profils Ihres Angehörigen. Sie zeigt die Details: die Veränderung in der codierenden Sequenz, die Proteinveränderung und die genomische Position."
+    thank-you:
+      title: Willkommen in der rettX-Community
+      text: "Danke für Ihre Registrierung! Ihr Angehöriger ist jetzt Teil des europäischen Rett-Syndrom-Registers. Hinweis: rettX ist kein Medizinprodukt. Die Prüfung bestätigt nur die Registerdaten und ist keine medizinische Beratung."
+      kick: Geschafft
+mock:
+  email: ihre.email@email.com
+  signup:
+    title: Konto erstellen
+    sub: Registrieren Sie sich bei rettX, um mit rettX fortzufahren.
+    email: E-Mail-Adresse*
+    next: Weiter
+    have: Sie haben bereits ein Konto?
+    login: Anmelden
+    verify: Bestätigen Sie Ihre Identität
+    sent: Wir haben eine E-Mail mit Ihrem Code gesendet an
+    code: Code eingeben
+    none: Keine E-Mail erhalten?
+    resend: Erneut senden
+  picker:
+    title: Datei auswählen
+    recent: Zuletzt verwendet
+    dl: Downloads
+    cam: Kamera

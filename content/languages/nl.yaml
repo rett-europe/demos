@@ -1,0 +1,64 @@
+name: Nederlands
+chapters:
+  title: Registreer bij rettX
+  ui:
+    step: Stap
+    of: van
+    next: Volgende
+    prev: Terug
+    all: Alle stappen
+    desktop: Computer
+    mobile: Mobiel
+    both: Naast elkaar
+    steps: Stappen
+    soon: Binnenkort
+  steps:
+    onboarding: Eerste stappen
+    create-patient: De patiënt aanmaken
+    upload-diagnosis: De diagnose uploaden
+    validation: Validatie van de diagnose
+    completed: Registratie voltooid
+  captions:
+    onboarding:
+      - Kies je voorkeurstaal
+      - Ga naar de volgende stap
+      - Vertel ons iets over jezelf
+      - Selecteer je land en regio
+      - Doorgaan
+      - Lees het privacybeleid
+      - Scroll naar het einde en ga akkoord
+      - Alles klaar – welkom bij rettX!
+    create-patient:
+      home: Voeg een patiënt toe vanaf je startpagina
+      names: Vul de naam van de patiënt in
+      details: Selecteer geslacht en geboorteland
+      birthdate: Kies de geboortedatum
+      relationship: Geef je relatie tot de patiënt aan
+      next: Ga verder naar de toestemming
+      consent: Lees het toestemmingsformulier
+      accept: Ga akkoord om de patiënt aan te maken
+      created: Patiënt aangemaakt – nu de diagnose
+    upload-diagnosis:
+      patient: Je patiënt heeft nu een diagnose nodig
+      instructions: Het rapport moet naam, geboortedatum en de diagnose Rett-syndroom met de gen-mutatietest bevatten
+      add: Voeg het diagnosebestand toe (pdf of afbeelding)
+      source: Scan het met de camera van je telefoon of kies het bestand uit de mappen van je apparaat
+      processing: Het bestand wordt veilig geüpload en verwerkt
+      review: Verzonden! Het rettX-team bekijkt het nu
+    completed:
+      patient: Het rettX-team heeft de diagnose beoordeeld
+      banner: Gevalideerd! Je registratie is voltooid
+      mutation: De bevestigde genmutatie maakt nu deel uit van het dossier van de patiënt
+  validation:
+    - title: Het rettX-team beoordeelt het
+      text: Elke geüploade diagnose wordt gecontroleerd door iemand van het rettX-team voordat de patiënt wordt bevestigd.
+    - title: Waar we op letten
+      text: Het rapport moet de naam, geboortedatum en de diagnose Rett-syndroom van de patiënt tonen, inclusief de uitslag van de gen-mutatietest.
+    - title: In beoordeling
+      text: Tijdens de beoordeling staat de patiënt als “In beoordeling”. Je kunt de app blijven gebruiken en krijgt een melding bij elke wijziging.
+    - title: Meer informatie nodig?
+      text: Als er iets ontbreekt of onduidelijk is, verandert de status in “Meer informatie vereist” en kun je een bijgewerkt rapport uploaden.
+    - title: Bevestigd
+      text: Na validatie krijgt de patiënt een RETTXID en wordt de bevestigde mutatie aan het dossier toegevoegd.
+    - title: Goed om te weten
+      text: rettX is geen medisch hulpmiddel. De validatie bevestigt alleen de gegevens in het register; het is geen medisch advies, diagnose of behandeladvies.

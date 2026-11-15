@@ -1,0 +1,64 @@
+name: Lietuvių
+chapters:
+  title: Registruokitės rettX
+  ui:
+    step: Žingsnis
+    of: iš
+    next: Toliau
+    prev: Atgal
+    all: Visi žingsniai
+    desktop: Kompiuteris
+    mobile: Telefonas
+    both: Greta
+    steps: Žingsniai
+    soon: Netrukus
+  steps:
+    onboarding: Pirmieji žingsniai
+    create-patient: Paciento sukūrimas
+    upload-diagnosis: Diagnozės įkėlimas
+    validation: Diagnozės patvirtinimas
+    completed: Registracija baigta
+  captions:
+    onboarding:
+      - Pasirinkite norimą kalbą
+      - Pereikite prie kito žingsnio
+      - Papasakokite šiek tiek apie save
+      - Pasirinkite savo šalį ir regioną
+      - Tęsti
+      - Perskaitykite privatumo politiką
+      - Slinkite iki galo ir sutikite
+      - Viskas paruošta – sveiki atvykę į rettX!
+    create-patient:
+      home: Pridėkite pacientą pagrindiniame puslapyje
+      names: Įveskite paciento vardą
+      details: Pasirinkite lytį ir gimimo šalį
+      birthdate: Pasirinkite gimimo datą
+      relationship: Nurodykite, kuo esate pacientui
+      next: Tęskite prie sutikimo
+      consent: Perskaitykite sutikimo formą
+      accept: Sutikite, kad būtų sukurtas pacientas
+      created: Pacientas sukurtas – toliau diagnozė
+    upload-diagnosis:
+      patient: Jūsų pacientui dabar reikia diagnozės
+      instructions: Ataskaitoje turi būti vardas, gimimo data ir Reto sindromo diagnozė su geno mutacijos tyrimu
+      add: Pridėkite diagnozės failą (PDF arba paveikslėlis)
+      source: Nuskaitykite jį telefono kamera arba pasirinkite failą iš įrenginio aplankų
+      processing: Failas saugiai įkeliamas ir apdorojamas
+      review: Išsiųsta! rettX komanda dabar jį peržiūrės
+    completed:
+      patient: rettX komanda peržiūrėjo diagnozę
+      banner: Patvirtinta! Jūsų registracija baigta
+      mutation: Patvirtinta geno mutacija dabar yra paciento įrašo dalis
+  validation:
+    - title: rettX komanda ją peržiūri
+      text: Kiekvieną įkeltą diagnozę patikrina rettX komandos narys, prieš patvirtinant pacientą.
+    - title: Ką tikriname
+      text: Ataskaitoje turi būti paciento vardas, gimimo data ir Reto sindromo diagnozė, įskaitant geno mutacijos tyrimo rezultatą.
+    - title: Peržiūrima
+      text: Kol peržiūrime, pacientas rodomas kaip „Peržiūrima“. Galite toliau naudotis programa, o apie bet kokius pakeitimus gausite pranešimą.
+    - title: Reikia daugiau informacijos?
+      text: Jei kažko trūksta arba kas nors neaišku, būsena pasikeičia į „Reikia daugiau informacijos“ ir galite įkelti atnaujintą ataskaitą.
+    - title: Patvirtinta
+      text: Patvirtinus pacientui suteikiamas RETTXID, o patvirtinta mutacija įtraukiama į įrašą.
+    - title: Verta žinoti
+      text: rettX nėra medicinos priemonė. Patvirtinimas tik patvirtina registro duomenis; tai nėra medicininis patarimas, diagnozė ar gydymo rekomendacija.

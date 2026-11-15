@@ -1,0 +1,141 @@
+name: Polski
+chapters:
+  title: Zarejestruj się w rettX
+  ui:
+    step: Krok
+    of: z
+    next: Dalej
+    prev: Wstecz
+    all: Wszystkie kroki
+    desktop: Komputer
+    mobile: Telefon
+    both: Obok siebie
+    steps: Kroki
+    soon: Wkrótce
+  steps:
+    onboarding: Pierwsze kroki
+    create-patient: Utwórz pacjenta
+    upload-diagnosis: Prześlij diagnozę
+    validation: Weryfikacja diagnozy
+    completed: Rejestracja zakończona
+  captions:
+    onboarding:
+      - Wybierz preferowany język
+      - Przejdź do następnego kroku
+      - Opowiedz nam trochę o sobie
+      - Wybierz swój kraj i region
+      - Dalej
+      - Przeczytaj politykę prywatności
+      - Przewiń do końca i zaakceptuj
+      - Wszystko gotowe – witamy w rettX!
+    create-patient:
+      home: Dodaj pacjenta ze strony głównej
+      names: Wpisz imię i nazwisko pacjenta
+      details: Wybierz płeć i kraj urodzenia
+      birthdate: Wybierz datę urodzenia
+      relationship: Wskaż, kim jesteś dla pacjenta
+      next: Przejdź do zgody
+      consent: Przeczytaj formularz zgody
+      accept: Zaakceptuj, aby utworzyć pacjenta
+      created: Pacjent utworzony – teraz diagnoza
+    upload-diagnosis:
+      patient: Twój pacjent potrzebuje teraz diagnozy
+      instructions: Raport musi zawierać imię i nazwisko, datę urodzenia oraz diagnozę zespołu Retta z wynikiem badania mutacji genu
+      add: Dodaj plik z diagnozą (PDF lub obraz)
+      source: Zeskanuj go aparatem telefonu lub wybierz plik z folderów urządzenia
+      processing: Plik jest bezpiecznie przesyłany i przetwarzany
+      review: Wysłano! Zespół rettX sprawdzi go teraz
+    completed:
+      patient: Zespół rettX sprawdził diagnozę
+      banner: Zweryfikowano! Twoja rejestracja jest zakończona
+      mutation: Potwierdzona mutacja genu jest teraz częścią karty pacjenta
+  validation:
+    - title: Sprawdza ją zespół rettX
+      text: Każda przesłana diagnoza jest sprawdzana przez osobę z zespołu rettX, zanim pacjent zostanie potwierdzony.
+    - title: Na co zwracamy uwagę
+      text: Raport musi zawierać imię i nazwisko pacjenta, datę urodzenia oraz diagnozę zespołu Retta, łącznie z wynikiem badania mutacji genu.
+    - title: W trakcie weryfikacji
+      text: Podczas weryfikacji pacjent widnieje jako „W trakcie weryfikacji”. Możesz nadal korzystać z aplikacji i dostaniesz powiadomienie o każdej zmianie.
+    - title: Potrzebne więcej informacji?
+      text: Jeśli czegoś brakuje lub coś jest niejasne, status zmienia się na „Wymagane dodatkowe informacje”, a Ty możesz przesłać zaktualizowany raport.
+    - title: Potwierdzono
+      text: Po weryfikacji pacjent otrzymuje RETTXID, a potwierdzona mutacja zostaje dodana do jego karty.
+    - title: Warto wiedzieć
+      text: rettX nie jest wyrobem medycznym. Weryfikacja potwierdza wyłącznie dane rejestru; nie jest poradą medyczną, diagnozą ani zaleceniem leczenia.
+story:
+  ui:
+    step: Krok
+    next: Co dalej
+    tapContinue: Dotknij, aby kontynuować
+    tapStart: Dotknij, aby rozpocząć
+    replay: Obejrzyj ponownie
+    title: rettX · Jak się zarejestrować
+  cards:
+    go-to-app:
+      title: Wejdź na app.rettx.eu
+      text: Otwórz app.rettx.eu w telefonie lub na komputerze. To dom europejskiego rejestru zespołu Retta. Aby się zarejestrować, dotknij „Dołącz do rettX”.
+    create-account:
+      title: Utwórz konto
+      text: Na ekranie „Utwórz konto” wpisz swój adres e-mail i dotknij „Dalej”. Użyj własnego adresu, a nie adresu utworzonego dla bliskiej osoby.
+    no-password:
+      title: Bez hasła
+      text: rettX nigdy nie prosi o hasło. Przy każdym logowaniu na Twój adres e-mail trafia nowy, jednorazowy kod. Nie trzeba niczego zapamiętywać, nie da się go użyć ponownie ani ukraść. Zalogować się może tylko osoba z dostępem do Twojej skrzynki, dlatego to jeszcze bezpieczniejsze.
+    enter-code:
+      title: Wpisz kod z e-maila
+      text: Otwórz skrzynkę odbiorczą, znajdź wiadomość od rettX i wpisz kod na ekranie „Potwierdź swoją tożsamość”.
+    set-up-account:
+      title: Skonfiguruj konto
+      text: Konto zostało utworzone. Teraz rettX zapyta o preferowany język, Twoje imię i nazwisko oraz miejsce zamieszkania.
+    privacy:
+      title: Zaakceptuj politykę prywatności
+      text: Przeczytaj, jak chronimy Twoje dane, a następnie zaakceptuj politykę prywatności, aby kontynuować.
+    welcome:
+      title: Witamy w rettX!
+      text: "Gotowe. Teraz utwórz profil bliskiej osoby z podstawowymi danymi: imię, nazwisko, data urodzenia i Twój stopień pokrewieństwa."
+    consent:
+      title: Wyraź zgodę
+      text: Przeczytaj formularz zgody dotyczący bliskiej osoby i zaakceptuj go. Następnie profil zostanie utworzony.
+    upload-report:
+      title: Prześlij wynik badania genetycznego
+      text: "rettX potrzebuje wyniku badania genetycznego, który potwierdza diagnozę zespołu Retta. Musi zawierać imię i nazwisko bliskiej osoby, datę urodzenia oraz mutację genu. Można go dodać na dwa sposoby: wybrać plik zapisany w telefonie albo zeskanować papierowy wynik aparatem."
+    option-file:
+      title: "Opcja 1: dodaj plik"
+      text: Jeśli masz wynik w telefonie jako PDF lub zdjęcie, na przykład z e-maila, dotknij „Prześlij plik z diagnozą” i wybierz go.
+    option-scan:
+      title: "Opcja 2: zeskanuj papierowy wynik"
+      text: Jeśli masz wynik tylko na papierze, dotknij „Skanuj dokument”. Połóż go na płaskiej powierzchni i zrób zdjęcie każdej strony. Gdy wszystkie strony są gotowe, dotknij „Zakończ”, a rettX połączy je w jeden plik PDF.
+    sent:
+      title: Bezpiecznie wysłane
+      text: Niezależnie od wybranej opcji wynik jest bezpiecznie przesyłany i przetwarzany. Następnie sprawdza go zespół rettX.
+    validation:
+      title: Zespół rettX weryfikuje diagnozę
+      text: Osoba z zespołu rettX czyta wynik i sprawdza, czy dotyczy Twojej bliskiej osoby oraz czy potwierdza zespół Retta wraz z mutacją genu. W trakcie weryfikacji profilu nie można zmieniać. Nie musisz robić nic więcej.
+    confirmed:
+      title: Diagnoza potwierdzona
+      text: Po weryfikacji profil zostaje oznaczony jako potwierdzony, a Twoja rejestracja jest zakończona.
+    mutation:
+      title: Mutacja genu jest w profilu
+      text: "Potwierdzona mutacja z wyniku jest teraz częścią profilu bliskiej osoby. Widać jej szczegóły: zmianę w sekwencji kodującej, zmianę w białku i pozycję w genomie."
+    thank-you:
+      title: Witamy w społeczności rettX
+      text: "Dziękujemy za rejestrację! Twoja bliska osoba jest teraz częścią europejskiego rejestru zespołu Retta. Uwaga: rettX nie jest wyrobem medycznym. Weryfikacja potwierdza wyłącznie dane w rejestrze i nie stanowi porady medycznej."
+      kick: Gotowe
+mock:
+  email: twoj.email@email.com
+  signup:
+    title: Utwórz konto
+    sub: Zarejestruj się w rettX, aby przejść do rettX.
+    email: Adres e-mail*
+    next: Dalej
+    have: Masz już konto?
+    login: Zaloguj się
+    verify: Potwierdź swoją tożsamość
+    sent: Wysłaliśmy wiadomość e-mail z kodem na adres
+    code: Wpisz kod
+    none: Nie otrzymano wiadomości?
+    resend: Wyślij ponownie
+  picker:
+    title: Wybierz plik
+    recent: Ostatnie
+    dl: Pobrane
+    cam: Aparat

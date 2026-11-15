@@ -1,0 +1,64 @@
+name: Svenska
+chapters:
+  title: Registrera dig hos rettX
+  ui:
+    step: Steg
+    of: av
+    next: Nästa
+    prev: Tillbaka
+    all: Alla steg
+    desktop: Dator
+    mobile: Mobil
+    both: Sida vid sida
+    steps: Steg
+    soon: Kommer snart
+  steps:
+    onboarding: Första stegen
+    create-patient: Skapa patienten
+    upload-diagnosis: Ladda upp diagnosen
+    validation: Granskning av diagnosen
+    completed: Registreringen är klar
+  captions:
+    onboarding:
+      - Välj önskat språk
+      - Fortsätt till nästa steg
+      - Berätta lite om dig själv
+      - Välj ditt land och din region
+      - Fortsätt
+      - Läs integritetspolicyn
+      - Scrolla till slutet och godkänn
+      - Allt klart – välkommen till rettX!
+    create-patient:
+      home: Lägg till en patient från startsidan
+      names: Ange patientens namn
+      details: Välj kön och födelseland
+      birthdate: Välj födelsedatum
+      relationship: Ange din relation till patienten
+      next: Fortsätt till samtycket
+      consent: Läs samtyckesformuläret
+      accept: Godkänn för att skapa patienten
+      created: Patienten är skapad – nästa steg är diagnosen
+    upload-diagnosis:
+      patient: Din patient behöver nu en diagnos
+      instructions: Rapporten måste innehålla namn, födelsedatum och Rett syndrom-diagnosen med genmutationstestet
+      add: Lägg till diagnosfilen (PDF eller bild)
+      source: Skanna den med mobilkameran eller välj filen från enhetens mappar
+      processing: Filen laddas upp säkert och bearbetas
+      review: Skickat! rettX-teamet granskar den nu
+    completed:
+      patient: rettX-teamet har granskat diagnosen
+      banner: Godkänt! Din registrering är klar
+      mutation: Den bekräftade genmutationen är nu en del av patientens journal
+  validation:
+    - title: rettX-teamet granskar den
+      text: Varje uppladdad diagnos kontrolleras av en person i rettX-teamet innan patienten bekräftas.
+    - title: Vad vi tittar efter
+      text: Rapporten måste visa patientens namn, födelsedatum och Rett syndrom-diagnosen, inklusive resultatet av genmutationstestet.
+    - title: Under granskning
+      text: Medan vi granskar visas patienten som ”Under granskning”. Du kan fortsätta använda appen och får besked om eventuella ändringar.
+    - title: Behövs mer information?
+      text: Om något saknas eller är oklart ändras statusen till ”Mer information krävs” och du kan ladda upp en uppdaterad rapport.
+    - title: Bekräftad
+      text: När diagnosen är godkänd får patienten ett RETTXID och den bekräftade mutationen läggs till i journalen.
+    - title: Bra att veta
+      text: rettX är inte en medicinteknisk produkt. Granskningen bekräftar bara registrets uppgifter; den är inte medicinsk rådgivning, en diagnos eller en behandlingsrekommendation.

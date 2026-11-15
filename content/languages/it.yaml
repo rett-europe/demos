@@ -1,0 +1,141 @@
+name: Italiano
+chapters:
+  title: Registrati su rettX
+  ui:
+    step: Passo
+    of: di
+    next: Avanti
+    prev: Indietro
+    all: Tutti i passi
+    desktop: Desktop
+    mobile: Mobile
+    both: Affiancati
+    steps: Passi
+    soon: Prossimamente
+  steps:
+    onboarding: Primi passi
+    create-patient: Crea il paziente
+    upload-diagnosis: Carica la diagnosi
+    validation: Convalida della diagnosi
+    completed: Registrazione completata
+  captions:
+    onboarding:
+      - Scegli la tua lingua preferita
+      - Passa al passo successivo
+      - Raccontaci qualcosa di te
+      - Seleziona il tuo paese e la tua regione
+      - Continua
+      - Leggi l’informativa sulla privacy
+      - Scorri fino in fondo e accetta
+      - Tutto pronto – benvenuto su rettX!
+    create-patient:
+      home: Aggiungi un paziente dalla tua pagina iniziale
+      names: Inserisci il nome del paziente
+      details: Seleziona il genere e il paese di nascita
+      birthdate: Scegli la data di nascita
+      relationship: Indica il tuo legame con il paziente
+      next: Continua con il consenso
+      consent: Leggi il modulo di consenso
+      accept: Accetta per creare il paziente
+      created: Paziente creato – ora, la diagnosi
+    upload-diagnosis:
+      patient: Ora il tuo paziente ha bisogno di una diagnosi
+      instructions: Il referto deve includere nome, data di nascita e la diagnosi di sindrome di Rett con il test della mutazione genetica
+      add: Aggiungi il file della diagnosi (PDF o immagine)
+      source: Scansionalo con la fotocamera del telefono o scegli il file dalle cartelle del dispositivo
+      processing: Il file viene caricato in modo sicuro ed elaborato
+      review: Inviato! Il team rettX lo esaminerà ora
+    completed:
+      patient: Il team rettX ha esaminato la diagnosi
+      banner: Convalidato! La tua registrazione è completa
+      mutation: La mutazione genetica confermata ora fa parte della scheda del paziente
+  validation:
+    - title: Il team rettX la esamina
+      text: Ogni diagnosi caricata viene controllata da una persona del team rettX prima di confermare il paziente.
+    - title: Cosa controlliamo
+      text: Il referto deve mostrare il nome del paziente, la data di nascita e la diagnosi di sindrome di Rett, incluso il risultato del test della mutazione genetica.
+    - title: In revisione
+      text: Durante la revisione, il paziente appare come “In revisione”. Puoi continuare a usare l’app e riceverai una notifica in caso di novità.
+    - title: Servono più informazioni?
+      text: Se manca qualcosa o non è chiaro, lo stato cambia in “Servono ulteriori informazioni” e puoi caricare un referto aggiornato.
+    - title: Confermato
+      text: Una volta convalidato, il paziente riceve un RETTXID e la mutazione confermata viene aggiunta alla sua scheda.
+    - title: Da sapere
+      text: rettX non è un dispositivo medico. La convalida conferma solo i dati del registro; non è un parere medico, una diagnosi né un consiglio terapeutico.
+story:
+  ui:
+    step: Passo
+    next: E ora
+    tapContinue: Tocca per continuare
+    tapStart: Tocca per iniziare
+    replay: Guarda di nuovo
+    title: rettX · Come registrarsi
+  cards:
+    go-to-app:
+      title: Vai su app.rettx.eu
+      text: Apri app.rettx.eu sul telefono o sul computer. È la casa del registro europeo della sindrome di Rett. Per registrarti, tocca "Unisciti a rettX".
+    create-account:
+      title: Crea il tuo account
+      text: Nella schermata "Crea il tuo account" scrivi il tuo indirizzo e-mail e tocca "Continua". Usa la tua e-mail personale, non una creata per il tuo familiare.
+    no-password:
+      title: Nessuna password
+      text: "rettX non ti chiede mai una password. Ogni volta che accedi, ricevi via e-mail un nuovo codice monouso. Niente da ricordare, niente da riutilizzare, niente da rubare. Solo chi ha accesso alla tua casella di posta può entrare: per questo è ancora più sicuro."
+    enter-code:
+      title: Inserisci il codice ricevuto
+      text: Apri la tua casella di posta, trova l’e-mail di rettX e inserisci il codice nella schermata "Verifica la tua identità".
+    set-up-account:
+      title: Configura il tuo account
+      text: Il tuo account è stato creato. Ora rettX ti chiede la lingua che preferisci, il tuo nome e dove vivi.
+    privacy:
+      title: Accetta l’informativa sulla privacy
+      text: Leggi come vengono protetti i tuoi dati, poi accetta l’informativa sulla privacy per continuare.
+    welcome:
+      title: Ti diamo il benvenuto in rettX!
+      text: "Ci sei. Ora crea il profilo del tuo familiare con le informazioni di base: nome, cognome, data di nascita e il vostro rapporto di parentela."
+    consent:
+      title: Dai il tuo consenso
+      text: Leggi il modulo di consenso per il tuo familiare e accettalo. Il profilo viene così creato.
+    upload-report:
+      title: Carica il referto genetico
+      text: "rettX ha bisogno del referto del test genetico che conferma la diagnosi di sindrome di Rett. Deve riportare il nome del tuo familiare, la data di nascita e la mutazione genetica. Puoi aggiungerlo in due modi: scegliendo un file già presente sul telefono oppure scansionando il referto cartaceo con la fotocamera."
+    option-file:
+      title: "Opzione 1: aggiungi un file"
+      text: Se hai il referto in PDF o in foto sul telefono, per esempio ricevuto via e-mail, tocca "Carica file di diagnosi" e sceglilo.
+    option-scan:
+      title: "Opzione 2: scansiona il referto cartaceo"
+      text: Se hai il referto solo su carta, tocca "Scansiona documento". Appoggialo su una superficie piana e fotografa ogni pagina. Quando hai acquisito tutte le pagine, tocca "Completa" e rettX le unisce in un unico PDF.
+    sent:
+      title: Inviato in modo sicuro
+      text: Qualunque opzione tu scelga, il referto viene caricato in modo sicuro ed elaborato. Ora il team di rettX lo esamina.
+    validation:
+      title: Il team di rettX convalida la diagnosi
+      text: Una persona del team di rettX legge il referto e verifica che appartenga al tuo familiare e che confermi la sindrome di Rett con la mutazione genetica. Durante la verifica il profilo non può essere modificato. Non devi fare nient’altro.
+    confirmed:
+      title: Diagnosi confermata
+      text: Dopo la convalida, il profilo viene contrassegnato come confermato e la tua registrazione è completa.
+    mutation:
+      title: La mutazione genetica è nel profilo
+      text: "La mutazione confermata dal referto fa ora parte del profilo del tuo familiare. Ne mostra i dettagli: la variazione codificante, la variazione proteica e la posizione genomica."
+    thank-you:
+      title: Ti diamo il benvenuto nella comunità rettX
+      text: "Grazie per la registrazione! Il tuo familiare ora fa parte del registro europeo della sindrome di Rett. Nota: rettX non è un dispositivo medico. La convalida conferma solo i dati del registro; non è un parere medico."
+      kick: Fatto
+mock:
+  email: tua.email@email.com
+  signup:
+    title: Crea il tuo account
+    sub: Registrati a rettX per continuare su rettX.
+    email: Indirizzo e-mail*
+    next: Continua
+    have: Hai già un account?
+    login: Accedi
+    verify: Verifica la tua identità
+    sent: Abbiamo inviato un'e-mail con il tuo codice a
+    code: Inserisci il codice
+    none: Non hai ricevuto l'e-mail?
+    resend: Invia di nuovo
+  picker:
+    title: Scegli un file
+    recent: Recenti
+    dl: Download
+    cam: Fotocamera
